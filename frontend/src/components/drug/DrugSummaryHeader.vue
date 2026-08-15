@@ -1,15 +1,28 @@
 <script setup>
-defineProps({
+import { computed, ref } from 'vue'
+
+const props = defineProps({
   drug: { type: Object, required: true },
   favoriteLoading: { type: Boolean, default: false },
 })
 
 defineEmits(['favorite'])
+
+const imageFailed = ref(false)
+const canShowImage = computed(() => Boolean(props.drug.imageUrl) && !imageFailed.value)
 </script>
 
 <template>
   <article class="summary-card card">
-    <div class="detail-pill" aria-hidden="true">💊</div>
+    <div class="detail-pill">
+      <img
+        v-if="canShowImage"
+        :src="drug.imageUrl"
+        :alt="`${drug.name} 낱알 이미지`"
+        @error="imageFailed = true"
+      >
+      <span v-else aria-hidden="true">💊</span>
+    </div>
     <div class="summary-text">
       <span class="summary-label">의약품 상세 정보</span>
       <h1>{{ drug.name }}</h1>
@@ -30,7 +43,8 @@ defineEmits(['favorite'])
 
 <style scoped>
 .summary-card { display: flex; align-items: center; gap: 20px; padding: 28px; }
-.detail-pill { display: grid; place-items: center; flex: none; width: 92px; height: 92px; border-radius: 25px; background: var(--primary-soft); font-size: 38px; }
+.detail-pill { display: grid; place-items: center; flex: none; width: 92px; height: 92px; overflow: hidden; border-radius: 25px; background: var(--primary-soft); font-size: 38px; }
+.detail-pill img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .summary-text h1 { margin: 4px 0 8px; font-size: 28px; }
 .summary-label { color: var(--primary-dark); font-size: 13px; font-weight: 700; }
 .summary-text p { color: var(--muted); font-size: 14px; }
