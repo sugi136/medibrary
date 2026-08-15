@@ -25,7 +25,7 @@ public class SideEffectCache {
     @Column(nullable = false)
     private String source;
 
-    @Lob
+    @Column(columnDefinition = "TEXT")
     private String content;
 
     @Column(name = "fetched_at")
