@@ -74,11 +74,40 @@ public class GranuleClient {
             return List.of();
         }
 
-        JsonNode items = root.path("body").path("items").path("item");
+        JsonNode payload = root.path("response").isObject() ? root.path("response") : root;
+        JsonNode items = payload.path("body").path("items");
         List<ExternalDrug> results = new ArrayList<>();
-        if (items.isArray()) for (JsonNode item : items) addItem(item, results);
-        else if (items.isObject()) addItem(items, results);
+        addItems(items, results);
         return results;
+    }
+
+    /**
+     * 공공데이터포털 응답의 두 가지 items 형식({@code [...]}, {@code {"item": [...]}})을 모두 수용한다.
+     */
+    private void addItems(JsonNode items, List<ExternalDrug> results) {
+        if (items.isArray()) {
+            for (JsonNode item : items) addWrappedOrDirectItem(item, results);
+            return;
+        }
+        if (items.isObject()) {
+            JsonNode wrappedItems = items.path("item");
+            if (wrappedItems.isArray()) {
+                for (JsonNode item : wrappedItems) addItem(item, results);
+            } else if (wrappedItems.isObject()) {
+                addItem(wrappedItems, results);
+            } else {
+                addItem(items, results);
+            }
+        }
+    }
+
+    private void addWrappedOrDirectItem(JsonNode item, List<ExternalDrug> results) {
+        JsonNode wrappedItem = item.path("item");
+        if (item.isObject() && item.size() == 1 && wrappedItem.isObject()) {
+            addItem(wrappedItem, results);
+            return;
+        }
+        addItem(item, results);
     }
 
     private String extractApiErrorSummary(String responseBody) {
