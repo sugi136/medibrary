@@ -19,15 +19,18 @@ public class DrugService {
     private final DrugRepository drugRepository;
     private final FavoriteRepository favoriteRepository;
     private final DrugSearchService drugSearchService;
+    private final DrugInformationEnrichmentService drugInformationEnrichmentService;
     private final CurrentUserProvider currentUserProvider;
 
     public DrugService(DrugRepository drugRepository,
                        FavoriteRepository favoriteRepository,
                        DrugSearchService drugSearchService,
+                       DrugInformationEnrichmentService drugInformationEnrichmentService,
                        CurrentUserProvider currentUserProvider) {
         this.drugRepository = drugRepository;
         this.favoriteRepository = favoriteRepository;
         this.drugSearchService = drugSearchService;
+        this.drugInformationEnrichmentService = drugInformationEnrichmentService;
         this.currentUserProvider = currentUserProvider;
     }
 
@@ -41,9 +44,10 @@ public class DrugService {
         return new DrugDtos.SearchResponse(items.size(), items);
     }
 
-    @Transactional(readOnly = true)
+    @Transactional
     public DrugDtos.DrugDetail getDetail(String drugId) {
         Drug drug = findDrug(drugId);
+        drugInformationEnrichmentService.enrichMissingFields(drug);
         boolean isFavorite = currentUserProvider.getUserId()
                 .map(userId -> favoriteRepository.existsByUserIdAndDrugId(userId, drugId))
                 .orElse(false);

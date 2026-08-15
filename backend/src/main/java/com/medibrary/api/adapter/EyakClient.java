@@ -12,7 +12,7 @@ import java.util.List;
 
 @Component
 public class EyakClient {
-    private static final String ENDPOINT = "http://apis.data.go.kr/1471000/DrbEasyDrugInfoService/getDrbEasyDrugList";
+    private static final String ENDPOINT = "https://apis.data.go.kr/1471000/DrbEasyDrugInfoService/getDrbEasyDrugList";
 
     private final String serviceKey;
     private final ObjectMapper objectMapper;
@@ -26,38 +26,94 @@ public class EyakClient {
         this.restClient = restClientFactory.create(ENDPOINT);
     }
 
-    public ExternalLookupResult fetchDomesticSideEffects(Drug drug) {
+    public ExternalDrugInformation fetchDrugInformation(Drug drug) {
         if (serviceKey.isBlank()) {
-            return ExternalLookupResult.unavailable("국내 부작용 연동 키가 설정되지 않았습니다.");
+            return ExternalDrugInformation.unavailable("국내 의약품 정보 연동 키가 설정되지 않았습니다.");
         }
         try {
             String body = restClient.get().uri(uriBuilder -> uriBuilder
                     .queryParam("serviceKey", serviceKey)
+                    .queryParam("itemSeq", drug.getId())
                     .queryParam("itemName", drug.getName())
                     .queryParam("pageNo", 1)
                     .queryParam("numOfRows", 1)
                     .queryParam("type", "json")
                     .build())
                     .retrieve().body(String.class);
-            return ExternalLookupResult.success(extractSideEffects(body));
+            return extractDrugInformation(body);
         } catch (Exception ex) {
-            return ExternalLookupResult.unavailable("현재 정보를 불러올 수 없습니다.");
+            return ExternalDrugInformation.unavailable("현재 국내 의약품 정보를 불러올 수 없습니다.");
         }
     }
 
-    private List<String> extractSideEffects(String responseBody) throws Exception {
-        JsonNode items = objectMapper.readTree(responseBody).path("body").path("items").path("item");
-        List<String> results = new ArrayList<>();
-        if (items.isArray()) {
-            for (JsonNode item : items) addSideEffect(item, results);
-        } else if (items.isObject()) {
-            addSideEffect(items, results);
-        }
-        return results;
+    public ExternalLookupResult fetchDomesticSideEffects(Drug drug) {
+        ExternalDrugInformation information = fetchDrugInformation(drug);
+        return information.available()
+                ? ExternalLookupResult.success(information.sideEffects())
+                : ExternalLookupResult.unavailable(information.message());
     }
 
-    private void addSideEffect(JsonNode item, List<String> results) {
-        String raw = item.path("seQ").asText("").replaceAll("<[^>]*>", " ").trim();
-        if (!raw.isBlank()) results.add(raw);
+    private ExternalDrugInformation extractDrugInformation(String responseBody) throws Exception {
+        JsonNode root = objectMapper.readTree(responseBody);
+        if (root.path("OpenAPI_ServiceResponse").path("cmmMsgHeader").isObject()) {
+            return ExternalDrugInformation.unavailable("국내 의약품 정보 요청이 거절되었습니다.");
+        }
+
+        JsonNode payload = root.path("response").isObject() ? root.path("response") : root;
+        JsonNode item = firstItem(payload.path("body").path("items"));
+        if (item.isMissingNode() || !item.isObject()) {
+            return ExternalDrugInformation.success("", "", "", List.of());
+        }
+
+        String efficacy = cleanText(firstText(item, "efcyQesitm", "EFCY_QESITM"));
+        String usageInfo = cleanText(firstText(item, "useMethodQesitm", "USE_METHOD_QESITM"));
+        String caution = joinNonBlank(
+                cleanText(firstText(item, "atpnWarnQesitm", "ATPN_WARN_QESITM")),
+                cleanText(firstText(item, "atpnQesitm", "ATPN_QESITM"))
+        );
+        String sideEffect = cleanText(firstText(item, "seQesitm", "SE_QESITM", "seQ", "SE_Q"));
+        List<String> sideEffects = sideEffect.isBlank() ? List.of() : List.of(sideEffect);
+        return ExternalDrugInformation.success(efficacy, usageInfo, caution, sideEffects);
+    }
+
+    private JsonNode firstItem(JsonNode items) {
+        if (items.isArray() && !items.isEmpty()) return unwrapItem(items.get(0));
+        if (items.isObject()) {
+            JsonNode wrappedItems = items.path("item");
+            if (wrappedItems.isArray() && !wrappedItems.isEmpty()) return unwrapItem(wrappedItems.get(0));
+            if (wrappedItems.isObject()) return unwrapItem(wrappedItems);
+            return items;
+        }
+        return items;
+    }
+
+    private JsonNode unwrapItem(JsonNode item) {
+        return item.isObject() && item.size() == 1 && item.path("item").isObject()
+                ? item.path("item")
+                : item;
+    }
+
+    private String firstText(JsonNode item, String... keys) {
+        for (String key : keys) {
+            String value = item.path(key).asText("").trim();
+            if (!value.isBlank()) return value;
+        }
+        return "";
+    }
+
+    private String cleanText(String value) {
+        return value
+                .replaceAll("(?i)<br\\s*/?>", "\n")
+                .replaceAll("(?i)</p>", "\n")
+                .replaceAll("<[^>]*>", " ")
+                .replaceAll("[\\t ]+", " ")
+                .replaceAll("\\n{3,}", "\n\n")
+                .trim();
+    }
+
+    private String joinNonBlank(String first, String second) {
+        if (first.isBlank()) return second;
+        if (second.isBlank()) return first;
+        return first + "\n\n" + second;
     }
 }
