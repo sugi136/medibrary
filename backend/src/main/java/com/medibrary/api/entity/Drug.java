@@ -36,14 +36,13 @@ public class Drug {
     @Column(name = "image_url", length = 500)
     private String imageUrl;
 
-    @Lob
+    @Column(columnDefinition = "TEXT")
     private String efficacy;
 
-    @Lob
-    @Column(name = "usage_info")
+    @Column(name = "usage_info", columnDefinition = "TEXT")
     private String usageInfo;
 
-    @Lob
+    @Column(columnDefinition = "TEXT")
     private String caution;
 
     @Column(name = "updated_at")

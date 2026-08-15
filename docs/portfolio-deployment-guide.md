@@ -34,11 +34,11 @@ Supabase Dashboard에서 **New project**를 만들고, Render와 가까운 리�
 
 | Render 변수 | 예시 형식 |
 |---|---|
-| `DB_URL` | `jdbc:postgresql://db.<project-ref>.supabase.co:5432/postgres?sslmode=require` |
-| `DB_USERNAME` | `postgres` 또는 Supabase Connect 화면의 사용자명 |
+| `DB_URL` | `jdbc:postgresql://aws-<region>.pooler.supabase.com:5432/postgres?sslmode=require` |
+| `DB_USERNAME` | `postgres.<project-ref>` (Connect의 Session Pooler 값) |
 | `DB_PASSWORD` | 프로젝트 생성 시 설정한 DB 비밀번호 |
 
-Supabase의 연결 방식과 호스트 값은 프로젝트의 **Connect** 화면을 기준으로 사용합니다. 복사한 비밀번호와 연결 문자열은 소스 파일·GitHub·Vercel에 저장하지 않습니다.
+Render Free와 Supabase Free를 연결할 때는 프로젝트 상단 **Connect → Session pooler**에서 보이는 값을 기준으로 사용합니다. Supabase Free의 Direct connection은 IPv6 기반이므로, IPv4 환경의 지속 실행 백엔드에는 Session Pooler가 적합합니다.[4] 복사한 비밀번호와 연결 문자열은 소스 파일·GitHub·Vercel에 저장하지 않습니다.
 
 ## 4. Render API 배포
 
@@ -97,3 +97,5 @@ CORS_ALLOWED_ORIGINS=https://<your-project>.vercel.app
 [2] [Render Free Instances](https://render.com/docs/free)
 
 [3] [Vercel Vite 배포 문서](https://vercel.com/docs/frameworks/frontend/vite)
+
+[4] [Supabase PostgreSQL 연결 방식](https://supabase.com/docs/guides/database/connecting-to-postgres)

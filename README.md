@@ -90,8 +90,8 @@ Render에는 다음 값을 등록합니다. DB·JWT·공공데이터 서비스 �
 
 | 변수명 | 설정값 또는 출처 |
 |---|---|
-| `DB_URL` | Supabase Connect 화면에서 제공하는 TLS PostgreSQL JDBC URL |
-| `DB_USERNAME` | Supabase PostgreSQL 사용자명 |
+| `DB_URL` | Supabase **Connect → Session pooler**의 TLS PostgreSQL JDBC URL |
+| `DB_USERNAME` | Session Pooler 사용자명 `postgres.<project-ref>` |
 | `DB_PASSWORD` | Supabase DB 비밀번호 |
 | `JWT_SECRET` | 32바이트 이상 임의 문자열 |
 | `DATA_GO_KR_SERVICE_KEY` | 공공데이터포털 서비스 키 |
@@ -104,7 +104,7 @@ Vercel에는 오직 아래 공개 변수만 등록합니다.
 VITE_API_BASE_URL=https://<your-render-service>.onrender.com/api
 ```
 
-`VITE_` 접두어 변수는 브라우저 번들에 포함되므로 `DB_PASSWORD`, `JWT_SECRET`, `DATA_GO_KR_SERVICE_KEY`를 절대 넣으면 안 됩니다.
+Supabase Free의 Direct connection은 IPv6 기반입니다. Render Free 환경에서는 **Connect → Session pooler**의 `5432` 포트 값을 사용하면 IPv4 연결을 지원하는 지속 실행 Spring Boot 서비스와 호환됩니다. `VITE_` 접두어 변수는 브라우저 번들에 포함되므로 `DB_PASSWORD`, `JWT_SECRET`, `DATA_GO_KR_SERVICE_KEY`를 절대 넣으면 안 됩니다.
 
 ## 외부 API 처리 방식
 
