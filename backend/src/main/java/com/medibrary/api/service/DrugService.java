@@ -31,7 +31,7 @@ public class DrugService {
         this.currentUserProvider = currentUserProvider;
     }
 
-    @Transactional(readOnly = true)
+    @Transactional
     public DrugDtos.SearchResponse search(String name, String shape, String color) {
         List<DrugDtos.DrugSummary> items = drugSearchService
                 .search(new DrugSearchCriteria(name, shape, color))
