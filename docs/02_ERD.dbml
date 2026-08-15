@@ -1,0 +1,67 @@
+// 내 약 정보 검색 서비스 - ERD
+// dbdiagram.io 에 이 파일 내용을 그대로 붙여넣으면 다이어그램이 생성됩니다.
+// DB: MySQL 8
+
+Table users {
+  id            bigint       [pk, increment]
+  email         varchar(255) [unique, not null]
+  password_hash varchar(255) [not null]
+  name          varchar(100)
+  created_at    timestamp    [default: `now()`]
+
+  Note: '서비스 회원'
+}
+
+Table drugs {
+  id             varchar(20)  [pk, note: '식약처 품목기준코드']
+  name           varchar(200) [not null]
+  shape          varchar(50)
+  color          varchar(50)
+  mark_front     varchar(100)
+  mark_back      varchar(100)
+  ingredient_en  varchar(200) [note: 'openFDA 매핑용 영문 주성분명']
+  image_url      varchar(500)
+  efficacy       text         [note: '효능·효과']
+  usage_info     text         [note: '용법·용량']
+  caution        text         [note: '주의사항']
+  updated_at     timestamp    [default: `now()`]
+
+  Note: '의약품 마스터 (공공데이터포털 낱알식별정보 + e약은요 동기화 결과 캐시)'
+}
+
+Table favorites {
+  id         bigint    [pk, increment]
+  user_id    bigint    [not null, ref: > users.id]
+  drug_id    varchar(20) [not null, ref: > drugs.id]
+  created_at timestamp [default: `now()`]
+
+  indexes {
+    (user_id, drug_id) [unique]
+  }
+
+  Note: '사용자별 즐겨찾기 (users - drugs 다대다 연결 테이블)'
+}
+
+Table dur_pairs {
+  id         bigint      [pk, increment]
+  drug_id_a  varchar(20) [not null, ref: > drugs.id]
+  drug_id_b  varchar(20) [not null, ref: > drugs.id]
+  reason     varchar(300) [note: '병용금기 사유']
+  severity   varchar(20)  [note: 'CONTRAINDICATED(금기) | CAUTION(주의) - API의 type 필드와 매핑']
+
+  Note: 'DUR(병용금기/주의) 조합 캐시. ① 즐겨찾기 약물 간 조합 체크(SCR-MY-001), ② 상세화면에서 특정 약 하나의 병용주의 목록 조회(SCR-DETAIL-001, GET /drugs/{id}/contraindications) 양쪽에 공용으로 사용됨. 조회 시 drug_id_a=X OR drug_id_b=X 로 검색'
+}
+
+Table side_effect_cache {
+  id         bigint      [pk, increment]
+  drug_id    varchar(20) [not null, ref: > drugs.id]
+  source     varchar(20) [note: 'domestic | overseas']
+  content    text
+  fetched_at timestamp   [default: `now()`]
+
+  indexes {
+    (drug_id, source)
+  }
+
+  Note: '외부 API(e약은요/openFDA) 부작용 조회 결과 캐시 - REQ-N-001, REQ-N-003 대응'
+}
