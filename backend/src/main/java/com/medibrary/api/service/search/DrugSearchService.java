@@ -21,7 +21,7 @@ public class DrugSearchService {
         this.drugCacheService = drugCacheService;
     }
 
-    @Transactional(readOnly = true)
+    @Transactional
     public List<Drug> search(DrugSearchCriteria criteria) {
         List<Drug> cachedDrugs = findCached(criteria);
         if (!cachedDrugs.isEmpty() || criteria.isEmpty()) {
