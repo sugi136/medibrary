@@ -30,11 +30,15 @@ public class SideEffectCacheService {
         return cacheRepository.findFirstByDrugIdAndSourceOrderByFetchedAtDesc(drugId, source)
                 .filter(cache -> cache.getFetchedAt() != null)
                 .filter(cache -> Duration.between(cache.getFetchedAt(), LocalDateTime.now()).compareTo(TTL) < 0)
-                .map(cache -> deserialize(cache.getContent()));
+                .map(cache -> deserialize(cache.getContent()))
+                .filter(items -> !items.isEmpty());
     }
 
     @Transactional
     public void save(String drugId, String source, List<String> items) {
+        if (items.isEmpty()) {
+            return;
+        }
         Drug drugReference = entityManager.getReference(Drug.class, drugId);
         cacheRepository.save(new SideEffectCache(drugReference, source, String.join("\n", items)));
     }
