@@ -15,7 +15,8 @@ import java.util.List;
 @Component
 public class GranuleClient {
     private static final Logger log = LoggerFactory.getLogger(GranuleClient.class);
-    private static final String ENDPOINT = "https://apis.data.go.kr/1471000/MdcinGrnIdntfcInfoService01/getMdcinGrnIdntfcInfoList01";
+    // 2025-11-10 공공데이터포털 공지에 따라 Service01/List01은 폐기되어 Service03/List03을 사용한다.
+    private static final String ENDPOINT = "https://apis.data.go.kr/1471000/MdcinGrnIdntfcInfoService03/getMdcinGrnIdntfcInfoList03";
 
     private final String serviceKey;
     private final ObjectMapper objectMapper;
