@@ -2,18 +2,24 @@ package com.medibrary.api.service;
 
 import com.medibrary.api.adapter.ExternalDrugInformation;
 import com.medibrary.api.adapter.EyakClient;
+import com.medibrary.api.adapter.IngredientEnglishMapper;
 import com.medibrary.api.entity.Drug;
 import org.springframework.stereotype.Service;
 
 @Service
 public class DrugInformationEnrichmentService {
     private final EyakClient eyakClient;
+    private final IngredientEnglishMapper ingredientEnglishMapper;
 
-    public DrugInformationEnrichmentService(EyakClient eyakClient) {
+    public DrugInformationEnrichmentService(EyakClient eyakClient,
+                                            IngredientEnglishMapper ingredientEnglishMapper) {
         this.eyakClient = eyakClient;
+        this.ingredientEnglishMapper = ingredientEnglishMapper;
     }
 
     public void enrichMissingFields(Drug drug) {
+        ingredientEnglishMapper.resolve(drug)
+                .ifPresent(ingredientEn -> setIfBlank(drug::getIngredientEn, drug::setIngredientEn, ingredientEn));
         if (hasAllDetailFields(drug)) {
             return;
         }
