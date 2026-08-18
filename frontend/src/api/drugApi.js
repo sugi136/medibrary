@@ -6,4 +6,5 @@ export const drugApi = {
   sideEffects: (drugId) => client.get(`/drugs/${drugId}/side-effects`),
   duplicates: (drugId) => client.get(`/drugs/${drugId}/duplicates`),
   contraindications: (drugId) => client.get(`/drugs/${drugId}/contraindications`),
+  overseasProducts: (drugId) => client.get(`/drugs/${drugId}/overseas-products`),
 }

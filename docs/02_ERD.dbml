@@ -22,13 +22,14 @@ Table drugs {
   mark_back      varchar(100)
   ingredient_kr  varchar(200) [note: '한글 주성분명']
   ingredient_en  varchar(200) [note: 'openFDA 매핑용 영문 주성분명']
+  atc_code       varchar(10)  [note: 'WHO ATC 코드. REQ-F-015 해외 성분명 해석 기준 키']
   image_url      varchar(500)
   efficacy       text         [note: '효능·효과']
   usage_info     text         [note: '용법·용량']
   caution        text         [note: '주의사항']
   updated_at     timestamp    [default: `now()`]
 
-  Note: '의약품 마스터. 낱알식별정보·e약은요 동기화 결과 및 DUR 상대 품목 stub을 포함한다.'
+  Note: '의약품 마스터. 낱알식별정보·e약은요 동기화 결과, DUR 상대 품목 stub 및 REQ-F-015 ATC 성분 해석 기준을 포함한다.'
 }
 
 Table favorites {

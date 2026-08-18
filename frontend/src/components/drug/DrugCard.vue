@@ -40,7 +40,7 @@ function selectDrug() {
         :alt="`${drug.name} 낱알 이미지`"
         loading="lazy"
         @error="markImageAsFailed(drug)"
-      >
+      />
       <span v-else class="pill-placeholder" aria-hidden="true">💊</span>
     </span>
     <span class="drug-card-body">
@@ -53,11 +53,64 @@ function selectDrug() {
 </template>
 
 <style scoped>
-.drug-card { display: flex; align-items: center; gap: 14px; width: 100%; padding: 16px; border: 1px solid var(--line); text-align: left; transition: .18s ease; }
-button.drug-card { cursor: pointer; background: var(--surface); }
-button.drug-card:hover { border-color: var(--primary); transform: translateY(-2px); }
-.pill-thumbnail { display: grid; place-items: center; flex: none; width: 52px; height: 52px; overflow: hidden; border-radius: 15px; background: var(--primary-soft); }
-.pill-thumbnail img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.pill-placeholder { display: grid; place-items: center; width: 100%; height: 100%; font-size: 23px; }
-.drug-card-body { display: grid; gap: 4px; min-width: 0; }.drug-card-body strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.drug-card-body small { color: var(--muted); font-size: 13px; }.chevron { margin-left: auto; color: var(--primary-dark); font-size: 27px; }
+.drug-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--line);
+  text-align: left;
+  transition: 0.18s ease;
+}
+button.drug-card {
+  cursor: pointer;
+  background: var(--surface);
+}
+button.drug-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+.pill-thumbnail {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  border-radius: 15px;
+  background: var(--primary-soft);
+}
+.pill-thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pill-placeholder {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 23px;
+}
+.drug-card-body {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+.drug-card-body strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.drug-card-body small {
+  color: var(--muted);
+  font-size: 13px;
+}
+.chevron {
+  margin-left: auto;
+  color: var(--primary-dark);
+  font-size: 27px;
+}
 </style>

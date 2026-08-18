@@ -1,0 +1,5157 @@
+# WHO ATC 5단계 코드 -> 영문 성분명 (구분자: |, 줄바꿈: LF)
+# 출처: WHO ATC/DDD Index. 성분명에 쉼표가 있어 파이프 구분자를 사용한다.
+atc_code|ingredient_en|is_combination
+A01AA01|sodium fluoride|N
+A01AA02|sodium monofluorophosphate|N
+A01AA03|olaflur|N
+A01AA04|stannous fluoride|N
+A01AA30|combinations|N
+A01AA51|sodium fluoride|Y
+A01AB02|hydrogen peroxide|N
+A01AB03|chlorhexidine|N
+A01AB04|amphotericin B|N
+A01AB05|polynoxylin|N
+A01AB06|domiphen|N
+A01AB07|oxyquinoline|N
+A01AB08|neomycin|N
+A01AB09|miconazole|N
+A01AB10|natamycin|N
+A01AB11|various|N
+A01AB12|hexetidine|N
+A01AB13|tetracycline|N
+A01AB14|benzoxonium chloride|N
+A01AB15|tibezonium iodide|N
+A01AB16|mepartricin|N
+A01AB17|metronidazole|N
+A01AB18|clotrimazole|N
+A01AB19|sodium perborate|N
+A01AB21|chlortetracycline|N
+A01AB22|doxycycline|N
+A01AB23|minocycline|N
+A01AC01|triamcinolone|N
+A01AC02|dexamethasone|N
+A01AC03|hydrocortisone|N
+A01AC54|prednisolone|Y
+A01AD01|epinephrine|N
+A01AD02|benzydamine|N
+A01AD05|acetylsalicylic acid|N
+A01AD06|adrenalone|N
+A01AD07|amlexanox|N
+A01AD08|becaplermin|N
+A01AD11|various|N
+A02AA01|magnesium carbonate|N
+A02AA02|magnesium oxide|N
+A02AA03|magnesium peroxide|N
+A02AA04|magnesium hydroxide|N
+A02AA05|magnesium silicate|N
+A02AA10|combinations|N
+A02AB01|aluminium hydroxide|N
+A02AB02|algeldrate|N
+A02AB03|aluminium phosphate|N
+A02AB04|dihydroxialumini sodium carbonate|N
+A02AB05|aluminium acetoacetate|N
+A02AB06|aloglutamol|N
+A02AB07|aluminium glycinate|N
+A02AB10|combinations|N
+A02AC01|calcium carbonate|N
+A02AC02|calcium silicate|N
+A02AC10|combinations|N
+A02AD01|ordinary salt combinations|N
+A02AD02|magaldrate|N
+A02AD03|almagate|N
+A02AD04|hydrotalcite|N
+A02AD05|almasilate|N
+A02AF01|magaldrate and antiflatulents|N
+A02AF02|ordinary salt combinations and antiflatulents|N
+A02BA01|cimetidine|N
+A02BA02|ranitidine|N
+A02BA03|famotidine|N
+A02BA04|nizatidine|N
+A02BA05|niperotidine|N
+A02BA06|roxatidine|N
+A02BA07|ranitidine bismuth citrate|N
+A02BA08|lafutidine|N
+A02BA51|cimetidine|Y
+A02BA53|famotidine|Y
+A02BB01|misoprostol|N
+A02BB02|enprostil|N
+A02BC01|omeprazole|N
+A02BC02|pantoprazole|N
+A02BC03|lansoprazole|N
+A02BC04|rabeprazole|N
+A02BC05|esomeprazole|N
+A02BC06|dexlansoprazole|N
+A02BC07|dexrabeprazole|N
+A02BC08|vonoprazan|N
+A02BC53|lansoprazole|Y
+A02BC54|rabeprazole|Y
+A02BD01|omeprazole, amoxicillin and metronidazole|N
+A02BD02|lansoprazole, tetracycline and metronidazole|N
+A02BD03|lansoprazole, amoxicillin and metronidazole|N
+A02BD04|pantoprazole, amoxicillin and clarithromycin|N
+A02BD05|omeprazole, amoxicillin and clarithromycin|N
+A02BD06|esomeprazole, amoxicillin and clarithromycin|N
+A02BD07|lansoprazole, amoxicillin and clarithromycin|N
+A02BD08|bismuth subcitrate, tetracycline and metronidazole|N
+A02BD09|lansoprazole, clarithromycin and tinidazole|N
+A02BD10|lansoprazole, amoxicillin and levofloxacin|N
+A02BD11|pantoprazole, amoxicillin, clarithromycin and metronidazole|N
+A02BD12|rabeprazole, amoxicillin and clarithromycin|N
+A02BD13|rabeprazole, amoxicillin and metronidazole|N
+A02BD14|vonoprazan, amoxicillin and clarithromycin|N
+A02BD15|vonoprazan, amoxicillin and metronidazole|N
+A02BX01|carbenoxolone|N
+A02BX02|sucralfate|N
+A02BX03|pirenzepine|N
+A02BX04|methiosulfonium chloride|N
+A02BX05|bismuth subcitrate|N
+A02BX06|proglumide|N
+A02BX07|gefarnate|N
+A02BX08|sulglicotide|N
+A02BX09|acetoxolone|N
+A02BX10|zolimidine|N
+A02BX11|troxipide|N
+A02BX12|bismuth subnitrate|N
+A02BX13|alginic acid|N
+A02BX14|rebamipide|N
+A02BX51|carbenoxolone|Y
+A02BX71|carbenoxolone|Y
+A02BX77|gefarnate|Y
+A03AA01|oxyphencyclimine|N
+A03AA03|camylofin|N
+A03AA04|mebeverine|N
+A03AA05|trimebutine|N
+A03AA06|rociverine|N
+A03AA07|dicycloverine|N
+A03AA08|dihexyverine|N
+A03AA09|difemerine|N
+A03AA30|piperidolate|N
+A03AB01|benzilone|N
+A03AB02|glycopyrronium bromide|N
+A03AB03|oxyphenonium|N
+A03AB04|penthienate|N
+A03AB05|propantheline|N
+A03AB06|otilonium bromide|N
+A03AB07|methantheline|N
+A03AB08|tridihexethyl|N
+A03AB09|isopropamide|N
+A03AB10|hexocyclium|N
+A03AB11|poldine|N
+A03AB12|mepenzolate|N
+A03AB13|bevonium|N
+A03AB14|pipenzolate|N
+A03AB15|diphemanil|N
+A03AB16|(2-benzhydryloxyethyl)diethyl-methylammonium iodide|N
+A03AB17|tiemonium iodide|N
+A03AB18|prifinium bromide|N
+A03AB19|timepidium bromide|N
+A03AB21|fenpiverinium|N
+A03AB53|oxyphenonium|Y
+A03AC02|dimethylaminopropionylphenothiazine|N
+A03AC04|nicofetamide|N
+A03AC05|tiropramide|N
+A03AD01|papaverine|N
+A03AD02|drotaverine|N
+A03AD30|moxaverine|N
+A03AE01|alosetron|N
+A03AE03|cilansetron|N
+A03AX01|fenpiprane|N
+A03AX02|diisopromine|N
+A03AX03|chlorbenzoxamine|N
+A03AX04|pinaverium|N
+A03AX05|fenoverine|N
+A03AX06|idanpramine|N
+A03AX07|proxazole|N
+A03AX08|alverine|N
+A03AX09|trepibutone|N
+A03AX10|isometheptene|N
+A03AX11|caroverine|N
+A03AX12|phloroglucinol|N
+A03AX13|silicones|N
+A03AX14|valethamate|N
+A03AX15|menthae piperitae aetheroleum|N
+A03AX30|trimethyldiphenylpropylamine|N
+A03AX58|alverine|Y
+A03BA01|atropine|N
+A03BA03|hyoscyamine|N
+A03BA04|belladonna total alkaloids|N
+A03BB01|butylscopolamine|N
+A03BB02|methylatropine|N
+A03BB03|methylscopolamine|N
+A03BB04|fentonium|N
+A03BB05|cimetropium bromide|N
+A03BB06|homatropine methylbromide|N
+A03CA01|isopropamide and psycholeptics|N
+A03CA02|clidinium and psycholeptics|N
+A03CA03|oxyphencyclimine and psycholeptics|N
+A03CA04|otilonium bromide and psycholeptics|N
+A03CA05|glycopyrronium bromide and psycholeptics|N
+A03CA06|bevonium and psycholeptics|N
+A03CA07|ambutonium and psycholeptics|N
+A03CA08|diphemanil and psycholeptics|N
+A03CA09|pipenzolate and psycholeptics|N
+A03CA30|emepronium and psycholeptics|N
+A03CA34|propantheline and psycholeptics|N
+A03CB01|methylscopolamine and psycholeptics|N
+A03CB02|belladonna total alkaloids and psycholeptics|N
+A03CB03|atropine and psycholeptics|N
+A03CB04|homatropine methylbromide and psycholeptics|N
+A03CB31|hyoscyamine and psycholeptics|N
+A03DA01|tropenzilone and analgesics|N
+A03DA02|pitofenone and analgesics|N
+A03DA03|bevonium and analgesics|N
+A03DA04|ciclonium and analgesics|N
+A03DA05|camylofin and analgesics|N
+A03DA06|trospium and analgesics|N
+A03DA07|tiemonium iodide and analgesics|N
+A03DB04|butylscopolamine and analgesics|N
+A03FA01|metoclopramide|N
+A03FA02|cisapride|N
+A03FA03|domperidone|N
+A03FA04|bromopride|N
+A03FA05|alizapride|N
+A03FA06|clebopride|N
+A03FA07|itopride|N
+A03FA08|cinitapride|N
+A03FA09|mosapride|N
+A04AA01|ondansetron|N
+A04AA02|granisetron|N
+A04AA03|tropisetron|N
+A04AA04|dolasetron|N
+A04AA05|palonosetron|N
+A04AA55|palonosetron|Y
+A04AD01|scopolamine|N
+A04AD02|cerium oxalate|N
+A04AD04|chlorobutanol|N
+A04AD05|metopimazine|N
+A04AD10|dronabinol|N
+A04AD11|nabilone|N
+A04AD12|aprepitant|N
+A04AD13|casopitant|N
+A04AD14|rolapitant|N
+A04AD51|scopolamine|Y
+A04AD54|chlorobutanol|Y
+A05AA01|chenodeoxycholic acid|N
+A05AA02|ursodeoxycholic acid|N
+A05AA03|cholic acid|N
+A05AA04|obeticholic acid|N
+A05AB01|nicotinyl methylamide|N
+A05AX01|piprozolin|N
+A05AX02|hymecromone|N
+A05AX03|cyclobutyrol|N
+A05BA01|arginine glutamate|N
+A05BA03|silymarin|N
+A05BA04|citiolone|N
+A05BA05|epomediol|N
+A05BA06|ornithine oxoglurate|N
+A05BA07|tidiacic arginine|N
+A05BA08|glycyrrhizic acid|N
+A05BA09|metadoxine|N
+A06AA01|liquid paraffin|N
+A06AA02|docusate sodium|N
+A06AA51|liquid paraffin|Y
+A06AB01|oxyphenisatine|N
+A06AB02|bisacodyl|N
+A06AB03|dantron|N
+A06AB04|phenolphthalein|N
+A06AB05|castor oil|N
+A06AB06|senna glycosides|N
+A06AB07|cascara|N
+A06AB08|sodium picosulfate|N
+A06AB09|bisoxatin|N
+A06AB20|contact laxatives in combination|N
+A06AB30|contact laxatives in combination with belladonna alkaloids|N
+A06AB52|bisacodyl|Y
+A06AB53|dantron|Y
+A06AB56|senna glycosides|Y
+A06AB57|cascara|Y
+A06AB58|sodium picosulfate|Y
+A06AC01|ispaghula (psylla seeds)|N
+A06AC02|ethulose|N
+A06AC03|sterculia|N
+A06AC05|linseed|N
+A06AC06|methylcellulose|N
+A06AC07|triticum (wheat fibre)|N
+A06AC08|polycarbophil calcium|N
+A06AC51|ispaghula|Y
+A06AC53|sterculia|Y
+A06AC55|linseed|Y
+A06AD01|magnesium carbonate|N
+A06AD02|magnesium oxide|N
+A06AD03|magnesium peroxide|N
+A06AD04|magnesium sulfate|N
+A06AD10|mineral salts in combination|N
+A06AD11|lactulose|N
+A06AD12|lactitol|N
+A06AD13|sodium sulfate|N
+A06AD14|pentaerithrityl|N
+A06AD15|macrogol|N
+A06AD16|mannitol|N
+A06AD17|sodium phosphate|N
+A06AD18|sorbitol|N
+A06AD19|magnesium citrate|N
+A06AD21|sodium tartrate|N
+A06AD61|lactulose|Y
+A06AD65|macrogol|Y
+A06AG01|sodium phosphate|N
+A06AG02|bisacodyl|N
+A06AG03|dantron|Y
+A06AG04|glycerol|N
+A06AG06|oil|N
+A06AG07|sorbitol|N
+A06AG10|docusate sodium|Y
+A06AG11|sodium lauryl sulfoacetate|Y
+A06AG20|combinations|N
+A06AH01|methylnaltrexone bromide|N
+A06AH02|alvimopan|N
+A06AH03|naloxegol|N
+A06AH04|naloxone|N
+A06AH05|naldemedine|N
+A06AX01|glycerol|N
+A06AX02|carbon dioxide producing drugs|N
+A06AX03|lubiprostone|N
+A06AX04|linaclotide|N
+A06AX05|prucalopride|N
+A06AX06|tegaserod|N
+A06AX07|plecanatide|N
+A06AX08|tenapanor|N
+A07AA01|neomycin|N
+A07AA02|nystatin|N
+A07AA03|natamycin|N
+A07AA04|streptomycin|N
+A07AA05|polymyxin B|N
+A07AA06|paromomycin|N
+A07AA07|amphotericin B|N
+A07AA08|kanamycin|N
+A07AA09|vancomycin|N
+A07AA10|colistin|N
+A07AA11|rifaximin|N
+A07AA12|fidaxomicin|N
+A07AA13|rifamycin|N
+A07AA51|neomycin|Y
+A07AA54|streptomycin|Y
+A07AB02|phthalylsulfathiazole|N
+A07AB03|sulfaguanidine|N
+A07AB04|succinylsulfathiazole|N
+A07AC01|miconazole|N
+A07AX01|broxyquinoline|N
+A07AX02|acetarsol|N
+A07AX03|nifuroxazide|N
+A07AX04|nifurzide|N
+A07BA01|medicinal charcoal|N
+A07BA51|medicinal charcoal|Y
+A07BC01|pectin|N
+A07BC02|kaolin|N
+A07BC03|crospovidone|N
+A07BC04|attapulgite|N
+A07BC05|diosmectite|N
+A07BC30|combinations|N
+A07BC54|attapulgite|Y
+A07DA01|diphenoxylate|N
+A07DA02|opium|N
+A07DA03|loperamide|N
+A07DA04|difenoxin|N
+A07DA05|loperamide oxide|N
+A07DA06|eluxadoline|N
+A07DA52|morphine|Y
+A07DA53|loperamide|Y
+A07EA01|prednisolone|N
+A07EA02|hydrocortisone|N
+A07EA03|prednisone|N
+A07EA04|betamethasone|N
+A07EA05|tixocortol|N
+A07EA06|budesonide|N
+A07EA07|beclometasone|N
+A07EB01|cromoglicic acid|N
+A07EC01|sulfasalazine|N
+A07EC02|mesalazine|N
+A07EC03|olsalazine|N
+A07EC04|balsalazide|N
+A07FA01|lactic acid producing organisms|N
+A07FA02|saccharomyces boulardii|N
+A07FA51|lactic acid producing organisms|Y
+A07XA01|albumin tannate|N
+A07XA02|ceratonia|N
+A07XA03|calcium compounds|N
+A07XA04|racecadotril|N
+A07XA06|crofelemer|N
+A07XA51|albumin tannate|Y
+A08AA01|phentermine|N
+A08AA02|fenfluramine|N
+A08AA03|amfepramone|N
+A08AA04|dexfenfluramine|N
+A08AA05|mazindol|N
+A08AA06|etilamfetamine|N
+A08AA07|cathine|N
+A08AA08|clobenzorex|N
+A08AA09|mefenorex|N
+A08AA10|sibutramine|N
+A08AA11|lorcaserin|N
+A08AA56|ephedrine|Y
+A08AA62|bupropion and naltrexone|N
+A08AB01|orlistat|N
+A08AX01|rimonabant|N
+A09AA01|diastase|N
+A09AA02|multienzymes (lipase, protease etc.)|N
+A09AA03|pepsin|N
+A09AA04|tilactase|N
+A09AB01|glutamic acid hydrochloride|N
+A09AB02|betaine hydrochloride|N
+A09AB03|hydrochloric acid|N
+A09AB04|citric acid|N
+A09AC01|pepsin and acid preparations|N
+A09AC02|multienzymes and acid preparations|N
+A10AB01|insulin (human)|N
+A10AB02|insulin (beef)|N
+A10AB03|insulin (pork)|N
+A10AB04|insulin lispro|N
+A10AB05|insulin aspart|N
+A10AB06|insulin glulisine|N
+A10AB30|combinations|N
+A10AC01|insulin (human)|N
+A10AC02|insulin (beef)|N
+A10AC03|insulin (pork)|N
+A10AC04|insulin lispro|N
+A10AC30|combinations|N
+A10AD01|insulin (human)|N
+A10AD02|insulin (beef)|N
+A10AD03|insulin (pork)|N
+A10AD04|insulin lispro|N
+A10AD05|insulin aspart|N
+A10AD06|insulin degludec and insulin aspart|N
+A10AD30|combinations|N
+A10AE01|insulin (human)|N
+A10AE02|insulin (beef)|N
+A10AE03|insulin (pork)|N
+A10AE04|insulin glargine|N
+A10AE05|insulin detemir|N
+A10AE06|insulin degludec|N
+A10AE30|combinations|N
+A10AE54|insulin glargine and lixisenatide|N
+A10AE56|insulin degludec and liraglutide|N
+A10AF01|insulin (human)|N
+A10BA01|phenformin|N
+A10BA02|metformin|N
+A10BA03|buformin|N
+A10BB01|glibenclamide|N
+A10BB02|chlorpropamide|N
+A10BB03|tolbutamide|N
+A10BB04|glibornuride|N
+A10BB05|tolazamide|N
+A10BB06|carbutamide|N
+A10BB07|glipizide|N
+A10BB08|gliquidone|N
+A10BB09|gliclazide|N
+A10BB10|metahexamide|N
+A10BB11|glisoxepide|N
+A10BB12|glimepiride|N
+A10BB31|acetohexamide|N
+A10BC01|glymidine|N
+A10BD01|phenformin and sulfonylureas|N
+A10BD02|metformin and sulfonylureas|N
+A10BD03|metformin and rosiglitazone|N
+A10BD04|glimepiride and rosiglitazone|N
+A10BD05|metformin and pioglitazone|N
+A10BD06|glimepiride and pioglitazone|N
+A10BD07|metformin and sitagliptin|N
+A10BD08|metformin and vildagliptin|N
+A10BD09|pioglitazone and alogliptin|N
+A10BD10|metformin and saxagliptin|N
+A10BD11|metformin and linagliptin|N
+A10BD12|pioglitazone and sitagliptin|N
+A10BD13|metformin and alogliptin|N
+A10BD14|metformin and repaglinide|N
+A10BD15|metformin and dapagliflozin|N
+A10BD16|metformin and canagliflozin|N
+A10BD17|metformin and acarbose|N
+A10BD18|metformin and gemigliptin|N
+A10BD19|linagliptin and empagliflozin|N
+A10BD20|metformin and empagliflozin|N
+A10BD21|saxagliptin and dapagliflozin|N
+A10BD22|metformin and evogliptin|N
+A10BD23|metformin and ertugliflozin|N
+A10BD24|sitagliptin and ertugliflozin|N
+A10BD25|metformin, saxagliptin and dapagliflozin|N
+A10BD26|metformin and lobeglitazone|N
+A10BF01|acarbose|N
+A10BF02|miglitol|N
+A10BF03|voglibose|N
+A10BG01|troglitazone|N
+A10BG02|rosiglitazone|N
+A10BG03|pioglitazone|N
+A10BG04|lobeglitazone|N
+A10BH01|sitagliptin|N
+A10BH02|vildagliptin|N
+A10BH03|saxagliptin|N
+A10BH04|alogliptin|N
+A10BH05|linagliptin|N
+A10BH06|gemigliptin|N
+A10BH07|evogliptin|N
+A10BH08|teneligliptin|N
+A10BH51|sitagliptin and simvastatin|N
+A10BH52|gemigliptin and rosuvastatin|N
+A10BJ01|exenatide|N
+A10BJ02|liraglutide|N
+A10BJ03|lixisenatide|N
+A10BJ04|albiglutide|N
+A10BJ05|dulaglutide|N
+A10BJ06|semaglutide|N
+A10BJ07|beinaglutide|N
+A10BK01|dapagliflozin|N
+A10BK02|canagliflozin|N
+A10BK03|empagliflozin|N
+A10BK04|ertugliflozin|N
+A10BK05|ipragliflozin|N
+A10BK06|sotagliflozin|N
+A10BK07|luseogliflozin|N
+A10BX01|guar gum|N
+A10BX02|repaglinide|N
+A10BX03|nateglinide|N
+A10BX05|pramlintide|N
+A10BX06|benfluorex|N
+A10BX08|mitiglinide|N
+A10XA01|tolrestat|N
+A11AA01|multivitamins and iron|N
+A11AA02|multivitamins and calcium|N
+A11AA03|multivitamins and other minerals|Y
+A11AA04|multivitamins and trace elements|N
+A11CA01|retinol (vit A)|N
+A11CA02|betacarotene|N
+A11CC01|ergocalciferol|N
+A11CC02|dihydrotachysterol|N
+A11CC03|alfacalcidol|N
+A11CC04|calcitriol|N
+A11CC05|colecalciferol|N
+A11CC06|calcifediol|N
+A11CC20|combinations|N
+A11CC55|colecalciferol|Y
+A11DA01|thiamine (vit B1)|N
+A11DA02|sulbutiamine|N
+A11DA03|benfotiamine|N
+A11GA01|ascorbic acid (vit C)|N
+A11GB01|ascorbic acid (vit C) and calcium|N
+A11HA01|nicotinamide|N
+A11HA02|pyridoxine (vit B6)|N
+A11HA03|tocopherol (vit E)|N
+A11HA04|riboflavin (vit B2)|N
+A11HA05|biotin|N
+A11HA06|pyridoxal phosphate|N
+A11HA07|inositol|N
+A11HA08|tocofersolan|N
+A11HA30|dexpanthenol|N
+A11HA31|calcium pantothenate|N
+A11HA32|pantethine|N
+A12AA01|calcium phosphate|N
+A12AA02|calcium glubionate|N
+A12AA03|calcium gluconate|N
+A12AA04|calcium carbonate|N
+A12AA05|calcium lactate|N
+A12AA06|calcium lactate gluconate|N
+A12AA07|calcium chloride|N
+A12AA08|calcium glycerylphosphate|N
+A12AA09|calcium citrate lysine complex|N
+A12AA10|calcium glucoheptonate|N
+A12AA11|calcium pangamate|N
+A12AA13|calcium citrate|N
+A12AA20|calcium (different salts in combination)|N
+A12AA30|calcium laevulate|N
+A12BA01|potassium chloride|N
+A12BA02|potassium citrate|N
+A12BA03|potassium hydrogentartrate|N
+A12BA04|potassium hydrogencarbonate|N
+A12BA05|potassium gluconate|N
+A12BA30|potassium (different salts in combination)|N
+A12BA51|potassium chloride|Y
+A12CA01|sodium chloride|N
+A12CA02|sodium sulfate|N
+A12CB01|zinc sulfate|N
+A12CB02|zinc gluconate|N
+A12CB03|zinc protein complex|N
+A12CC01|magnesium chloride|N
+A12CC02|magnesium sulfate|N
+A12CC03|magnesium gluconate|N
+A12CC04|magnesium citrate|N
+A12CC05|magnesium aspartate|N
+A12CC06|magnesium lactate|N
+A12CC07|magnesium levulinate|N
+A12CC08|magnesium pidolate|N
+A12CC09|magnesium orotate|N
+A12CC10|magnesium oxide|N
+A12CC30|magnesium (different salts in combination)|N
+A12CD01|sodium fluoride|N
+A12CD02|sodium monofluorophosphate|N
+A12CD51|fluoride|Y
+A12CE01|sodium selenate|N
+A12CE02|sodium selenite|N
+A14AA01|androstanolone|N
+A14AA02|stanozolol|N
+A14AA03|metandienone|N
+A14AA04|metenolone|N
+A14AA05|oxymetholone|N
+A14AA06|quinbolone|N
+A14AA07|prasterone|N
+A14AA08|oxandrolone|N
+A14AA09|norethandrolone|N
+A14AB01|nandrolone|N
+A14AB02|ethylestrenol|N
+A14AB03|oxabolone cipionate|N
+A16AA01|levocarnitine|N
+A16AA02|ademetionine|N
+A16AA03|glutamine|N
+A16AA04|mercaptamine|N
+A16AA05|carglumic acid|N
+A16AA06|betaine|N
+A16AA07|metreleptin|N
+A16AB01|alglucerase|N
+A16AB02|imiglucerase|N
+A16AB03|agalsidase alfa|N
+A16AB04|agalsidase beta|N
+A16AB05|laronidase|N
+A16AB06|sacrosidase|N
+A16AB07|alglucosidase alfa|N
+A16AB08|galsulfase|N
+A16AB09|idursulfase|N
+A16AB10|velaglucerase alfa|N
+A16AB11|taliglucerase alfa|N
+A16AB12|elosulfase alfa|N
+A16AB13|asfotase alfa|N
+A16AB14|sebelipase alfa|N
+A16AB15|velmanase alfa|N
+A16AB16|idursulfase beta|N
+A16AB17|cerliponase alfa|N
+A16AB18|vestronidase alfa|N
+A16AB19|pegvaliase|N
+A16AX01|thioctic acid|N
+A16AX02|anethole trithione|N
+A16AX03|sodium phenylbutyrate|N
+A16AX04|nitisinone|N
+A16AX05|zinc acetate|N
+A16AX06|miglustat|N
+A16AX07|sapropterin|N
+A16AX08|teduglutide|N
+A16AX09|glycerol phenylbutyrate|N
+A16AX10|eliglustat|N
+A16AX11|sodium benzoate|N
+A16AX12|trientine|N
+A16AX13|uridine triacetate|N
+A16AX14|migalastat|N
+A16AX15|telotristat|N
+A16AX16|givosiran|N
+A16AX17|triheptanoin|N
+A16AX18|lumasiran|N
+A16AX30|sodium benzoate and sodium phenylacetate|N
+B01AA01|dicoumarol|N
+B01AA02|phenindione|N
+B01AA03|warfarin|N
+B01AA04|phenprocoumon|N
+B01AA07|acenocoumarol|N
+B01AA08|ethyl biscoumacetate|N
+B01AA09|clorindione|N
+B01AA10|diphenadione|N
+B01AA11|tioclomarol|N
+B01AA12|fluindione|N
+B01AB01|heparin|N
+B01AB02|antithrombin III|N
+B01AB04|dalteparin|N
+B01AB05|enoxaparin|N
+B01AB06|nadroparin|N
+B01AB07|parnaparin|N
+B01AB08|reviparin|N
+B01AB09|danaparoid|N
+B01AB10|tinzaparin|N
+B01AB11|sulodexide|N
+B01AB12|bemiparin|N
+B01AB51|heparin|Y
+B01AC01|ditazole|N
+B01AC02|cloricromen|N
+B01AC03|picotamide|N
+B01AC04|clopidogrel|N
+B01AC05|ticlopidine|N
+B01AC06|acetylsalicylic acid|N
+B01AC07|dipyridamole|N
+B01AC08|carbasalate calcium|N
+B01AC09|epoprostenol|N
+B01AC10|indobufen|N
+B01AC11|iloprost|N
+B01AC13|abciximab|N
+B01AC15|aloxiprin|N
+B01AC16|eptifibatide|N
+B01AC17|tirofiban|N
+B01AC18|triflusal|N
+B01AC19|beraprost|N
+B01AC21|treprostinil|N
+B01AC22|prasugrel|N
+B01AC23|cilostazol|N
+B01AC24|ticagrelor|N
+B01AC25|cangrelor|N
+B01AC26|vorapaxar|N
+B01AC27|selexipag|N
+B01AC30|combinations|N
+B01AC56|acetylsalicylic acid|Y
+B01AD01|streptokinase|N
+B01AD02|alteplase|N
+B01AD03|anistreplase|N
+B01AD04|urokinase|N
+B01AD05|fibrinolysin|N
+B01AD06|brinase|N
+B01AD07|reteplase|N
+B01AD08|saruplase|N
+B01AD09|ancrod|N
+B01AD10|drotrecogin alfa (activated)|N
+B01AD11|tenecteplase|N
+B01AD12|protein C|N
+B01AE01|desirudin|N
+B01AE02|lepirudin|N
+B01AE03|argatroban|N
+B01AE04|melagatran|N
+B01AE05|ximelagatran|N
+B01AE06|bivalirudin|N
+B01AE07|dabigatran etexilate|N
+B01AF01|rivaroxaban|N
+B01AF02|apixaban|N
+B01AF03|edoxaban|N
+B01AF04|betrixaban|N
+B01AX01|defibrotide|N
+B01AX04|dermatan sulfate|N
+B01AX05|fondaparinux|N
+B01AX07|caplacizumab|N
+B02AA01|aminocaproic acid|N
+B02AA02|tranexamic acid|N
+B02AA03|aminomethylbenzoic acid|N
+B02AB01|aprotinin|N
+B02AB02|alfa1 antitrypsin|N
+B02AB04|camostat|N
+B02AB05|ulinastatin|N
+B02BA01|phytomenadione|N
+B02BA02|menadione|N
+B02BB01|fibrinogen, human|N
+B02BC01|absorbable gelatin sponge|N
+B02BC02|oxidized cellulose|N
+B02BC03|tetragalacturonic acid hydroxymethylester|N
+B02BC05|adrenalone|N
+B02BC06|thrombin|N
+B02BC07|collagen|N
+B02BC08|calcium alginate|N
+B02BC09|epinephrine|N
+B02BC30|combinations|N
+B02BD01|coagulation factor IX, II, VII and X in combination|N
+B02BD02|coagulation factor VIII|N
+B02BD03|factor VIII inhibitor bypassing activity|N
+B02BD04|coagulation factor IX|N
+B02BD05|coagulation factor VII|N
+B02BD06|von Willebrand factor and coagulation factor VIII in combination|N
+B02BD07|coagulation factor XIII|N
+B02BD08|coagulation factor VIIa|N
+B02BD10|von Willebrand factor|N
+B02BD11|catridecacog|N
+B02BD13|coagulation factor X|N
+B02BD14|susoctocog alfa|N
+B02BD30|thrombin|N
+B02BX01|etamsylate|N
+B02BX02|carbazochrome|N
+B02BX03|batroxobin|N
+B02BX04|romiplostim|N
+B02BX05|eltrombopag|N
+B02BX06|emicizumab|N
+B02BX07|lusutrombopag|N
+B02BX08|avatrombopag|N
+B02BX09|fostamatinib|N
+B03AA01|ferrous glycine sulfate|N
+B03AA02|ferrous fumarate|N
+B03AA03|ferrous gluconate|N
+B03AA04|ferrous carbonate|N
+B03AA05|ferrous chloride|N
+B03AA06|ferrous succinate|N
+B03AA07|ferrous sulfate|N
+B03AA08|ferrous tartrate|N
+B03AA09|ferrous aspartate|N
+B03AA10|ferrous ascorbate|N
+B03AA11|ferrous iodine|N
+B03AA12|ferrous sodium citrate|N
+B03AB01|ferric sodium citrate|N
+B03AB02|saccharated iron oxide|N
+B03AB03|sodium feredetate|N
+B03AB04|ferric hydroxide|N
+B03AB05|ferric oxide polymaltose complexes|N
+B03AB07|chondroitin sulfate-iron complex|N
+B03AB08|ferric acetyl transferrin|N
+B03AB09|ferric proteinsuccinylate|N
+B03AB10|ferric maltol|N
+B03AD01|ferrous amino acid complex|N
+B03AD02|ferrous fumarate|N
+B03AD03|ferrous sulfate|N
+B03AD04|ferric oxide polymaltose complexes|N
+B03AD05|ferrous gluconate|N
+B03AE01|iron, vitamin B12 and folic acid|N
+B03AE02|iron, multivitamins and folic acid|N
+B03AE03|iron and multivitamins|N
+B03AE04|iron, multivitamins and minerals|N
+B03AE10|various combinations|N
+B03BA01|cyanocobalamin|N
+B03BA02|cyanocobalamin tannin complex|N
+B03BA03|hydroxocobalamin|N
+B03BA04|cobamamide|N
+B03BA05|mecobalamin|N
+B03BA51|cyanocobalamin|Y
+B03BA53|hydroxocobalamin|Y
+B03BB01|folic acid|N
+B03BB51|folic acid|Y
+B03XA01|erythropoietin|N
+B03XA02|darbepoetin alfa|N
+B03XA03|methoxy polyethylene glycol-epoetin beta|N
+B03XA04|peginesatide|N
+B03XA05|roxadustat|N
+B03XA06|luspatercept|N
+B05AA01|albumin|N
+B05AA02|other plasma protein fractions|N
+B05AA03|fluorocarbon blood substitutes|N
+B05AA05|dextran|N
+B05AA06|gelatin agents|N
+B05AA07|hydroxyethylstarch|N
+B05AA08|hemoglobin crosfumaril|N
+B05AA09|hemoglobin raffimer|N
+B05AA10|hemoglobin glutamer (bovine)|N
+B05AX01|erythrocytes|N
+B05AX02|thrombocytes|N
+B05AX03|blood plasma|N
+B05AX04|stem cells from umbilical cord blood|N
+B05BA01|amino acids|N
+B05BA02|fat emulsions|N
+B05BA03|carbohydrates|N
+B05BA04|protein hydrolysates|N
+B05BA10|combinations|N
+B05BB01|electrolytes|N
+B05BB02|electrolytes with carbohydrates|N
+B05BB03|trometamol|N
+B05BB04|electrolytes in combination with other drugs|N
+B05BC01|mannitol|N
+B05BC02|carbamide|N
+B05CA01|cetylpyridinium|N
+B05CA02|chlorhexidine|N
+B05CA03|nitrofural|N
+B05CA04|sulfamethizole|N
+B05CA05|taurolidine|N
+B05CA06|mandelic acid|N
+B05CA07|noxytiolin|N
+B05CA08|ethacridine lactate|N
+B05CA09|neomycin|N
+B05CA10|combinations|N
+B05CB01|sodium chloride|N
+B05CB02|sodium citrate|N
+B05CB03|magnesium citrate|N
+B05CB04|sodium bicarbonate|N
+B05CB10|combinations|N
+B05CX01|glucose|N
+B05CX02|sorbitol|N
+B05CX03|glycine|N
+B05CX04|mannitol|N
+B05CX10|combinations|N
+B05XA01|potassium chloride|N
+B05XA02|sodium bicarbonate|N
+B05XA03|sodium chloride|N
+B05XA04|ammonium chloride|N
+B05XA05|magnesium sulfate|N
+B05XA06|potassium phosphate|Y
+B05XA07|calcium chloride|N
+B05XA08|sodium acetate|N
+B05XA09|sodium phosphate|N
+B05XA10|magnesium phosphate|N
+B05XA11|magnesium chloride|N
+B05XA12|zinc chloride|N
+B05XA13|hydrochloric acid|N
+B05XA14|sodium glycerophosphate|N
+B05XA15|potassium lactate|N
+B05XA16|cardioplegia solutions|N
+B05XA17|potassium acetate|N
+B05XA18|zinc sulfate|N
+B05XA30|combinations of electrolytes|N
+B05XA31|electrolytes in combination with other drugs|N
+B05XB01|arginine hydrochloride|N
+B05XB02|alanyl glutamine|N
+B05XB03|lysine|N
+B05XX02|trometamol|N
+B06AA02|fibrinolysin and desoxyribonuclease|N
+B06AA03|hyaluronidase|N
+B06AA04|chymotrypsin|N
+B06AA07|trypsin|N
+B06AA10|desoxyribonuclease|N
+B06AA55|streptokinase|Y
+B06AB01|hemin|N
+B06AC01|c1-inhibitor, plasma derived|N
+B06AC02|icatibant|N
+B06AC03|ecallantide|N
+B06AC04|conestat alfa|N
+B06AC05|lanadelumab|N
+B06AX01|crizanlizumab|N
+B06AX02|betibeglogene autotemcel|N
+C01AA01|acetyldigitoxin|N
+C01AA02|acetyldigoxin|N
+C01AA03|digitalis leaves|N
+C01AA04|digitoxin|N
+C01AA05|digoxin|N
+C01AA06|lanatoside C|N
+C01AA07|deslanoside|N
+C01AA08|metildigoxin|N
+C01AA09|gitoformate|N
+C01AA52|acetyldigoxin|Y
+C01AB01|proscillaridin|N
+C01AB51|proscillaridin|Y
+C01AC01|g-strophanthin|N
+C01AC03|cymarin|N
+C01AX02|peruvoside|N
+C01BA01|quinidine|N
+C01BA02|procainamide|N
+C01BA03|disopyramide|N
+C01BA04|sparteine|N
+C01BA05|ajmaline|N
+C01BA08|prajmaline|N
+C01BA12|lorajmine|N
+C01BA13|hydroquinidine|N
+C01BA51|quinidine|Y
+C01BA71|quinidine|Y
+C01BB01|lidocaine|N
+C01BB02|mexiletine|N
+C01BB03|tocainide|N
+C01BB04|aprindine|N
+C01BC03|propafenone|N
+C01BC04|flecainide|N
+C01BC07|lorcainide|N
+C01BC08|encainide|N
+C01BC09|ethacizine|N
+C01BD01|amiodarone|N
+C01BD02|bretylium tosilate|N
+C01BD03|bunaftine|N
+C01BD04|dofetilide|N
+C01BD05|ibutilide|N
+C01BD06|tedisamil|N
+C01BD07|dronedarone|N
+C01BG01|moracizine|N
+C01BG07|cibenzoline|N
+C01BG11|vernakalant|N
+C01CA01|etilefrine|N
+C01CA02|isoprenaline|N
+C01CA03|norepinephrine|N
+C01CA04|dopamine|N
+C01CA05|norfenefrine|N
+C01CA06|phenylephrine|N
+C01CA07|dobutamine|N
+C01CA08|oxedrine|N
+C01CA09|metaraminol|N
+C01CA10|methoxamine|N
+C01CA11|mephentermine|N
+C01CA12|dimetofrine|N
+C01CA13|prenalterol|N
+C01CA14|dopexamine|N
+C01CA15|gepefrine|N
+C01CA16|ibopamine|N
+C01CA17|midodrine|N
+C01CA18|octopamine|N
+C01CA19|fenoldopam|N
+C01CA21|cafedrine|N
+C01CA22|arbutamine|N
+C01CA23|theodrenaline|N
+C01CA24|epinephrine|N
+C01CA25|amezinium metilsulfate|N
+C01CA26|ephedrine|N
+C01CA27|droxidopa|N
+C01CA30|combinations|N
+C01CA51|etilefrine|Y
+C01CE01|amrinone|N
+C01CE02|milrinone|N
+C01CE03|enoximone|N
+C01CE04|bucladesine|N
+C01CX06|angiotensinamide|N
+C01CX07|xamoterol|N
+C01CX08|levosimendan|N
+C01CX09|angiotensin II|N
+C01DA02|glyceryl trinitrate|N
+C01DA04|methylpropylpropanediol dinitrate|N
+C01DA05|pentaerithrityl tetranitrate|N
+C01DA07|propatylnitrate|N
+C01DA08|isosorbide dinitrate|N
+C01DA09|trolnitrate|N
+C01DA13|eritrityl tetranitrate|N
+C01DA14|isosorbide mononitrate|N
+C01DA20|organic nitrates in combination|N
+C01DA38|tenitramine|N
+C01DA52|glyceryl trinitrate|Y
+C01DA54|methylpropylpropanediol dinitrate|Y
+C01DA55|pentaerithrityl tetranitrate|Y
+C01DA57|propatylnitrate|Y
+C01DA58|isosorbide dinitrate|Y
+C01DA59|trolnitrate|Y
+C01DA63|eritrityl tetranitrate|Y
+C01DA70|organic nitrates in combination with psycholeptics|N
+C01DB01|flosequinan|N
+C01DX01|itramin tosilate|N
+C01DX02|prenylamine|N
+C01DX03|oxyfedrine|N
+C01DX04|benziodarone|N
+C01DX05|carbocromen|N
+C01DX06|hexobendine|N
+C01DX07|etafenone|N
+C01DX08|heptaminol|N
+C01DX09|imolamine|N
+C01DX10|dilazep|N
+C01DX11|trapidil|N
+C01DX12|molsidomine|N
+C01DX13|efloxate|N
+C01DX14|cinepazet|N
+C01DX15|cloridarol|N
+C01DX16|nicorandil|N
+C01DX18|linsidomine|N
+C01DX19|nesiritide|N
+C01DX21|serelaxin|N
+C01DX22|vericiguat|N
+C01DX51|itramin tosilate|Y
+C01DX52|prenylamine|Y
+C01DX53|oxyfedrine|Y
+C01DX54|benziodarone|Y
+C01EA01|alprostadil|N
+C01EB02|camphora|N
+C01EB03|indometacin|N
+C01EB04|crataegus glycosides|N
+C01EB05|creatinolfosfate|N
+C01EB06|fosfocreatine|N
+C01EB07|fructose 1,6-diphosphate|N
+C01EB09|ubidecarenone|N
+C01EB10|adenosine|N
+C01EB11|tiracizine|N
+C01EB13|acadesine|N
+C01EB15|trimetazidine|N
+C01EB16|ibuprofen|N
+C01EB17|ivabradine|N
+C01EB18|ranolazine|N
+C01EB21|regadenoson|N
+C01EB22|meldonium|N
+C01EB23|tiazotic acid|N
+C02AA01|rescinnamine|N
+C02AA02|reserpine|N
+C02AA03|combinations of rauwolfia alkaloids|N
+C02AA04|rauwolfia alkaloids, whole root|N
+C02AA05|deserpidine|N
+C02AA06|methoserpidine|N
+C02AA07|bietaserpine|N
+C02AA52|reserpine|Y
+C02AA53|combinations of rauwolfia alkoloids|Y
+C02AA57|bietaserpine|Y
+C02AB01|methyldopa (levorotatory)|N
+C02AB02|methyldopa (racemic)|N
+C02AC01|clonidine|N
+C02AC02|guanfacine|N
+C02AC04|tolonidine|N
+C02AC05|moxonidine|N
+C02AC06|rilmenidine|N
+C02BA01|trimetaphan|N
+C02BB01|mecamylamine|N
+C02CA01|prazosin|N
+C02CA02|indoramin|N
+C02CA03|trimazosin|N
+C02CA04|doxazosin|N
+C02CA06|urapidil|N
+C02CC01|betanidine|N
+C02CC02|guanethidine|N
+C02CC03|guanoxan|N
+C02CC04|debrisoquine|N
+C02CC05|guanoclor|N
+C02CC06|guanazodine|N
+C02CC07|guanoxabenz|N
+C02DA01|diazoxide|N
+C02DB01|dihydralazine|N
+C02DB02|hydralazine|N
+C02DB03|endralazine|N
+C02DB04|cadralazine|N
+C02DC01|minoxidil|N
+C02DD01|nitroprusside|N
+C02DG01|pinacidil|N
+C02KA01|veratrum|N
+C02KB01|metirosine|N
+C02KC01|pargyline|N
+C02KD01|ketanserin|N
+C02KX01|bosentan|N
+C02KX02|ambrisentan|N
+C02KX03|sitaxentan|N
+C02KX04|macitentan|N
+C02KX05|riociguat|N
+C02KX52|ambrisentan and tadalafil|N
+C02LA01|reserpine and diuretics|N
+C02LA02|rescinnamine and diuretics|N
+C02LA03|deserpidine and diuretics|N
+C02LA04|methoserpidine and diuretics|N
+C02LA07|bietaserpine and diuretics|N
+C02LA08|rauwolfia alkaloids, whole root and diuretics|N
+C02LA09|syrosingopine and diuretics|N
+C02LA50|combination of rauwolfia alkaloids and diuretics incl. other combinations|N
+C02LA51|reserpine and diuretics|Y
+C02LA52|rescinnamine and diuretics|Y
+C02LA71|reserpine and diuretics|Y
+C02LB01|methyldopa (levorotatory) and diuretics|N
+C02LC01|clonidine and diuretics|N
+C02LC05|moxonidine and diuretics|N
+C02LC51|clonidine and diuretics|Y
+C02LE01|prazosin and diuretics|N
+C02LF01|guanethidine and diuretics|N
+C02LG01|dihydralazine and diuretics|N
+C02LG02|hydralazine and diuretics|N
+C02LG03|picodralazine and diuretics|N
+C02LG51|dihydralazine and diuretics|Y
+C02LG73|picodralazine and diuretics|Y
+C02LK01|veratrum and diuretics|N
+C02LL01|pargyline and diuretics|N
+C02LX01|pinacidil and diuretics|N
+C03AA01|bendroflumethiazide|N
+C03AA02|hydroflumethiazide|N
+C03AA03|hydrochlorothiazide|N
+C03AA04|chlorothiazide|N
+C03AA05|polythiazide|N
+C03AA06|trichlormethiazide|N
+C03AA07|cyclopenthiazide|N
+C03AA08|methyclothiazide|N
+C03AA09|cyclothiazide|N
+C03AA13|mebutizide|N
+C03AB01|bendroflumethiazide and potassium|N
+C03AB02|hydroflumethiazide and potassium|N
+C03AB03|hydrochlorothiazide and potassium|N
+C03AB04|chlorothiazide and potassium|N
+C03AB05|polythiazide and potassium|N
+C03AB06|trichlormethiazide and potassium|N
+C03AB07|cyclopenthiazide and potassium|N
+C03AB08|methyclothiazide and potassium|N
+C03AB09|cyclothiazide and potassium|N
+C03AH01|chlorothiazide|Y
+C03AH02|hydroflumethiazide|Y
+C03AX01|hydrochlorothiazide|Y
+C03BA02|quinethazone|N
+C03BA03|clopamide|N
+C03BA04|chlortalidone|N
+C03BA05|mefruside|N
+C03BA07|clofenamide|N
+C03BA08|metolazone|N
+C03BA09|meticrane|N
+C03BA10|xipamide|N
+C03BA11|indapamide|N
+C03BA12|clorexolone|N
+C03BA13|fenquizone|N
+C03BA82|clorexolone|Y
+C03BB02|quinethazone and potassium|N
+C03BB03|clopamide and potassium|N
+C03BB04|chlortalidone and potassium|N
+C03BB05|mefruside and potassium|N
+C03BB07|clofenamide and potassium|N
+C03BC01|mersalyl|N
+C03BD01|theobromine|N
+C03BX03|cicletanine|N
+C03CA01|furosemide|N
+C03CA02|bumetanide|N
+C03CA03|piretanide|N
+C03CA04|torasemide|N
+C03CB01|furosemide and potassium|N
+C03CB02|bumetanide and potassium|N
+C03CC01|etacrynic acid|N
+C03CC02|tienilic acid|N
+C03CD01|muzolimine|N
+C03CX01|etozolin|N
+C03DA01|spironolactone|N
+C03DA02|potassium canrenoate|N
+C03DA03|canrenone|N
+C03DA04|eplerenone|N
+C03DB01|amiloride|N
+C03DB02|triamterene|N
+C03EA01|hydrochlorothiazide and potassium-sparing agents|N
+C03EA02|trichlormethiazide and potassium-sparing agents|N
+C03EA03|epitizide and potassium-sparing agents|N
+C03EA04|altizide and potassium-sparing agents|N
+C03EA05|mebutizide and potassium-sparing agents|N
+C03EA06|chlortalidone and potassium-sparing agents|N
+C03EA07|cyclopenthiazide and potassium-sparing agents|N
+C03EA12|metolazone and potassium-sparing agents|N
+C03EA13|bendroflumethiazide and potassium-sparing agents|N
+C03EA14|butizide and potassium-sparing agents|N
+C03EB01|furosemide and potassium-sparing agents|N
+C03EB02|bumetanide and potassium-sparing agents|N
+C03XA01|tolvaptan|N
+C03XA02|conivaptan|N
+C04AA01|isoxsuprine|N
+C04AA02|buphenine|N
+C04AA31|bamethan|N
+C04AB01|phentolamine|N
+C04AB02|tolazoline|N
+C04AC01|nicotinic acid|N
+C04AC02|nicotinyl alcohol (pyridylcarbinol)|N
+C04AC03|inositol nicotinate|N
+C04AC07|ciclonicate|N
+C04AD01|pentifylline|N
+C04AD02|xantinol nicotinate|N
+C04AD03|pentoxifylline|N
+C04AD04|etofylline nicotinate|N
+C04AE01|ergoloid mesylates|N
+C04AE02|nicergoline|N
+C04AE04|dihydroergocristine|N
+C04AE51|ergoloid mesylates|Y
+C04AE54|dihydroergocristine|Y
+C04AF01|kallidinogenase|N
+C04AX01|cyclandelate|N
+C04AX02|phenoxybenzamine|N
+C04AX07|vincamine|N
+C04AX10|moxisylyte|N
+C04AX11|bencyclane|N
+C04AX17|vinburnine|N
+C04AX19|suloctidil|N
+C04AX20|buflomedil|N
+C04AX21|naftidrofuryl|N
+C04AX23|butalamine|N
+C04AX24|visnadine|N
+C04AX26|cetiedil|N
+C04AX27|cinepazide|N
+C04AX28|ifenprodil|N
+C04AX30|azapetine|N
+C04AX32|fasudil|N
+C05AA01|hydrocortisone|N
+C05AA04|prednisolone|N
+C05AA05|betamethasone|N
+C05AA06|fluorometholone|N
+C05AA08|fluocortolone|N
+C05AA09|dexamethasone|N
+C05AA10|fluocinolone acetonide|N
+C05AA11|fluocinonide|N
+C05AA12|triamcinolone|N
+C05AD01|lidocaine|N
+C05AD02|tetracaine|N
+C05AD03|benzocaine|N
+C05AD04|cinchocaine|N
+C05AD05|procaine|N
+C05AD06|oxetacaine|N
+C05AD07|pramocaine|N
+C05AE01|glyceryl trinitrate|N
+C05AE02|isosorbide dinitrate|N
+C05AE03|diltiazem|N
+C05AX01|aluminium preparations|N
+C05AX02|bismuth preparations|Y
+C05AX03|other preparations|Y
+C05AX04|zinc preparations|N
+C05AX05|tribenoside|N
+C05BA01|organo-heparinoid|N
+C05BA02|sodium apolate|N
+C05BA03|heparin|N
+C05BA04|pentosan polysulfate sodium|N
+C05BA51|heparinoid|Y
+C05BA53|heparin|Y
+C05BB01|monoethanolamine oleate|N
+C05BB02|polidocanol|N
+C05BB03|invert sugar|N
+C05BB04|sodium tetradecyl sulfate|N
+C05BB05|phenol|N
+C05BB56|glucose|Y
+C05BX01|calcium dobesilate|N
+C05BX51|calcium dobesilate|Y
+C05CA01|rutoside|N
+C05CA02|monoxerutin|N
+C05CA03|diosmin|N
+C05CA04|troxerutin|N
+C05CA05|hidrosmin|N
+C05CA51|rutoside|Y
+C05CA53|diosmin|Y
+C05CA54|troxerutin|Y
+C05CX01|tribenoside|N
+C05CX02|naftazone|N
+C05CX03|Hippocastani semen|N
+C07AA01|alprenolol|N
+C07AA02|oxprenolol|N
+C07AA03|pindolol|N
+C07AA05|propranolol|N
+C07AA06|timolol|N
+C07AA07|sotalol|N
+C07AA12|nadolol|N
+C07AA14|mepindolol|N
+C07AA15|carteolol|N
+C07AA16|tertatolol|N
+C07AA17|bopindolol|N
+C07AA19|bupranolol|N
+C07AA23|penbutolol|N
+C07AA27|cloranolol|N
+C07AB01|practolol|N
+C07AB02|metoprolol|N
+C07AB03|atenolol|N
+C07AB04|acebutolol|N
+C07AB05|betaxolol|N
+C07AB06|bevantolol|N
+C07AB07|bisoprolol|N
+C07AB08|celiprolol|N
+C07AB09|esmolol|N
+C07AB10|epanolol|N
+C07AB11|s-atenolol|N
+C07AB12|nebivolol|N
+C07AB13|talinolol|N
+C07AB14|landiolol|N
+C07AG01|labetalol|N
+C07AG02|carvedilol|N
+C07BA02|oxprenolol and thiazides|N
+C07BA05|propranolol and thiazides|N
+C07BA06|timolol and thiazides|N
+C07BA07|sotalol and thiazides|N
+C07BA12|nadolol and thiazides|N
+C07BA68|metipranolol and thiazides|Y
+C07BB02|metoprolol and thiazides|N
+C07BB03|atenolol and thiazides|N
+C07BB04|acebutolol and thiazides|N
+C07BB06|bevantolol and thiazides|N
+C07BB07|bisoprolol and thiazides|N
+C07BB12|nebivolol and thiazides|N
+C07BB52|metoprolol and thiazides|Y
+C07BG01|labetalol and thiazides|N
+C07CA02|oxprenolol and other diuretics|N
+C07CA03|pindolol and other diuretics|N
+C07CA17|bopindolol and other diuretics|N
+C07CA23|penbutolol and other diuretics|N
+C07CB02|metoprolol and other diuretics|N
+C07CB03|atenolol and other diuretics|N
+C07CB53|atenolol and other diuretics|Y
+C07CG01|labetalol and other diuretics|N
+C07DA06|timolol, thiazides and other diuretics|N
+C07DB01|atenolol, thiazides and other diuretics|N
+C07FB02|metoprolol and felodipine|N
+C07FB03|atenolol and nifedipine|N
+C07FB07|bisoprolol and amlodipine|N
+C07FB12|nebivolol and amlodipine|N
+C07FB13|metoprolol and amlodipine|N
+C07FX01|propranolol and other combinations|N
+C07FX02|sotalol and acetylsalicylic acid|N
+C07FX03|metoprolol and acetylsalicylic acid|N
+C07FX04|bisoprolol and acetylsalicylic acid|N
+C07FX05|metoprolol and ivabradine|N
+C07FX06|carvedilol and ivabradine|N
+C08CA01|amlodipine|N
+C08CA02|felodipine|N
+C08CA03|isradipine|N
+C08CA04|nicardipine|N
+C08CA05|nifedipine|N
+C08CA06|nimodipine|N
+C08CA07|nisoldipine|N
+C08CA08|nitrendipine|N
+C08CA09|lacidipine|N
+C08CA10|nilvadipine|N
+C08CA11|manidipine|N
+C08CA12|barnidipine|N
+C08CA13|lercanidipine|N
+C08CA14|cilnidipine|N
+C08CA15|benidipine|N
+C08CA16|clevidipine|N
+C08CA51|amlodipine and celecoxib|N
+C08CA55|nifedipine|Y
+C08CX01|mibefradil|N
+C08DA01|verapamil|N
+C08DA02|gallopamil|N
+C08DA51|verapamil|Y
+C08DB01|diltiazem|N
+C08EA01|fendiline|N
+C08EA02|bepridil|N
+C08EX01|lidoflazine|N
+C08EX02|perhexiline|N
+C08GA01|nifedipine and diuretics|N
+C08GA02|amlodipine and diuretics|N
+C09AA01|captopril|N
+C09AA02|enalapril|N
+C09AA03|lisinopril|N
+C09AA04|perindopril|N
+C09AA05|ramipril|N
+C09AA06|quinapril|N
+C09AA07|benazepril|N
+C09AA08|cilazapril|N
+C09AA09|fosinopril|N
+C09AA10|trandolapril|N
+C09AA11|spirapril|N
+C09AA12|delapril|N
+C09AA13|moexipril|N
+C09AA14|temocapril|N
+C09AA15|zofenopril|N
+C09AA16|imidapril|N
+C09BA01|captopril and diuretics|N
+C09BA02|enalapril and diuretics|N
+C09BA03|lisinopril and diuretics|N
+C09BA04|perindopril and diuretics|N
+C09BA05|ramipril and diuretics|N
+C09BA06|quinapril and diuretics|N
+C09BA07|benazepril and diuretics|N
+C09BA08|cilazapril and diuretics|N
+C09BA09|fosinopril and diuretics|N
+C09BA12|delapril and diuretics|N
+C09BA13|moexipril and diuretics|N
+C09BA15|zofenopril and diuretics|N
+C09BB02|enalapril and lercanidipine|N
+C09BB03|lisinopril and amlodipine|N
+C09BB04|perindopril and amlodipine|N
+C09BB05|ramipril and felodipine|N
+C09BB06|enalapril and nitrendipine|N
+C09BB07|ramipril and amlodipine|N
+C09BB10|trandolapril and verapamil|N
+C09BB12|delapril and manidipine|N
+C09BX01|perindopril, amlodipine and indapamide|N
+C09BX02|perindopril and bisoprolol|N
+C09BX03|ramipril, amlodipine and hydrochlorothiazide|N
+C09BX04|perindopril, bisoprolol and amlodipine|N
+C09BX05|ramipril and bisoprolol|N
+C09CA01|losartan|N
+C09CA02|eprosartan|N
+C09CA03|valsartan|N
+C09CA04|irbesartan|N
+C09CA05|tasosartan|N
+C09CA06|candesartan|N
+C09CA07|telmisartan|N
+C09CA08|olmesartan medoxomil|N
+C09CA09|azilsartan medoxomil|N
+C09CA10|fimasartan|N
+C09DA01|losartan and diuretics|N
+C09DA02|eprosartan and diuretics|N
+C09DA03|valsartan and diuretics|N
+C09DA04|irbesartan and diuretics|N
+C09DA06|candesartan and diuretics|N
+C09DA07|telmisartan and diuretics|N
+C09DA08|olmesartan medoxomil and diuretics|N
+C09DA09|azilsartan medoxomil and diuretics|N
+C09DA10|fimasartan and diuretics|N
+C09DB01|valsartan and amlodipine|N
+C09DB02|olmesartan medoxomil and amlodipine|N
+C09DB04|telmisartan and amlodipine|N
+C09DB05|irbesartan and amlodipine|N
+C09DB06|losartan and amlodipine|N
+C09DB07|candesartan and amlodipine|N
+C09DB08|valsartan and lercanidipine|N
+C09DB09|fimasartan and amlodipine|N
+C09DX01|valsartan, amlodipine and hydrochlorothiazide|N
+C09DX02|valsartan and aliskiren|N
+C09DX03|olmesartan medoxomil, amlodipine and hydrochlorothiazide|N
+C09DX04|valsartan and sacubitril|N
+C09DX05|valsartan and nebivolol|N
+C09DX06|candesartan, amlodipine and hydrochlorothiazide|N
+C09DX07|irbesartan, amlodipine and hydrochlorothiazide|N
+C09XA01|remikiren|N
+C09XA02|aliskiren|N
+C09XA52|aliskiren and hydrochlorothiazide|N
+C09XA53|aliskiren and amlodipine|N
+C09XA54|aliskiren, amlodipine and hydrochlorothiazide|N
+C10AA01|simvastatin|N
+C10AA02|lovastatin|N
+C10AA03|pravastatin|N
+C10AA04|fluvastatin|N
+C10AA05|atorvastatin|N
+C10AA06|cerivastatin|N
+C10AA07|rosuvastatin|N
+C10AA08|pitavastatin|N
+C10AB01|clofibrate|N
+C10AB02|bezafibrate|N
+C10AB03|aluminium clofibrate|N
+C10AB04|gemfibrozil|N
+C10AB05|fenofibrate|N
+C10AB06|simfibrate|N
+C10AB07|ronifibrate|N
+C10AB08|ciprofibrate|N
+C10AB09|etofibrate|N
+C10AB10|clofibride|N
+C10AB11|choline fenofibrate|N
+C10AC01|colestyramine|N
+C10AC02|colestipol|N
+C10AC03|colextran|N
+C10AC04|colesevelam|N
+C10AD01|niceritrol|N
+C10AD02|nicotinic acid|N
+C10AD03|nicofuranose|N
+C10AD04|aluminium nicotinate|N
+C10AD05|nicotinyl alcohol (pyridylcarbinol)|N
+C10AD06|acipimox|N
+C10AD52|nicotinic acid|Y
+C10AX01|dextrothyroxine|N
+C10AX02|probucol|N
+C10AX03|tiadenol|N
+C10AX05|meglutol|N
+C10AX06|omega-3-triglycerides incl. other esters and acids|N
+C10AX07|magnesium pyridoxal 5-phosphate glutamate|N
+C10AX08|policosanol|N
+C10AX09|ezetimibe|N
+C10AX10|alipogene tiparvovec|N
+C10AX11|mipomersen|N
+C10AX12|lomitapide|N
+C10AX13|evolocumab|N
+C10AX14|alirocumab|N
+C10AX15|bempedoic acid|N
+C10AX16|inclisiran|N
+C10BA01|lovastatin and nicotinic acid|N
+C10BA02|simvastatin and ezetimibe|N
+C10BA03|pravastatin and fenofibrate|N
+C10BA04|simvastatin and fenofibrate|N
+C10BA05|atorvastatin and ezetimibe|N
+C10BA06|rosuvastatin and ezetimibe|N
+C10BA07|rosuvastatin and omega-3 fatty acids|N
+C10BA08|atorvastatin and omega-3 fatty acids|N
+C10BA09|rosuvastatin and fenofibrate|N
+C10BA10|bempedoic acid and ezetimibe|N
+C10BX01|simvastatin and acetylsalicylic acid|N
+C10BX02|pravastatin and acetylsalicylic acid|N
+C10BX03|atorvastatin and amlodipine|N
+C10BX04|simvastatin, acetylsalicylic acid and ramipril|N
+C10BX05|rosuvastatin and acetylsalicylic acid|N
+C10BX06|atorvastatin, acetylsalicylic acid and ramipril|N
+C10BX07|rosuvastatin, amlodipine and lisinopril|N
+C10BX08|atorvastatin and acetylsalicylic acid|N
+C10BX09|rosuvastatin and amlodipine|N
+C10BX10|rosuvastatin and valsartan|N
+C10BX11|atorvastatin, amlodipine and perindopril|N
+C10BX12|atorvastatin, acetylsalicylic acid and perindopril|N
+C10BX13|rosuvastatin, perindopril and indapamide|N
+C10BX14|rosuvastatin, amlodipine and perindopril|N
+C10BX15|atorvastatin and perindopril|N
+C10BX16|rosuvastatin and fimasartan|N
+C10BX17|rosuvastatin and ramipril|N
+C10BX18|atorvastatin, amlodipine and ramipril|N
+D01AA01|nystatin|N
+D01AA02|natamycin|N
+D01AA03|hachimycin|N
+D01AA04|pecilocin|N
+D01AA06|mepartricin|N
+D01AA07|pyrrolnitrin|N
+D01AA08|griseofulvin|N
+D01AA20|combinations|N
+D01AC01|clotrimazole|N
+D01AC02|miconazole|N
+D01AC03|econazole|N
+D01AC04|chlormidazole|N
+D01AC05|isoconazole|N
+D01AC06|tiabendazole|N
+D01AC07|tioconazole|N
+D01AC08|ketoconazole|N
+D01AC09|sulconazole|N
+D01AC10|bifonazole|N
+D01AC11|oxiconazole|N
+D01AC12|fenticonazole|N
+D01AC13|omoconazole|N
+D01AC14|sertaconazole|N
+D01AC15|fluconazole|N
+D01AC16|flutrimazole|N
+D01AC17|eberconazole|N
+D01AC18|luliconazole|N
+D01AC19|efinaconazole|N
+D01AC20|imidazoles/triazoles in combination with corticosteroids|N
+D01AC52|miconazole|Y
+D01AC60|bifonazole|Y
+D01AE01|bromochlorosalicylanilide|N
+D01AE02|methylrosaniline|N
+D01AE03|tribromometacresol|N
+D01AE04|undecylenic acid|N
+D01AE05|polynoxylin|N
+D01AE06|2-(4-chlorphenoxy)-ethanol|N
+D01AE07|chlorphenesin|N
+D01AE08|ticlatone|N
+D01AE09|sulbentine|N
+D01AE10|ethyl hydroxybenzoate|N
+D01AE11|haloprogin|N
+D01AE12|salicylic acid|N
+D01AE13|selenium sulfide|N
+D01AE14|ciclopirox|N
+D01AE15|terbinafine|N
+D01AE16|amorolfine|N
+D01AE17|dimazole|N
+D01AE18|tolnaftate|N
+D01AE19|tolciclate|N
+D01AE20|combinations|N
+D01AE21|flucytosine|N
+D01AE22|naftifine|N
+D01AE23|butenafine|N
+D01AE24|tavaborole|N
+D01AE54|undecylenic acid|Y
+D01BA01|griseofulvin|N
+D01BA02|terbinafine|N
+D01BA03|fosravuconazole|N
+D02AE01|carbamide|N
+D02AE51|carbamide|Y
+D02BA01|aminobenzoic acid|N
+D02BA02|octinoxate|N
+D02BB01|betacarotene|N
+D02BB02|afamelanotide|N
+D03AX01|cadexomer iodine|N
+D03AX02|dextranomer|N
+D03AX03|dexpanthenol|N
+D03AX04|calcium pantothenate|N
+D03AX05|hyaluronic acid|N
+D03AX06|becaplermin|N
+D03AX09|crilanomer|N
+D03AX10|enoxolone|N
+D03AX11|sodium chlorite|N
+D03AX12|trolamine|N
+D03AX13|Betulae cortex|N
+D03AX14|Centella asiatica herba|N
+D03BA01|trypsin|N
+D03BA02|collagenase|N
+D03BA03|bromelains|N
+D03BA52|collagenase|Y
+D04AA01|thonzylamine|N
+D04AA02|mepyramine|N
+D04AA03|thenalidine|N
+D04AA04|tripelennamine|N
+D04AA09|chloropyramine|N
+D04AA10|promethazine|N
+D04AA12|tolpropamine|N
+D04AA13|dimetindene|N
+D04AA14|clemastine|N
+D04AA15|bamipine|N
+D04AA16|pheniramine|N
+D04AA22|isothipendyl|N
+D04AA32|diphenhydramine|N
+D04AA33|diphenhydramine methylbromide|N
+D04AA34|chlorphenoxamine|N
+D04AB01|lidocaine|N
+D04AB02|cinchocaine|N
+D04AB03|oxybuprocaine|N
+D04AB04|benzocaine|N
+D04AB05|quinisocaine|N
+D04AB06|tetracaine|N
+D04AB07|pramocaine|N
+D04AX01|doxepin|N
+D05AC01|dithranol|N
+D05AC51|dithranol|Y
+D05AD01|trioxysalen|N
+D05AD02|methoxsalen|N
+D05AX01|fumaric acid|N
+D05AX02|calcipotriol|N
+D05AX03|calcitriol|N
+D05AX04|tacalcitol|N
+D05AX05|tazarotene|N
+D05AX52|calcipotriol|Y
+D05AX55|tazarotene and ulobetasol|N
+D05BA01|trioxysalen|N
+D05BA02|methoxsalen|N
+D05BA03|bergapten|N
+D05BB01|etretinate|N
+D05BB02|acitretin|N
+D05BX51|fumaric acid derivatives|Y
+D06AA01|demeclocycline|N
+D06AA02|chlortetracycline|N
+D06AA03|oxytetracycline|N
+D06AA04|tetracycline|N
+D06AX01|fusidic acid|N
+D06AX02|chloramphenicol|N
+D06AX04|neomycin|N
+D06AX05|bacitracin|N
+D06AX07|gentamicin|N
+D06AX08|tyrothricin|N
+D06AX09|mupirocin|N
+D06AX10|virginiamycin|N
+D06AX11|rifaximin|N
+D06AX12|amikacin|N
+D06AX13|retapamulin|N
+D06AX14|ozenoxacin|N
+D06AX15|rifamycin|N
+D06BA01|silver sulfadiazine|N
+D06BA02|sulfathiazole|N
+D06BA03|mafenide|N
+D06BA04|sulfamethizole|N
+D06BA05|sulfanilamide|N
+D06BA06|sulfamerazine|N
+D06BA51|silver sulfadiazine|Y
+D06BB01|idoxuridine|N
+D06BB02|tromantadine|N
+D06BB03|aciclovir|N
+D06BB04|podophyllotoxin|N
+D06BB05|inosine|N
+D06BB06|penciclovir|N
+D06BB07|lysozyme|N
+D06BB08|ibacitabine|N
+D06BB09|edoxudine|N
+D06BB10|imiquimod|N
+D06BB11|docosanol|N
+D06BB12|sinecatechins|N
+D06BB53|aciclovir|Y
+D06BX01|metronidazole|N
+D06BX02|ingenol mebutate|N
+D06BX03|tirbanibulin|N
+D07AA01|methylprednisolone|N
+D07AA02|hydrocortisone|N
+D07AA03|prednisolone|N
+D07AB01|clobetasone|N
+D07AB02|hydrocortisone butyrate|N
+D07AB03|flumetasone|N
+D07AB04|fluocortin|N
+D07AB05|fluperolone|N
+D07AB06|fluorometholone|N
+D07AB07|fluprednidene|N
+D07AB08|desonide|N
+D07AB09|triamcinolone|N
+D07AB10|alclometasone|N
+D07AB11|hydrocortisone buteprate|N
+D07AB19|dexamethasone|N
+D07AB21|clocortolone|N
+D07AB30|combinations of corticosteroids|N
+D07AC01|betamethasone|N
+D07AC02|fluclorolone|N
+D07AC03|desoximetasone|N
+D07AC04|fluocinolone acetonide|N
+D07AC05|fluocortolone|N
+D07AC06|diflucortolone|N
+D07AC07|fludroxycortide|N
+D07AC08|fluocinonide|N
+D07AC09|budesonide|N
+D07AC10|diflorasone|N
+D07AC11|amcinonide|N
+D07AC12|halometasone|N
+D07AC13|mometasone|N
+D07AC14|methylprednisolone aceponate|N
+D07AC15|beclometasone|N
+D07AC16|hydrocortisone aceponate|N
+D07AC17|fluticasone|N
+D07AC18|prednicarbate|N
+D07AC19|difluprednate|N
+D07AC21|ulobetasol|N
+D07AD01|clobetasol|N
+D07AD02|halcinonide|N
+D07BA01|prednisolone and antiseptics|N
+D07BA04|hydrocortisone and antiseptics|N
+D07BB01|flumetasone and antiseptics|N
+D07BB02|desonide and antiseptics|N
+D07BB03|triamcinolone and antiseptics|N
+D07BB04|hydrocortisone butyrate and antiseptics|N
+D07BC01|betamethasone and antiseptics|N
+D07BC02|fluocinolone acetonide and antiseptics|N
+D07BC03|fluocortolone and antiseptics|N
+D07BC04|diflucortolone and antiseptics|N
+D07CA01|hydrocortisone and antibiotics|N
+D07CA02|methylprednisolone and antibiotics|N
+D07CA03|prednisolone and antibiotics|N
+D07CB01|triamcinolone and antibiotics|N
+D07CB02|fluprednidene and antibiotics|N
+D07CB03|fluorometholone and antibiotics|N
+D07CB04|dexamethasone and antibiotics|N
+D07CB05|flumetasone and antibiotics|N
+D07CC01|betamethasone and antibiotics|N
+D07CC02|fluocinolone acetonide and antibiotics|N
+D07CC03|fludroxycortide and antibiotics|N
+D07CC04|beclometasone and antibiotics|N
+D07CC05|fluocinonide and antibiotics|N
+D07CC06|fluocortolone and antibiotics|N
+D07CD01|clobetasol and antibiotics|N
+D07XA01|hydrocortisone|N
+D07XA02|prednisolone|N
+D07XB01|flumetasone|N
+D07XB02|triamcinolone|N
+D07XB03|fluprednidene|N
+D07XB04|fluorometholone|N
+D07XB05|dexamethasone|N
+D07XB30|combinations of corticosteroids|N
+D07XC01|betamethasone|N
+D07XC02|desoximetasone|N
+D07XC03|mometasone|N
+D07XC04|diflucortolone|N
+D07XC05|fluocortolone|N
+D08AA01|ethacridine lactate|N
+D08AA02|aminoacridine|N
+D08AA03|euflavine|N
+D08AC01|dibrompropamidine|N
+D08AC02|chlorhexidine|N
+D08AC03|propamidine|N
+D08AC04|hexamidine|N
+D08AC05|polihexanide|N
+D08AC52|chlorhexidine|Y
+D08AE01|hexachlorophene|N
+D08AE02|policresulen|N
+D08AE03|phenol|N
+D08AE04|triclosan|N
+D08AE05|chloroxylenol|N
+D08AE06|biphenylol|N
+D08AF01|nitrofural|N
+D08AG01|iodine/octylphenoxypolyglycolether|N
+D08AG02|povidone-iodine|N
+D08AG03|iodine|N
+D08AG04|diiodohydroxypropane|N
+D08AH01|dequalinium|N
+D08AH02|chlorquinaldol|N
+D08AH03|oxyquinoline|N
+D08AH30|clioquinol|N
+D08AJ01|benzalkonium|N
+D08AJ02|cetrimonium|N
+D08AJ03|cetylpyridinium|N
+D08AJ04|cetrimide|N
+D08AJ05|benzoxonium chloride|N
+D08AJ06|didecyldimethylammonium chloride|N
+D08AJ08|benzethonium chloride|N
+D08AJ10|decamethoxine|N
+D08AJ57|octenidine|Y
+D08AJ58|benzethonium chloride|Y
+D08AJ59|dodeclonium bromide|Y
+D08AK01|mercuric amidochloride|N
+D08AK02|phenylmercuric borate|N
+D08AK03|mercuric chloride|N
+D08AK04|merbromin|N
+D08AK05|mercury, metallic|N
+D08AK06|thiomersal|N
+D08AK30|mercuric iodide|N
+D08AL01|silver nitrate|N
+D08AL30|silver|N
+D08AX01|hydrogen peroxide|N
+D08AX02|eosin|N
+D08AX03|propanol|N
+D08AX04|tosylchloramide sodium|N
+D08AX05|isopropanol|N
+D08AX06|potassium permanganate|N
+D08AX07|sodium hypochlorite|N
+D08AX08|ethanol|N
+D08AX53|propanol|Y
+D09AA01|framycetin|N
+D09AA02|fusidic acid|N
+D09AA03|nitrofural|N
+D09AA04|phenylmercuric nitrate|N
+D09AA05|benzododecinium|N
+D09AA06|triclosan|N
+D09AA07|cetylpyridinium|N
+D09AA08|aluminium chlorohydrate|N
+D09AA09|povidone-iodine|N
+D09AA10|clioquinol|N
+D09AA11|benzalkonium|N
+D09AA12|chlorhexidine|N
+D09AA13|iodoform|N
+D09AB01|zinc bandage without supplements|N
+D09AB02|zinc bandage with supplements|N
+D10AA01|fluorometholone|N
+D10AA02|methylprednisolone|N
+D10AA03|dexamethasone|N
+D10AB01|bithionol|N
+D10AB02|sulfur|N
+D10AB03|tioxolone|N
+D10AB05|mesulfen|N
+D10AD01|tretinoin|N
+D10AD02|retinol|N
+D10AD03|adapalene|N
+D10AD04|isotretinoin|N
+D10AD05|motretinide|N
+D10AD06|trifarotene|N
+D10AD51|tretinoin|Y
+D10AD53|adapalene|Y
+D10AD54|isotretinoin|Y
+D10AE01|benzoyl peroxide|N
+D10AE51|benzoyl peroxide|Y
+D10AF01|clindamycin|N
+D10AF02|erythromycin|N
+D10AF03|chloramphenicol|N
+D10AF04|meclocycline|N
+D10AF05|nadifloxacin|N
+D10AF06|sulfacetamide|N
+D10AF07|minocycline|N
+D10AF51|clindamycin|Y
+D10AF52|erythromycin|Y
+D10AX01|aluminium chloride|N
+D10AX02|resorcinol|N
+D10AX03|azelaic acid|N
+D10AX04|aluminium oxide|N
+D10AX05|dapsone|N
+D10AX30|various combinations|N
+D10BA01|isotretinoin|N
+D10BX01|ichtasol|N
+D11AA01|glycopyrronium|N
+D11AC01|cetrimide|N
+D11AC02|cadmium compounds|N
+D11AC03|selenium compounds|N
+D11AC06|povidone-iodine|N
+D11AC08|sulfur compounds|N
+D11AC09|xenysalate|N
+D11AC30|others|N
+D11AE01|metandienone|N
+D11AH01|tacrolimus|N
+D11AH02|pimecrolimus|N
+D11AH03|cromoglicic acid|N
+D11AH04|alitretinoin|N
+D11AH05|dupilumab|N
+D11AH06|crisaborole|N
+D11AH07|tralokinumab|N
+D11AX01|minoxidil|N
+D11AX02|gamolenic acid|N
+D11AX03|calcium gluconate|N
+D11AX04|lithium succinate|N
+D11AX05|magnesium sulfate|N
+D11AX06|mequinol|N
+D11AX08|tiratricol|N
+D11AX09|oxaceprol|N
+D11AX10|finasteride|N
+D11AX11|hydroquinone|N
+D11AX12|pyrithione zinc|N
+D11AX13|monobenzone|N
+D11AX16|eflornithine|N
+D11AX18|diclofenac|N
+D11AX21|brimonidine|N
+D11AX22|ivermectin|N
+D11AX23|aminobenzoate potassium|N
+D11AX24|deoxycholic acid|N
+D11AX25|hydrogen peroxide|N
+D11AX26|caffeine|N
+D11AX52|gamolenic acid|Y
+D11AX57|collagen|Y
+G01AA01|nystatin|N
+G01AA02|natamycin|N
+G01AA03|amphotericin B|N
+G01AA04|candicidin|N
+G01AA05|chloramphenicol|N
+G01AA06|hachimycin|N
+G01AA07|oxytetracycline|N
+G01AA08|carfecillin|N
+G01AA09|mepartricin|N
+G01AA10|clindamycin|N
+G01AA11|pentamycin|N
+G01AA51|nystatin|Y
+G01AB01|acetarsol|N
+G01AC01|diiodohydroxyquinoline|N
+G01AC02|clioquinol|N
+G01AC03|chlorquinaldol|N
+G01AC05|dequalinium|N
+G01AC06|broxyquinoline|N
+G01AC30|oxyquinoline|N
+G01AD01|lactic acid|N
+G01AD02|acetic acid|N
+G01AD03|ascorbic acid|N
+G01AE01|sulfatolamide|N
+G01AE10|combinations of sulfonamides|N
+G01AF01|metronidazole|N
+G01AF02|clotrimazole|N
+G01AF04|miconazole|N
+G01AF05|econazole|N
+G01AF06|ornidazole|N
+G01AF07|isoconazole|N
+G01AF08|tioconazole|N
+G01AF11|ketoconazole|N
+G01AF12|fenticonazole|N
+G01AF13|azanidazole|N
+G01AF14|propenidazole|N
+G01AF15|butoconazole|N
+G01AF16|omoconazole|N
+G01AF17|oxiconazole|N
+G01AF18|flutrimazole|N
+G01AF19|sertaconazole|N
+G01AF20|combinations of imidazole derivatives|N
+G01AF55|econazole|Y
+G01AG02|terconazole|N
+G01AX01|clodantoin|N
+G01AX02|inosine|N
+G01AX03|policresulen|N
+G01AX05|nifuratel|N
+G01AX06|furazolidone|N
+G01AX09|methylrosaniline|N
+G01AX11|povidone-iodine|N
+G01AX12|ciclopirox|N
+G01AX13|protiofate|N
+G01AX14|lactobacillus|N
+G01AX15|copper usnate|N
+G01AX16|hexetidine|N
+G01AX17|dapivirine|N
+G01AX66|octenidine|Y
+G02AB01|methylergometrine|N
+G02AB02|ergot alkaloids|N
+G02AB03|ergometrine|N
+G02AC01|methylergometrine and oxytocin|N
+G02AD01|dinoprost|N
+G02AD02|dinoprostone|N
+G02AD03|gemeprost|N
+G02AD04|carboprost|N
+G02AD05|sulprostone|N
+G02AD06|misoprostol|N
+G02BA01|plastic IUD|N
+G02BA02|plastic IUD with copper|N
+G02BA03|plastic IUD with progestogen|N
+G02BB01|vaginal ring with progestogen and estrogen|N
+G02BB02|vaginal ring with progestogen|N
+G02CA01|ritodrine|N
+G02CA02|buphenine|N
+G02CA03|fenoterol|N
+G02CB01|bromocriptine|N
+G02CB02|lisuride|N
+G02CB03|cabergoline|N
+G02CB04|quinagolide|N
+G02CB05|metergoline|N
+G02CB06|terguride|N
+G02CC01|ibuprofen|N
+G02CC02|naproxen|N
+G02CC03|benzydamine|N
+G02CC04|flunoxaprofen|N
+G02CX01|atosiban|N
+G02CX02|flibanserin|N
+G02CX03|Agni casti fructus|N
+G02CX04|Cimicifugae rhizoma|N
+G02CX05|bremelanotide|N
+G03AA01|etynodiol and ethinylestradiol|N
+G03AA02|quingestanol and ethinylestradiol|N
+G03AA03|lynestrenol and ethinylestradiol|N
+G03AA04|megestrol and ethinylestradiol|N
+G03AA05|norethisterone and ethinylestradiol|N
+G03AA06|norgestrel and ethinylestradiol|N
+G03AA07|levonorgestrel and ethinylestradiol|N
+G03AA08|medroxyprogesterone and ethinylestradiol|N
+G03AA09|desogestrel and ethinylestradiol|N
+G03AA10|gestodene and ethinylestradiol|N
+G03AA11|norgestimate and ethinylestradiol|N
+G03AA12|drospirenone and ethinylestradiol|N
+G03AA13|norelgestromin and ethinylestradiol|N
+G03AA14|nomegestrol and estradiol|N
+G03AA15|chlormadinone and ethinylestradiol|N
+G03AA16|dienogest and ethinylestradiol|N
+G03AA17|medroxyprogesterone and estradiol|N
+G03AA18|drospirenone and estetrol|N
+G03AB01|megestrol and ethinylestradiol|N
+G03AB02|lynestrenol and ethinylestradiol|N
+G03AB03|levonorgestrel and ethinylestradiol|N
+G03AB04|norethisterone and ethinylestradiol|N
+G03AB05|desogestrel and ethinylestradiol|N
+G03AB06|gestodene and ethinylestradiol|N
+G03AB07|chlormadinone and ethinylestradiol|N
+G03AB08|dienogest and estradiol|N
+G03AB09|norgestimate and ethinylestradiol|N
+G03AC01|norethisterone|N
+G03AC02|lynestrenol|N
+G03AC03|levonorgestrel|N
+G03AC04|quingestanol|N
+G03AC05|megestrol|N
+G03AC06|medroxyprogesterone|N
+G03AC07|norgestrienone|N
+G03AC08|etonogestrel|N
+G03AC09|desogestrel|N
+G03AC10|drospirenone|N
+G03AD01|levonorgestrel|N
+G03AD02|ulipristal|N
+G03BA01|fluoxymesterone|N
+G03BA02|methyltestosterone|N
+G03BA03|testosterone|N
+G03BB01|mesterolone|N
+G03BB02|androstanolone|N
+G03CA01|ethinylestradiol|N
+G03CA03|estradiol|N
+G03CA04|estriol|N
+G03CA06|chlorotrianisene|N
+G03CA07|estrone|N
+G03CA09|promestriene|N
+G03CA53|estradiol|Y
+G03CA57|conjugated estrogens|N
+G03CB01|dienestrol|N
+G03CB02|diethylstilbestrol|N
+G03CB03|methallenestril|N
+G03CB04|moxestrol|N
+G03CC02|dienestrol|N
+G03CC03|methallenestril|N
+G03CC04|estrone|N
+G03CC05|diethylstilbestrol|N
+G03CC06|estriol|N
+G03CC07|conjugated estrogens and bazedoxifene|N
+G03CX01|tibolone|N
+G03DA01|gestonorone|N
+G03DA02|medroxyprogesterone|N
+G03DA03|hydroxyprogesterone|N
+G03DA04|progesterone|N
+G03DB01|dydrogesterone|N
+G03DB02|megestrol|N
+G03DB03|medrogestone|N
+G03DB04|nomegestrol|N
+G03DB05|demegestone|N
+G03DB06|chlormadinone|N
+G03DB07|promegestone|N
+G03DB08|dienogest|N
+G03DC01|allylestrenol|N
+G03DC02|norethisterone|N
+G03DC03|lynestrenol|N
+G03DC04|ethisterone|N
+G03DC06|etynodiol|N
+G03DC31|methylestrenolone|N
+G03EA01|methyltestosterone and estrogen|N
+G03EA02|testosterone and estrogen|N
+G03EA03|prasterone and estrogen|N
+G03EK01|methyltestosterone|N
+G03FA01|norethisterone and estrogen|N
+G03FA02|hydroxyprogesterone and estrogen|N
+G03FA03|ethisterone and estrogen|N
+G03FA04|progesterone and estrogen|N
+G03FA05|methylnortestosterone and estrogen|N
+G03FA06|etynodiol and estrogen|N
+G03FA07|lynestrenol and estrogen|N
+G03FA08|megestrol and estrogen|N
+G03FA09|noretynodrel and estrogen|N
+G03FA10|norgestrel and estrogen|N
+G03FA11|levonorgestrel and estrogen|N
+G03FA12|medroxyprogesterone and estrogen|N
+G03FA13|norgestimate and estrogen|N
+G03FA14|dydrogesterone and estrogen|N
+G03FA15|dienogest and estrogen|N
+G03FA16|trimegestone and estrogen|N
+G03FA17|drospirenone and estrogen|N
+G03FB01|norgestrel and estrogen|N
+G03FB02|lynestrenol and estrogen|N
+G03FB03|chlormadinone and estrogen|N
+G03FB04|megestrol and estrogen|N
+G03FB05|norethisterone and estrogen|N
+G03FB06|medroxyprogesterone and estrogen|N
+G03FB07|medrogestone and estrogen|N
+G03FB08|dydrogesterone and estrogen|N
+G03FB09|levonorgestrel and estrogen|N
+G03FB10|desogestrel and estrogen|N
+G03FB11|trimegestone and estrogen|N
+G03FB12|nomegestrol and estrogen|N
+G03GA01|chorionic gonadotrophin|N
+G03GA02|human menopausal gonadotrophin|N
+G03GA03|serum gonadotrophin|N
+G03GA04|urofollitropin|N
+G03GA05|follitropin alfa|N
+G03GA06|follitropin beta|N
+G03GA07|lutropin alfa|N
+G03GA08|choriogonadotropin alfa|N
+G03GA09|corifollitropin alfa|N
+G03GA10|follitropin delta|N
+G03GA30|combinations|N
+G03GB01|cyclofenil|N
+G03GB02|clomifene|N
+G03GB03|epimestrol|N
+G03HA01|cyproterone|N
+G03HB01|cyproterone and estrogen|N
+G03XA01|danazol|N
+G03XA02|gestrinone|N
+G03XB01|mifepristone|N
+G03XB02|ulipristal|N
+G03XB51|mifepristone|Y
+G03XC01|raloxifene|N
+G03XC02|bazedoxifene|N
+G03XC03|lasofoxifene|N
+G03XC04|ormeloxifene|N
+G03XC05|ospemifene|N
+G03XX01|prasterone|N
+G04BA01|ammonium chloride|N
+G04BA03|calcium chloride|N
+G04BD01|emepronium|N
+G04BD02|flavoxate|N
+G04BD03|meladrazine|N
+G04BD04|oxybutynin|N
+G04BD05|terodiline|N
+G04BD06|propiverine|N
+G04BD07|tolterodine|N
+G04BD08|solifenacin|N
+G04BD09|trospium|N
+G04BD10|darifenacin|N
+G04BD11|fesoterodine|N
+G04BD12|mirabegron|N
+G04BD13|desfesoterodine|N
+G04BE01|alprostadil|N
+G04BE02|papaverine|N
+G04BE03|sildenafil|N
+G04BE04|yohimbine|N
+G04BE06|moxisylyte|N
+G04BE07|apomorphine|N
+G04BE08|tadalafil|N
+G04BE09|vardenafil|N
+G04BE10|avanafil|N
+G04BE11|udenafil|N
+G04BE30|combinations|N
+G04BE52|papaverine|Y
+G04BX01|magnesium hydroxide|N
+G04BX03|acetohydroxamic acid|N
+G04BX06|phenazopyridine|N
+G04BX10|succinimide|N
+G04BX11|collagen|N
+G04BX12|phenyl salicylate|N
+G04BX13|dimethyl sulfoxide|N
+G04BX14|dapoxetine|N
+G04BX15|pentosan polysulfate sodium|N
+G04BX16|tiopronin|N
+G04CA01|alfuzosin|N
+G04CA02|tamsulosin|N
+G04CA03|terazosin|N
+G04CA04|silodosin|N
+G04CA51|alfuzosin and finasteride|N
+G04CA52|tamsulosin and dutasteride|N
+G04CA53|tamsulosin and solifenacin|N
+G04CA54|tamsulosin and tadalafil|N
+G04CB01|finasteride|N
+G04CB02|dutasteride|N
+G04CX01|Prunus africanae cortex|N
+G04CX02|Sabalis serrulatae fructus|N
+G04CX03|mepartricin|N
+G04CX04|fexapotide|N
+H01AA01|corticotropin|N
+H01AA02|tetracosactide|N
+H01AB01|thyrotropin alfa|N
+H01AC01|somatropin|N
+H01AC02|somatrem|N
+H01AC03|mecasermin|N
+H01AC04|sermorelin|N
+H01AC05|mecasermin rinfabate|N
+H01AC06|tesamorelin|N
+H01AC07|somapacitan|N
+H01AX01|pegvisomant|N
+H01BA01|vasopressin (argipressin)|N
+H01BA02|desmopressin|N
+H01BA03|lypressin|N
+H01BA04|terlipressin|N
+H01BA05|ornipressin|N
+H01BB01|demoxytocin|N
+H01BB02|oxytocin|N
+H01BB03|carbetocin|N
+H01CA01|gonadorelin|N
+H01CA02|nafarelin|N
+H01CB01|somatostatin|N
+H01CB02|octreotide|N
+H01CB03|lanreotide|N
+H01CB04|vapreotide|N
+H01CB05|pasireotide|N
+H01CC01|ganirelix|N
+H01CC02|cetrorelix|N
+H01CC03|elagolix|N
+H01CC54|relugolix, estradiol and norethisterone|N
+H02AA01|aldosterone|N
+H02AA02|fludrocortisone|N
+H02AA03|desoxycortone|N
+H02AB01|betamethasone|N
+H02AB02|dexamethasone|N
+H02AB03|fluocortolone|N
+H02AB04|methylprednisolone|N
+H02AB05|paramethasone|N
+H02AB06|prednisolone|N
+H02AB07|prednisone|N
+H02AB08|triamcinolone|N
+H02AB09|hydrocortisone|N
+H02AB10|cortisone|N
+H02AB11|prednylidene|N
+H02AB12|rimexolone|N
+H02AB13|deflazacort|N
+H02AB14|cloprednol|N
+H02AB15|meprednisone|N
+H02AB17|cortivazol|N
+H02BX01|methylprednisolone|Y
+H02CA01|trilostane|N
+H02CA02|osilodrostat|N
+H02CA03|ketoconazole|N
+H03AA01|levothyroxine sodium|N
+H03AA02|liothyronine sodium|N
+H03AA03|combinations of levothyroxine and liothyronine|N
+H03AA04|tiratricol|N
+H03AA05|thyroid gland preparations|N
+H03BA01|methylthiouracil|N
+H03BA02|propylthiouracil|N
+H03BA03|benzylthiouracil|N
+H03BB01|carbimazole|N
+H03BB02|thiamazole|N
+H03BB52|thiamazole|Y
+H03BC01|potassium perchlorate|N
+H03BX01|diiodotyrosine|N
+H03BX02|dibromotyrosine|N
+H04AA01|glucagon|N
+H05AA01|parathyroid gland extract|N
+H05AA02|teriparatide|N
+H05AA03|parathyroid hormone|N
+H05AA04|abaloparatide|N
+H05BA01|calcitonin (salmon synthetic)|N
+H05BA02|calcitonin (pork natural)|N
+H05BA03|calcitonin (human synthetic)|N
+H05BA04|elcatonin|N
+H05BX01|cinacalcet|N
+H05BX02|paricalcitol|N
+H05BX03|doxercalciferol|N
+H05BX04|etelcalcetide|N
+H05BX05|calcifediol|N
+J01AA01|demeclocycline|N
+J01AA02|doxycycline|N
+J01AA03|chlortetracycline|N
+J01AA04|lymecycline|N
+J01AA05|metacycline|N
+J01AA06|oxytetracycline|N
+J01AA07|tetracycline|N
+J01AA08|minocycline|N
+J01AA09|rolitetracycline|N
+J01AA10|penimepicycline|N
+J01AA11|clomocycline|N
+J01AA12|tigecycline|N
+J01AA13|eravacycline|N
+J01AA14|sarecycline|N
+J01AA15|omadacycline|N
+J01AA20|combinations of tetracyclines|N
+J01AA56|oxytetracycline|Y
+J01BA01|chloramphenicol|N
+J01BA02|thiamphenicol|N
+J01BA52|thiamphenicol|Y
+J01CA01|ampicillin|N
+J01CA02|pivampicillin|N
+J01CA03|carbenicillin|N
+J01CA04|amoxicillin|N
+J01CA05|carindacillin|N
+J01CA06|bacampicillin|N
+J01CA07|epicillin|N
+J01CA08|pivmecillinam|N
+J01CA09|azlocillin|N
+J01CA10|mezlocillin|N
+J01CA11|mecillinam|N
+J01CA12|piperacillin|N
+J01CA13|ticarcillin|N
+J01CA14|metampicillin|N
+J01CA15|talampicillin|N
+J01CA16|sulbenicillin|N
+J01CA17|temocillin|N
+J01CA18|hetacillin|N
+J01CA19|aspoxicillin|N
+J01CA20|combinations|N
+J01CA51|ampicillin|Y
+J01CE01|benzylpenicillin|N
+J01CE02|phenoxymethylpenicillin|N
+J01CE03|propicillin|N
+J01CE04|azidocillin|N
+J01CE05|pheneticillin|N
+J01CE06|penamecillin|N
+J01CE07|clometocillin|N
+J01CE08|benzathine benzylpenicillin|N
+J01CE09|procaine benzylpenicillin|N
+J01CE10|benzathine phenoxymethylpenicillin|N
+J01CE30|combinations|N
+J01CF01|dicloxacillin|N
+J01CF02|cloxacillin|N
+J01CF03|meticillin|N
+J01CF04|oxacillin|N
+J01CF05|flucloxacillin|N
+J01CF06|nafcillin|N
+J01CG01|sulbactam|N
+J01CG02|tazobactam|N
+J01CR01|ampicillin and beta-lactamase inhibitor|N
+J01CR02|amoxicillin and beta-lactamase inhibitor|N
+J01CR03|ticarcillin and beta-lactamase inhibitor|N
+J01CR04|sultamicillin|N
+J01CR05|piperacillin and beta-lactamase inhibitor|N
+J01CR50|combinations of penicillins|N
+J01DB01|cefalexin|N
+J01DB02|cefaloridine|N
+J01DB03|cefalotin|N
+J01DB04|cefazolin|N
+J01DB05|cefadroxil|N
+J01DB06|cefazedone|N
+J01DB07|cefatrizine|N
+J01DB08|cefapirin|N
+J01DB09|cefradine|N
+J01DB10|cefacetrile|N
+J01DB11|cefroxadine|N
+J01DB12|ceftezole|N
+J01DC01|cefoxitin|N
+J01DC02|cefuroxime|N
+J01DC03|cefamandole|N
+J01DC04|cefaclor|N
+J01DC05|cefotetan|N
+J01DC06|cefonicid|N
+J01DC07|cefotiam|N
+J01DC08|loracarbef|N
+J01DC09|cefmetazole|N
+J01DC10|cefprozil|N
+J01DC11|ceforanide|N
+J01DC12|cefminox|N
+J01DC13|cefbuperazone|N
+J01DC14|flomoxef|N
+J01DD01|cefotaxime|N
+J01DD02|ceftazidime|N
+J01DD03|cefsulodin|N
+J01DD04|ceftriaxone|N
+J01DD05|cefmenoxime|N
+J01DD06|latamoxef|N
+J01DD07|ceftizoxime|N
+J01DD08|cefixime|N
+J01DD09|cefodizime|N
+J01DD10|cefetamet|N
+J01DD11|cefpiramide|N
+J01DD12|cefoperazone|N
+J01DD13|cefpodoxime|N
+J01DD14|ceftibuten|N
+J01DD15|cefdinir|N
+J01DD16|cefditoren|N
+J01DD17|cefcapene|N
+J01DD18|cefteram|N
+J01DD51|cefotaxime and beta-lactamase inhibitor|N
+J01DD52|ceftazidime and beta-lactamase inhibitor|N
+J01DD54|ceftriaxone|Y
+J01DD62|cefoperazone and beta-lactamase inhibitor|N
+J01DD63|ceftriaxone and beta-lactamase inhibitor|N
+J01DD64|cefpodoxime and beta-lactamase inhibitor|N
+J01DE01|cefepime|N
+J01DE02|cefpirome|N
+J01DE03|cefozopran|N
+J01DF01|aztreonam|N
+J01DF02|carumonam|N
+J01DH02|meropenem|N
+J01DH03|ertapenem|N
+J01DH04|doripenem|N
+J01DH05|biapenem|N
+J01DH06|tebipenem pivoxil|N
+J01DH51|imipenem and cilastatin|N
+J01DH52|meropenem and vaborbactam|N
+J01DH55|panipenem and betamipron|N
+J01DH56|imipenem, cilastatin and relebactam|N
+J01DI01|ceftobiprole medocaril|N
+J01DI02|ceftaroline fosamil|N
+J01DI03|faropenem|N
+J01DI04|cefiderocol|N
+J01DI54|ceftolozane and beta-lactamase inhibitor|N
+J01EA01|trimethoprim|N
+J01EA02|brodimoprim|N
+J01EA03|iclaprim|N
+J01EB01|sulfaisodimidine|N
+J01EB02|sulfamethizole|N
+J01EB03|sulfadimidine|N
+J01EB04|sulfapyridine|N
+J01EB05|sulfafurazole|N
+J01EB06|sulfanilamide|N
+J01EB07|sulfathiazole|N
+J01EB08|sulfathiourea|N
+J01EB20|combinations|N
+J01EC01|sulfamethoxazole|N
+J01EC02|sulfadiazine|N
+J01EC03|sulfamoxole|N
+J01EC20|combinations|N
+J01ED01|sulfadimethoxine|N
+J01ED02|sulfalene|N
+J01ED03|sulfametomidine|N
+J01ED04|sulfametoxydiazine|N
+J01ED05|sulfamethoxypyridazine|N
+J01ED06|sulfaperin|N
+J01ED07|sulfamerazine|N
+J01ED08|sulfaphenazole|N
+J01ED09|sulfamazone|N
+J01ED20|combinations|N
+J01EE01|sulfamethoxazole and trimethoprim|N
+J01EE02|sulfadiazine and trimethoprim|N
+J01EE03|sulfametrole and trimethoprim|N
+J01EE04|sulfamoxole and trimethoprim|N
+J01EE05|sulfadimidine and trimethoprim|N
+J01EE06|sulfadiazine and tetroxoprim|N
+J01EE07|sulfamerazine and trimethoprim|N
+J01FA01|erythromycin|N
+J01FA02|spiramycin|N
+J01FA03|midecamycin|N
+J01FA05|oleandomycin|N
+J01FA06|roxithromycin|N
+J01FA07|josamycin|N
+J01FA08|troleandomycin|N
+J01FA09|clarithromycin|N
+J01FA10|azithromycin|N
+J01FA11|miocamycin|N
+J01FA12|rokitamycin|N
+J01FA13|dirithromycin|N
+J01FA14|flurithromycin|N
+J01FA15|telithromycin|N
+J01FA16|solithromycin|N
+J01FF01|clindamycin|N
+J01FF02|lincomycin|N
+J01FG01|pristinamycin|N
+J01FG02|quinupristin/dalfopristin|N
+J01GA01|streptomycin|N
+J01GA02|streptoduocin|N
+J01GB01|tobramycin|N
+J01GB03|gentamicin|N
+J01GB04|kanamycin|N
+J01GB05|neomycin|N
+J01GB06|amikacin|N
+J01GB07|netilmicin|N
+J01GB08|sisomicin|N
+J01GB09|dibekacin|N
+J01GB10|ribostamycin|N
+J01GB11|isepamicin|N
+J01GB12|arbekacin|N
+J01GB13|bekanamycin|N
+J01GB14|plazomicin|N
+J01MA01|ofloxacin|N
+J01MA02|ciprofloxacin|N
+J01MA03|pefloxacin|N
+J01MA04|enoxacin|N
+J01MA05|temafloxacin|N
+J01MA06|norfloxacin|N
+J01MA07|lomefloxacin|N
+J01MA08|fleroxacin|N
+J01MA09|sparfloxacin|N
+J01MA10|rufloxacin|N
+J01MA11|grepafloxacin|N
+J01MA12|levofloxacin|N
+J01MA13|trovafloxacin|N
+J01MA14|moxifloxacin|N
+J01MA15|gemifloxacin|N
+J01MA16|gatifloxacin|N
+J01MA17|prulifloxacin|N
+J01MA18|pazufloxacin|N
+J01MA19|garenoxacin|N
+J01MA21|sitafloxacin|N
+J01MA22|tosufloxacin|N
+J01MA23|delafloxacin|N
+J01MA24|levonadifloxacin|N
+J01MA25|lascufloxacin|N
+J01MB01|rosoxacin|N
+J01MB02|nalidixic acid|N
+J01MB03|piromidic acid|N
+J01MB04|pipemidic acid|N
+J01MB05|oxolinic acid|N
+J01MB06|cinoxacin|N
+J01MB07|flumequine|N
+J01MB08|nemonoxacin|N
+J01RA01|penicillins|Y
+J01RA02|sulfonamides|Y
+J01RA03|cefuroxime and metronidazole|N
+J01RA04|spiramycin and metronidazole|N
+J01RA05|levofloxacin and ornidazole|N
+J01RA06|cefepime and amikacin|N
+J01RA07|azithromycin, fluconazole and secnidazole|N
+J01RA08|tetracycline and oleandomycin|N
+J01RA09|ofloxacin and ornidazole|N
+J01RA10|ciprofloxacin and metronidazole|N
+J01RA11|ciprofloxacin and tinidazole|N
+J01RA12|ciprofloxacin and ornidazole|N
+J01RA13|norfloxacin and tinidazole|N
+J01XA01|vancomycin|N
+J01XA02|teicoplanin|N
+J01XA03|telavancin|N
+J01XA04|dalbavancin|N
+J01XA05|oritavancin|N
+J01XB01|colistin|N
+J01XB02|polymyxin B|N
+J01XC01|fusidic acid|N
+J01XD01|metronidazole|N
+J01XD02|tinidazole|N
+J01XD03|ornidazole|N
+J01XE01|nitrofurantoin|N
+J01XE02|nifurtoinol|N
+J01XE03|furazidin|N
+J01XE51|nitrofurantoin|Y
+J01XX01|fosfomycin|N
+J01XX02|xibornol|N
+J01XX03|clofoctol|N
+J01XX04|spectinomycin|N
+J01XX05|methenamine|N
+J01XX06|mandelic acid|N
+J01XX07|nitroxoline|N
+J01XX08|linezolid|N
+J01XX09|daptomycin|N
+J01XX10|bacitracin|N
+J01XX11|tedizolid|N
+J01XX12|lefamulin|N
+J02AA01|amphotericin B|N
+J02AA02|hachimycin|N
+J02AB01|miconazole|N
+J02AB02|ketoconazole|N
+J02AC01|fluconazole|N
+J02AC02|itraconazole|N
+J02AC03|voriconazole|N
+J02AC04|posaconazole|N
+J02AC05|isavuconazole|N
+J02AX01|flucytosine|N
+J02AX04|caspofungin|N
+J02AX05|micafungin|N
+J02AX06|anidulafungin|N
+J04AA01|4-aminosalicylic acid|N
+J04AA02|sodium aminosalicylate|N
+J04AA03|calcium aminosalicylate|N
+J04AB01|cycloserine|N
+J04AB02|rifampicin|N
+J04AB03|rifamycin|N
+J04AB04|rifabutin|N
+J04AB05|rifapentine|N
+J04AB06|enviomycin|N
+J04AB30|capreomycin|N
+J04AC01|isoniazid|N
+J04AC51|isoniazid|Y
+J04AD01|protionamide|N
+J04AD02|tiocarlide|N
+J04AD03|ethionamide|N
+J04AK01|pyrazinamide|N
+J04AK02|ethambutol|N
+J04AK03|terizidone|N
+J04AK04|morinamide|N
+J04AK05|bedaquiline|N
+J04AK06|delamanid|N
+J04AK07|thioacetazone|N
+J04AK08|pretomanid|N
+J04AM01|streptomycin and isoniazid|N
+J04AM02|rifampicin and isoniazid|N
+J04AM03|ethambutol and isoniazid|N
+J04AM04|thioacetazone and isoniazid|N
+J04AM05|rifampicin, pyrazinamide and isoniazid|N
+J04AM06|rifampicin, pyrazinamide, ethambutol and isoniazid|N
+J04AM07|rifampicin, ethambutol and isoniazid|N
+J04AM08|isoniazid, sulfamethoxazole, trimethoprim and pyridoxine|N
+J04BA01|clofazimine|N
+J04BA02|dapsone|N
+J04BA03|aldesulfone sodium|N
+J05AA01|metisazone|N
+J05AB01|aciclovir|N
+J05AB02|idoxuridine|N
+J05AB03|vidarabine|N
+J05AB06|ganciclovir|N
+J05AB09|famciclovir|N
+J05AB11|valaciclovir|N
+J05AB12|cidofovir|N
+J05AB13|penciclovir|N
+J05AB14|valganciclovir|N
+J05AB15|brivudine|N
+J05AC02|rimantadine|N
+J05AC03|tromantadine|N
+J05AD01|foscarnet|N
+J05AD02|fosfonet|N
+J05AE01|saquinavir|N
+J05AE02|indinavir|N
+J05AE03|ritonavir|N
+J05AE04|nelfinavir|N
+J05AE05|amprenavir|N
+J05AE07|fosamprenavir|N
+J05AE08|atazanavir|N
+J05AE09|tipranavir|N
+J05AE10|darunavir|N
+J05AF01|zidovudine|N
+J05AF02|didanosine|N
+J05AF03|zalcitabine|N
+J05AF04|stavudine|N
+J05AF05|lamivudine|N
+J05AF06|abacavir|N
+J05AF07|tenofovir disoproxil|N
+J05AF08|adefovir dipivoxil|N
+J05AF09|emtricitabine|N
+J05AF10|entecavir|N
+J05AF11|telbivudine|N
+J05AF12|clevudine|N
+J05AF13|tenofovir alafenamide|N
+J05AG01|nevirapine|N
+J05AG02|delavirdine|N
+J05AG03|efavirenz|N
+J05AG04|etravirine|N
+J05AG05|rilpivirine|N
+J05AG06|doravirine|N
+J05AH01|zanamivir|N
+J05AH02|oseltamivir|N
+J05AH03|peramivir|N
+J05AH04|laninamivir|N
+J05AJ01|raltegravir|N
+J05AJ02|elvitegravir|N
+J05AJ03|dolutegravir|N
+J05AJ04|cabotegravir|N
+J05AP01|ribavirin|N
+J05AP02|telaprevir|N
+J05AP03|boceprevir|N
+J05AP04|faldaprevir|N
+J05AP05|simeprevir|N
+J05AP06|asunaprevir|N
+J05AP07|daclatasvir|N
+J05AP08|sofosbuvir|N
+J05AP09|dasabuvir|N
+J05AP10|elbasvir|N
+J05AP11|grazoprevir|N
+J05AP51|sofosbuvir and ledipasvir|N
+J05AP52|dasabuvir, ombitasvir, paritaprevir and ritonavir|N
+J05AP53|ombitasvir, paritaprevir and ritonavir|N
+J05AP54|elbasvir and grazoprevir|N
+J05AP55|sofosbuvir and velpatasvir|N
+J05AP56|sofosbuvir, velpatasvir and voxilaprevir|N
+J05AP57|glecaprevir and pibrentasvir|N
+J05AP58|daclatasvir, asunaprevir and beclabuvir|N
+J05AR01|zidovudine and lamivudine|N
+J05AR02|lamivudine and abacavir|N
+J05AR03|tenofovir disoproxil and emtricitabine|N
+J05AR04|zidovudine, lamivudine and abacavir|N
+J05AR05|zidovudine, lamivudine and nevirapine|N
+J05AR06|emtricitabine, tenofovir disoproxil and efavirenz|N
+J05AR07|stavudine, lamivudine and nevirapine|N
+J05AR08|emtricitabine, tenofovir disoproxil and rilpivirine|N
+J05AR09|emtricitabine, tenofovir disoproxil, elvitegravir and cobicistat|N
+J05AR10|lopinavir and ritonavir|N
+J05AR11|lamivudine, tenofovir disoproxil and efavirenz|N
+J05AR12|lamivudine and tenofovir disoproxil|N
+J05AR13|lamivudine, abacavir and dolutegravir|N
+J05AR14|darunavir and cobicistat|N
+J05AR15|atazanavir and cobicistat|N
+J05AR16|lamivudine and raltegravir|N
+J05AR17|emtricitabine and tenofovir alafenamide|N
+J05AR18|emtricitabine, tenofovir alafenamide, elvitegravir and cobicistat|N
+J05AR19|emtricitabine, tenofovir alafenamide and rilpivirine|N
+J05AR20|emtricitabine, tenofovir alafenamide and bictegravir|N
+J05AR21|dolutegravir and rilpivirine|N
+J05AR22|emtricitabine, tenofovir alafenamide, darunavir and cobicistat|N
+J05AR23|atazanavir and ritonavir|N
+J05AR24|lamivudine, tenofovir disoproxil and doravirine|N
+J05AR25|lamivudine and dolutegravir|N
+J05AR26|darunavir and ritonavir|N
+J05AR27|lamivudine, tenofovir disoproxil and dolutegravir|N
+J05AX01|moroxydine|N
+J05AX02|lysozyme|N
+J05AX05|inosine pranobex|N
+J05AX06|pleconaril|N
+J05AX07|enfuvirtide|N
+J05AX09|maraviroc|N
+J05AX10|maribavir|N
+J05AX13|umifenovir|N
+J05AX17|enisamium iodide|N
+J05AX18|letermovir|N
+J05AX19|tilorone|N
+J05AX21|pentanedioic acid imidazolyl ethanamide|N
+J05AX23|ibalizumab|N
+J05AX24|tecovirimat|N
+J05AX25|baloxavir marboxil|N
+J05AX26|amenamevir|N
+J05AX27|favipiravir|N
+J05AX28|bulevirtide|N
+J05AX29|fostemsavir|N
+J06AA01|diphtheria antitoxin|N
+J06AA02|tetanus antitoxin|N
+J06AA03|snake venom antiserum|N
+J06AA04|botulinum antitoxin|N
+J06AA05|gas-gangrene sera|N
+J06AA06|rabies serum|N
+J06BA01|immunoglobulins, normal human, for extravascular adm.|N
+J06BA02|immunoglobulins, normal human, for intravascular adm.|N
+J06BB01|anti-D (rh) immunoglobulin|N
+J06BB02|tetanus immunoglobulin|N
+J06BB03|varicella/zoster immunoglobulin|N
+J06BB04|hepatitis B immunoglobulin|N
+J06BB05|rabies immunoglobulin|N
+J06BB06|rubella immunoglobulin|N
+J06BB07|vaccinia immunoglobulin|N
+J06BB08|staphylococcus immunoglobulin|N
+J06BB09|cytomegalovirus immunoglobulin|N
+J06BB10|diphtheria immunoglobulin|N
+J06BB11|hepatitis A immunoglobulin|N
+J06BB12|encephalitis, tick borne immunoglobulin|N
+J06BB13|pertussis immunoglobulin|N
+J06BB14|measles immunoglobulin|N
+J06BB15|mumps immunoglobulin|N
+J06BB16|palivizumab|N
+J06BB17|motavizumab|N
+J06BB18|raxibacumab|N
+J06BB19|anthrax immunoglobulin|N
+J06BB21|bezlotoxumab|N
+J06BB22|obiltoxaximab|N
+J06BB30|combinations|N
+J06BC01|nebacumab|N
+J07AC01|anthrax antigen|N
+J07AD01|brucella antigen|N
+J07AE01|cholera, inactivated, whole cell|N
+J07AE02|cholera, live attenuated|N
+J07AE51|cholera|Y
+J07AF01|diphtheria toxoid|N
+J07AG01|haemophilus influenzae B, purified antigen conjugated|N
+J07AG51|haemophilus influenzae B|Y
+J07AG52|haemophilus influenzae B|Y
+J07AG53|haemophilus influenzae B|Y
+J07AH01|meningococcus A, purified polysaccharides antigen|N
+J07AH02|other meningococcal monovalent purified polysaccharides antigen|N
+J07AH03|meningococcus A,C, bivalent purified polysaccharides antigen|N
+J07AH04|meningococcus A,C,Y,W-135, tetravalent purified polysaccharides antigen|N
+J07AH05|other meningococcal polyvalent purified polysaccharides antigen|N
+J07AH06|meningococcus B, outer membrane vesicle vaccine|N
+J07AH07|meningococcus C, purified polysaccharides antigen conjugated|N
+J07AH08|meningococcus A,C,Y,W-135, tetravalent purified polysaccharides antigen conjugated|N
+J07AH09|meningococcus B, multicomponent vaccine|N
+J07AH10|meningococcus A, purified polysaccharides antigen conjugated|N
+J07AJ01|pertussis, inactivated, whole cell|N
+J07AJ02|pertussis, purified antigen|N
+J07AJ51|pertussis, inactivated, whole cell|Y
+J07AJ52|pertussis, purified antigen|Y
+J07AK01|plague, inactivated, whole cell|N
+J07AL01|pneumococcus, purified polysaccharides antigen|N
+J07AL02|pneumococcus, purified polysaccharides antigen conjugated|N
+J07AL52|pneumococcus purified polysaccharides antigen and haemophilus influenzae, conjugated|N
+J07AM01|tetanus toxoid|N
+J07AM51|tetanus toxoid|Y
+J07AM52|tetanus toxoid|Y
+J07AN01|tuberculosis, live attenuated|N
+J07AP01|typhoid, oral, live attenuated|N
+J07AP02|typhoid, inactivated, whole cell|N
+J07AP03|typhoid, purified polysaccharide antigen|N
+J07AP10|typhoid|Y
+J07AR01|typhus exanthematicus, inactivated, whole cell|N
+J07BA01|encephalitis, tick borne, inactivated, whole virus|N
+J07BA02|encephalitis, Japanese, inactivated, whole virus|N
+J07BA03|encephalitis, Japanese, live attenuated|N
+J07BB01|influenza, inactivated, whole virus|N
+J07BB02|influenza, inactivated, split virus or surface antigen|N
+J07BB03|influenza, live attenuated|N
+J07BB04|influenza, virus like particles|N
+J07BC01|hepatitis B, purified antigen|N
+J07BC02|hepatitis A, inactivated, whole virus|N
+J07BC20|combinations|N
+J07BD01|measles, live attenuated|N
+J07BD51|measles|Y
+J07BD52|measles|Y
+J07BD53|measles|Y
+J07BD54|measles|Y
+J07BE01|mumps, live attenuated|N
+J07BF01|poliomyelitis oral, monovalent, live attenuated|N
+J07BF02|poliomyelitis oral, trivalent, live attenuated|N
+J07BF03|poliomyelitis, trivalent, inactivated, whole virus|N
+J07BF04|poliomyelitis oral, bivalent, live attenuated|N
+J07BG01|rabies, inactivated, whole virus|N
+J07BH01|rota virus, live attenuated|N
+J07BH02|rota virus, pentavalent, live, reassorted|N
+J07BJ01|rubella, live attenuated|N
+J07BJ51|rubella|Y
+J07BK01|varicella, live attenuated|N
+J07BK02|zoster, live attenuated|N
+J07BK03|zoster, purified antigen|N
+J07BL01|yellow fever, live attenuated|N
+J07BM01|papillomavirus (human types 6, 11, 16, 18)|N
+J07BM02|papillomavirus (human types 16, 18)|N
+J07BM03|papillomavirus (human types 6, 11, 16, 18, 31, 33, 45, 52, 58)|N
+J07BX01|smallpox vaccines|N
+J07BX02|ebola vaccines|N
+J07CA01|diphtheria-poliomyelitis-tetanus|N
+J07CA02|diphtheria-pertussis-poliomyelitis-tetanus|N
+J07CA03|diphtheria-rubella-tetanus|N
+J07CA04|haemophilus influenzae B and poliomyelitis|N
+J07CA05|diphtheria-hepatitis B-pertussis-tetanus|N
+J07CA06|diphtheria-haemophilus influenzae B-pertussis-poliomyelitis-tetanus|N
+J07CA07|diphtheria-hepatitis B-tetanus|N
+J07CA08|haemophilus influenzae B and hepatitis B|N
+J07CA09|diphtheria-haemophilus influenzae B-pertussis-poliomyelitis-tetanus-hepatitis B|N
+J07CA10|typhoid-hepatitis A|N
+J07CA11|diphtheria-haemophilus influenzae B-pertussis-tetanus-hepatitis B|N
+J07CA12|diphtheria-pertussis-poliomyelitis-tetanus-hepatitis B|N
+J07CA13|diphtheria-haemophilus influenzae B-pertussis-tetanus-hepatitis B-meningococcus A + C|N
+L01AA01|cyclophosphamide|N
+L01AA02|chlorambucil|N
+L01AA03|melphalan|N
+L01AA05|chlormethine|N
+L01AA06|ifosfamide|N
+L01AA07|trofosfamide|N
+L01AA08|prednimustine|N
+L01AA09|bendamustine|N
+L01AB01|busulfan|N
+L01AB02|treosulfan|N
+L01AB03|mannosulfan|N
+L01AC01|thiotepa|N
+L01AC02|triaziquone|N
+L01AC03|carboquone|N
+L01AD01|carmustine|N
+L01AD02|lomustine|N
+L01AD03|semustine|N
+L01AD04|streptozocin|N
+L01AD05|fotemustine|N
+L01AD06|nimustine|N
+L01AD07|ranimustine|N
+L01AD08|uramustine|N
+L01AG01|etoglucid|N
+L01AX01|mitobronitol|N
+L01AX02|pipobroman|N
+L01AX03|temozolomide|N
+L01AX04|dacarbazine|N
+L01BA01|methotrexate|N
+L01BA03|raltitrexed|N
+L01BA04|pemetrexed|N
+L01BA05|pralatrexate|N
+L01BB02|mercaptopurine|N
+L01BB03|tioguanine|N
+L01BB04|cladribine|N
+L01BB05|fludarabine|N
+L01BB06|clofarabine|N
+L01BB07|nelarabine|N
+L01BC01|cytarabine|N
+L01BC02|fluorouracil|N
+L01BC03|tegafur|N
+L01BC04|carmofur|N
+L01BC05|gemcitabine|N
+L01BC06|capecitabine|N
+L01BC07|azacitidine|N
+L01BC08|decitabine|N
+L01BC09|floxuridine|N
+L01BC52|fluorouracil|Y
+L01BC53|tegafur|Y
+L01BC59|trifluridine|Y
+L01CA01|vinblastine|N
+L01CA02|vincristine|N
+L01CA03|vindesine|N
+L01CA04|vinorelbine|N
+L01CA05|vinflunine|N
+L01CA06|vintafolide|N
+L01CB01|etoposide|N
+L01CB02|teniposide|N
+L01CC01|demecolcine|N
+L01CD01|paclitaxel|N
+L01CD02|docetaxel|N
+L01CD03|paclitaxel poliglumex|N
+L01CD04|cabazitaxel|N
+L01CE01|topotecan|N
+L01CE02|irinotecan|N
+L01CE03|etirinotecan pegol|N
+L01CE04|belotecan|N
+L01CX01|trabectedin|N
+L01DA01|dactinomycin|N
+L01DB01|doxorubicin|N
+L01DB02|daunorubicin|N
+L01DB03|epirubicin|N
+L01DB04|aclarubicin|N
+L01DB05|zorubicin|N
+L01DB06|idarubicin|N
+L01DB07|mitoxantrone|N
+L01DB08|pirarubicin|N
+L01DB09|valrubicin|N
+L01DB10|amrubicin|N
+L01DB11|pixantrone|N
+L01DC01|bleomycin|N
+L01DC02|plicamycin|N
+L01DC03|mitomycin|N
+L01DC04|ixabepilone|N
+L01EA01|imatinib|N
+L01EA02|dasatinib|N
+L01EA03|nilotinib|N
+L01EA04|bosutinib|N
+L01EA05|ponatinib|N
+L01EB01|gefitinib|N
+L01EB02|erlotinib|N
+L01EB03|afatinib|N
+L01EB04|osimertinib|N
+L01EB05|rociletinib|N
+L01EB06|olmutinib|N
+L01EB07|dacomitinib|N
+L01EB08|icotinib|N
+L01EC01|vemurafenib|N
+L01EC02|dabrafenib|N
+L01EC03|encorafenib|N
+L01ED01|crizotinib|N
+L01ED02|ceritinib|N
+L01ED03|alectinib|N
+L01ED04|brigatinib|N
+L01ED05|lorlatinib|N
+L01EE01|trametinib|N
+L01EE02|cobimetinib|N
+L01EE03|binimetinib|N
+L01EE04|selumetinib|N
+L01EF01|palbociclib|N
+L01EF02|ribociclib|N
+L01EF03|abemaciclib|N
+L01EG01|temsirolimus|N
+L01EG02|everolimus|N
+L01EG03|ridaforolimus|N
+L01EH01|lapatinib|N
+L01EH02|neratinib|N
+L01EH03|tucatinib|N
+L01EJ01|ruxolitinib|N
+L01EJ02|fedratinib|N
+L01EK01|axitinib|N
+L01EK02|cediranib|N
+L01EK03|tivozanib|N
+L01EL01|ibrutinib|N
+L01EL02|acalabrutinib|N
+L01EL03|zanubrutinib|N
+L01EM01|idelalisib|N
+L01EM02|copanlisib|N
+L01EM03|alpelisib|N
+L01EM04|duvelisib|N
+L01EX01|sunitinib|N
+L01EX02|sorafenib|N
+L01EX03|pazopanib|N
+L01EX04|vandetanib|N
+L01EX05|regorafenib|N
+L01EX06|masitinib|N
+L01EX07|cabozantinib|N
+L01EX08|lenvatinib|N
+L01EX09|nintedanib|N
+L01EX10|midostaurin|N
+L01EX11|quizartinib|N
+L01EX12|larotrectinib|N
+L01EX13|gilteritinib|N
+L01EX14|entrectinib|N
+L01EX15|pexidartinib|N
+L01EX16|erdafitinib|N
+L01EX17|capmatinib|N
+L01EX18|avapritinib|N
+L01EX19|ripretinib|N
+L01EX20|pemigatinib|N
+L01EX21|tepotinib|N
+L01XA01|cisplatin|N
+L01XA02|carboplatin|N
+L01XA03|oxaliplatin|N
+L01XA04|satraplatin|N
+L01XA05|polyplatillen|N
+L01XB01|procarbazine|N
+L01XC01|edrecolomab|N
+L01XC02|rituximab|N
+L01XC03|trastuzumab|N
+L01XC05|gemtuzumab ozogamicin|N
+L01XC06|cetuximab|N
+L01XC07|bevacizumab|N
+L01XC08|panitumumab|N
+L01XC09|catumaxomab|N
+L01XC10|ofatumumab|N
+L01XC11|ipilimumab|N
+L01XC12|brentuximab vedotin|N
+L01XC13|pertuzumab|N
+L01XC14|trastuzumab emtansine|N
+L01XC15|obinutuzumab|N
+L01XC16|dinutuximab beta|N
+L01XC17|nivolumab|N
+L01XC18|pembrolizumab|N
+L01XC19|blinatumomab|N
+L01XC21|ramucirumab|N
+L01XC22|necitumumab|N
+L01XC23|elotuzumab|N
+L01XC24|daratumumab|N
+L01XC25|mogamulizumab|N
+L01XC26|inotuzumab ozogamicin|N
+L01XC27|olaratumab|N
+L01XC28|durvalumab|N
+L01XC29|bermekimab|N
+L01XC31|avelumab|N
+L01XC32|atezolizumab|N
+L01XC33|cemiplimab|N
+L01XC34|moxetumomab pasudotox|N
+L01XC35|tafasitamab|N
+L01XC36|enfortumab vedotin|N
+L01XC37|polatuzumab vedotin|N
+L01XC38|isatuximab|N
+L01XC39|belantamab mafodotin|N
+L01XC40|dostarlimab|N
+L01XC41|trastuzumab deruxtecan|N
+L01XD01|porfimer sodium|N
+L01XD03|methyl aminolevulinate|N
+L01XD04|aminolevulinic acid|N
+L01XD05|temoporfin|N
+L01XD06|efaproxiral|N
+L01XD07|padeliporfin|N
+L01XF01|tretinoin|N
+L01XF02|alitretinoin|N
+L01XF03|bexarotene|N
+L01XG01|bortezomib|N
+L01XG02|carfilzomib|N
+L01XG03|ixazomib|N
+L01XH01|vorinostat|N
+L01XH02|romidepsin|N
+L01XH03|panobinostat|N
+L01XH04|belinostat|N
+L01XH05|entinostat|N
+L01XJ01|vismodegib|N
+L01XJ02|sonidegib|N
+L01XJ03|glasdegib|N
+L01XK01|olaparib|N
+L01XK02|niraparib|N
+L01XK03|rucaparib|N
+L01XK04|talazoparib|N
+L01XK05|veliparib|N
+L01XX01|amsacrine|N
+L01XX02|asparaginase|N
+L01XX03|altretamine|N
+L01XX05|hydroxycarbamide|N
+L01XX07|lonidamine|N
+L01XX08|pentostatin|N
+L01XX10|masoprocol|N
+L01XX11|estramustine|N
+L01XX16|mitoguazone|N
+L01XX18|tiazofurine|N
+L01XX23|mitotane|N
+L01XX24|pegaspargase|N
+L01XX27|arsenic trioxide|N
+L01XX29|denileukin diftitox|N
+L01XX33|celecoxib|N
+L01XX35|anagrelide|N
+L01XX36|oblimersen|N
+L01XX37|sitimagene ceradenovec|N
+L01XX40|omacetaxine mepesuccinate|N
+L01XX41|eribulin|N
+L01XX44|aflibercept|N
+L01XX51|talimogene laherparepvec|N
+L01XX52|venetoclax|N
+L01XX53|vosaroxin|N
+L01XX57|plitidepsin|N
+L01XX58|epacadostat|N
+L01XX59|enasidenib|N
+L01XX62|ivosidenib|N
+L01XX66|selinexor|N
+L01XX67|tagraxofusp|N
+L01XX69|lurbinectedin|N
+L01XX70|axicabtagene ciloleucel|N
+L01XX71|tisagenlecleucel|N
+L01XY01|cytarabine and daunorubicin|N
+L01XY02|pertuzumab and trastuzumab|N
+L02AA01|diethylstilbestrol|N
+L02AA02|polyestradiol phosphate|N
+L02AA03|ethinylestradiol|N
+L02AA04|fosfestrol|N
+L02AB01|megestrol|N
+L02AB02|medroxyprogesterone|N
+L02AB03|gestonorone|N
+L02AE01|buserelin|N
+L02AE02|leuprorelin|N
+L02AE03|goserelin|N
+L02AE04|triptorelin|N
+L02AE05|histrelin|N
+L02AE51|leuprorelin and bicalutamide|N
+L02BA01|tamoxifen|N
+L02BA02|toremifene|N
+L02BA03|fulvestrant|N
+L02BB01|flutamide|N
+L02BB02|nilutamide|N
+L02BB03|bicalutamide|N
+L02BB04|enzalutamide|N
+L02BB05|apalutamide|N
+L02BB06|darolutamide|N
+L02BG01|aminoglutethimide|N
+L02BG02|formestane|N
+L02BG03|anastrozole|N
+L02BG04|letrozole|N
+L02BG05|vorozole|N
+L02BG06|exemestane|N
+L02BX01|abarelix|N
+L02BX02|degarelix|N
+L02BX03|abiraterone|N
+L03AA02|filgrastim|N
+L03AA03|molgramostim|N
+L03AA09|sargramostim|N
+L03AA10|lenograstim|N
+L03AA12|ancestim|N
+L03AA13|pegfilgrastim|N
+L03AA14|lipegfilgrastim|N
+L03AA15|balugrastim|N
+L03AA16|empegfilgrastim|N
+L03AA17|pegteograstim|N
+L03AB01|interferon alfa natural|N
+L03AB02|interferon beta natural|N
+L03AB03|interferon gamma|N
+L03AB04|interferon alfa-2a|N
+L03AB05|interferon alfa-2b|N
+L03AB06|interferon alfa-n1|N
+L03AB07|interferon beta-1a|N
+L03AB08|interferon beta-1b|N
+L03AB09|interferon alfacon-1|N
+L03AB10|peginterferon alfa-2b|N
+L03AB11|peginterferon alfa-2a|N
+L03AB12|albinterferon alfa-2b|N
+L03AB13|peginterferon beta-1a|N
+L03AB14|cepeginterferon alfa-2b|N
+L03AB15|ropeginterferon alfa-2b|N
+L03AB60|peginterferon alfa-2b|Y
+L03AB61|peginterferon alfa-2a|Y
+L03AC01|aldesleukin|N
+L03AC02|oprelvekin|N
+L03AX01|lentinan|N
+L03AX02|roquinimex|N
+L03AX03|BCG vaccine|N
+L03AX04|pegademase|N
+L03AX05|pidotimod|N
+L03AX07|poly I:C|N
+L03AX08|poly ICLC|N
+L03AX09|thymopentin|N
+L03AX10|immunocyanin|N
+L03AX11|tasonermin|N
+L03AX12|melanoma vaccine|N
+L03AX13|glatiramer acetate|N
+L03AX14|histamine dihydrochloride|N
+L03AX15|mifamurtide|N
+L03AX16|plerixafor|N
+L03AX17|sipuleucel-T|N
+L03AX18|cridanimod|N
+L03AX19|dasiprotimut-T|N
+L03AX21|elapegademase|N
+L04AA02|muromonab-CD3|N
+L04AA03|antilymphocyte immunoglobulin (horse)|N
+L04AA04|antithymocyte immunoglobulin (rabbit)|N
+L04AA06|mycophenolic acid|N
+L04AA10|sirolimus|N
+L04AA13|leflunomide|N
+L04AA15|alefacept|N
+L04AA18|everolimus|N
+L04AA19|gusperimus|N
+L04AA21|efalizumab|N
+L04AA22|abetimus|N
+L04AA23|natalizumab|N
+L04AA24|abatacept|N
+L04AA25|eculizumab|N
+L04AA26|belimumab|N
+L04AA27|fingolimod|N
+L04AA28|belatacept|N
+L04AA29|tofacitinib|N
+L04AA31|teriflunomide|N
+L04AA32|apremilast|N
+L04AA33|vedolizumab|N
+L04AA34|alemtuzumab|N
+L04AA35|begelomab|N
+L04AA36|ocrelizumab|N
+L04AA37|baricitinib|N
+L04AA38|ozanimod|N
+L04AA39|emapalumab|N
+L04AA40|cladribine|N
+L04AA41|imlifidase|N
+L04AA42|siponimod|N
+L04AA43|ravulizumab|N
+L04AA44|upadacitinib|N
+L04AA45|filgotinib|N
+L04AA46|itacitinib|N
+L04AA47|inebilizumab|N
+L04AB01|etanercept|N
+L04AB02|infliximab|N
+L04AB03|afelimomab|N
+L04AB04|adalimumab|N
+L04AB05|certolizumab pegol|N
+L04AB06|golimumab|N
+L04AB07|opinercept|N
+L04AC01|daclizumab|N
+L04AC02|basiliximab|N
+L04AC03|anakinra|N
+L04AC04|rilonacept|N
+L04AC05|ustekinumab|N
+L04AC07|tocilizumab|N
+L04AC08|canakinumab|N
+L04AC09|briakinumab|N
+L04AC10|secukinumab|N
+L04AC11|siltuximab|N
+L04AC12|brodalumab|N
+L04AC13|ixekizumab|N
+L04AC14|sarilumab|N
+L04AC15|sirukumab|N
+L04AC16|guselkumab|N
+L04AC17|tildrakizumab|N
+L04AC18|risankizumab|N
+L04AC19|satralizumab|N
+L04AD01|ciclosporin|N
+L04AD02|tacrolimus|N
+L04AD03|voclosporin|N
+L04AX01|azathioprine|N
+L04AX02|thalidomide|N
+L04AX03|methotrexate|N
+L04AX04|lenalidomide|N
+L04AX05|pirfenidone|N
+L04AX06|pomalidomide|N
+L04AX07|dimethyl fumarate|N
+L04AX08|darvadstrocel|N
+M01AA01|phenylbutazone|N
+M01AA02|mofebutazone|N
+M01AA03|oxyphenbutazone|N
+M01AA05|clofezone|N
+M01AA06|kebuzone|N
+M01AB01|indometacin|N
+M01AB02|sulindac|N
+M01AB03|tolmetin|N
+M01AB04|zomepirac|N
+M01AB05|diclofenac|N
+M01AB06|alclofenac|N
+M01AB07|bumadizone|N
+M01AB08|etodolac|N
+M01AB09|lonazolac|N
+M01AB10|fentiazac|N
+M01AB11|acemetacin|N
+M01AB12|difenpiramide|N
+M01AB13|oxametacin|N
+M01AB14|proglumetacin|N
+M01AB15|ketorolac|N
+M01AB16|aceclofenac|N
+M01AB17|bufexamac|N
+M01AB51|indometacin|Y
+M01AB55|diclofenac|Y
+M01AC01|piroxicam|N
+M01AC02|tenoxicam|N
+M01AC04|droxicam|N
+M01AC05|lornoxicam|N
+M01AC06|meloxicam|N
+M01AC56|meloxicam|Y
+M01AE01|ibuprofen|N
+M01AE02|naproxen|N
+M01AE03|ketoprofen|N
+M01AE04|fenoprofen|N
+M01AE05|fenbufen|N
+M01AE06|benoxaprofen|N
+M01AE07|suprofen|N
+M01AE08|pirprofen|N
+M01AE09|flurbiprofen|N
+M01AE10|indoprofen|N
+M01AE11|tiaprofenic acid|N
+M01AE12|oxaprozin|N
+M01AE13|ibuproxam|N
+M01AE14|dexibuprofen|N
+M01AE15|flunoxaprofen|N
+M01AE16|alminoprofen|N
+M01AE17|dexketoprofen|N
+M01AE18|naproxcinod|N
+M01AE51|ibuprofen|Y
+M01AE52|naproxen and esomeprazole|N
+M01AE53|ketoprofen|Y
+M01AE56|naproxen and misoprostol|N
+M01AG01|mefenamic acid|N
+M01AG02|tolfenamic acid|N
+M01AG03|flufenamic acid|N
+M01AG04|meclofenamic acid|N
+M01AH01|celecoxib|N
+M01AH02|rofecoxib|N
+M01AH03|valdecoxib|N
+M01AH04|parecoxib|N
+M01AH05|etoricoxib|N
+M01AH06|lumiracoxib|N
+M01AH07|polmacoxib|N
+M01AX01|nabumetone|N
+M01AX02|niflumic acid|N
+M01AX04|azapropazone|N
+M01AX05|glucosamine|N
+M01AX07|benzydamine|N
+M01AX12|glucosaminoglycan polysulfate|N
+M01AX13|proquazone|N
+M01AX14|orgotein|N
+M01AX17|nimesulide|N
+M01AX18|feprazone|N
+M01AX21|diacerein|N
+M01AX22|morniflumate|N
+M01AX23|tenidap|N
+M01AX24|oxaceprol|N
+M01AX25|chondroitin sulfate|N
+M01AX26|avocado and soyabean oil, unsaponifiables|N
+M01AX68|feprazone|Y
+M01BA01|phenylbutazone and corticosteroids|N
+M01BA02|dipyrocetyl and corticosteroids|N
+M01BA03|acetylsalicylic acid and corticosteroids|N
+M01CA03|oxycinchophen|N
+M01CB01|sodium aurothiomalate|N
+M01CB02|sodium aurotiosulfate|N
+M01CB03|auranofin|N
+M01CB04|aurothioglucose|N
+M01CB05|aurotioprol|N
+M01CC01|penicillamine|N
+M01CC02|bucillamine|N
+M02AA01|phenylbutazone|N
+M02AA02|mofebutazone|N
+M02AA03|clofezone|N
+M02AA04|oxyphenbutazone|N
+M02AA05|benzydamine|N
+M02AA06|etofenamate|N
+M02AA07|piroxicam|N
+M02AA08|felbinac|N
+M02AA09|bufexamac|N
+M02AA10|ketoprofen|N
+M02AA11|bendazac|N
+M02AA12|naproxen|N
+M02AA13|ibuprofen|N
+M02AA14|fentiazac|N
+M02AA15|diclofenac|N
+M02AA16|feprazone|N
+M02AA17|niflumic acid|N
+M02AA18|meclofenamic acid|N
+M02AA19|flurbiprofen|N
+M02AA21|tolmetin|N
+M02AA22|suxibuzone|N
+M02AA23|indometacin|N
+M02AA24|nifenazone|N
+M02AA25|aceclofenac|N
+M02AA26|nimesulide|N
+M02AA27|dexketoprofen|N
+M02AA28|piketoprofen|N
+M02AA29|esflurbiprofen|N
+M02AB01|capsaicin|N
+M02AB02|zucapsaicin|N
+M02AX02|tolazoline|N
+M02AX03|dimethyl sulfoxide|N
+M02AX05|idrocilamide|N
+M02AX06|tolperisone|N
+M02AX10|various|N
+M03AA01|alcuronium|N
+M03AA02|tubocurarine|N
+M03AA04|dimethyltubocurarine|N
+M03AB01|suxamethonium|N
+M03AC01|pancuronium|N
+M03AC02|gallamine|N
+M03AC03|vecuronium|N
+M03AC04|atracurium|N
+M03AC05|hexafluronium|N
+M03AC06|pipecuronium bromide|N
+M03AC07|doxacurium chloride|N
+M03AC08|fazadinium bromide|N
+M03AC09|rocuronium bromide|N
+M03AC10|mivacurium chloride|N
+M03AC11|cisatracurium|N
+M03AX01|botulinum toxin|N
+M03BA01|phenprobamate|N
+M03BA02|carisoprodol|N
+M03BA03|methocarbamol|N
+M03BA04|styramate|N
+M03BA05|febarbamate|N
+M03BA51|phenprobamate|Y
+M03BA52|carisoprodol|Y
+M03BA53|methocarbamol|Y
+M03BA71|phenprobamate|Y
+M03BA72|carisoprodol|Y
+M03BA73|methocarbamol|Y
+M03BB02|chlormezanone|N
+M03BB03|chlorzoxazone|N
+M03BB52|chlormezanone|Y
+M03BB53|chlorzoxazone|Y
+M03BB72|chlormezanone|Y
+M03BB73|chlorzoxazone|Y
+M03BC01|orphenadrine (citrate)|N
+M03BC51|orphenadrine|Y
+M03BX01|baclofen|N
+M03BX02|tizanidine|N
+M03BX03|pridinol|N
+M03BX04|tolperisone|N
+M03BX05|thiocolchicoside|N
+M03BX06|mephenesin|N
+M03BX07|tetrazepam|N
+M03BX08|cyclobenzaprine|N
+M03BX09|eperisone|N
+M03BX30|fenyramidol|N
+M03BX55|thiocolchicoside|Y
+M03CA01|dantrolene|N
+M04AA01|allopurinol|N
+M04AA02|tisopurine|N
+M04AA03|febuxostat|N
+M04AA51|allopurinol|Y
+M04AB01|probenecid|N
+M04AB02|sulfinpyrazone|N
+M04AB03|benzbromarone|N
+M04AB04|isobromindione|N
+M04AB05|lesinurad|N
+M04AC01|colchicine|N
+M04AC02|cinchophen|N
+M04AX01|urate oxidase|N
+M04AX02|pegloticase|N
+M05BA01|etidronic acid|N
+M05BA02|clodronic acid|N
+M05BA03|pamidronic acid|N
+M05BA04|alendronic acid|N
+M05BA05|tiludronic acid|N
+M05BA06|ibandronic acid|N
+M05BA07|risedronic acid|N
+M05BA08|zoledronic acid|N
+M05BB01|etidronic acid and calcium, sequential|N
+M05BB02|risedronic acid and calcium, sequential|N
+M05BB03|alendronic acid and colecalciferol|N
+M05BB04|risedronic acid, calcium and colecalciferol, sequential|N
+M05BB05|alendronic acid, calcium and colecalciferol, sequential|N
+M05BB06|alendronic acid and alfacalcidol, sequential|N
+M05BB07|risedronic acid and colecalciferol|N
+M05BB08|zoledronic acid, calcium and colecalciferol, sequential|N
+M05BB09|ibandronic acid and colecalciferol|N
+M05BC01|dibotermin alfa|N
+M05BC02|eptotermin alfa|N
+M05BX01|ipriflavone|N
+M05BX02|aluminium chlorohydrate|N
+M05BX03|strontium ranelate|N
+M05BX04|denosumab|N
+M05BX05|burosumab|N
+M05BX06|romosozumab|N
+M05BX53|strontium ranelate and colecalciferol|N
+M09AA01|hydroquinine|N
+M09AA72|quinine|Y
+M09AB01|chymopapain|N
+M09AB02|collagenase clostridium histolyticum|N
+M09AB03|bromelains|N
+M09AB52|trypsin|Y
+M09AX01|hyaluronic acid|N
+M09AX02|chondrocytes, autologous|N
+M09AX03|ataluren|N
+M09AX04|drisapersen|N
+M09AX05|aceneuramic acid|N
+M09AX06|eteplirsen|N
+M09AX07|nusinersen|N
+M09AX08|golodirsen|N
+M09AX09|onasemnogene abeparvovec|N
+M09AX10|risdiplam|N
+M09AX11|palovarotene|N
+N01AA01|diethyl ether|N
+N01AA02|vinyl ether|N
+N01AB01|halothane|N
+N01AB02|chloroform|N
+N01AB04|enflurane|N
+N01AB05|trichloroethylene|N
+N01AB06|isoflurane|N
+N01AB07|desflurane|N
+N01AB08|sevoflurane|N
+N01AF01|methohexital|N
+N01AF02|hexobarbital|N
+N01AF03|thiopental|N
+N01AG01|narcobarbital|N
+N01AH01|fentanyl|N
+N01AH02|alfentanil|N
+N01AH03|sufentanil|N
+N01AH04|phenoperidine|N
+N01AH05|anileridine|N
+N01AH06|remifentanil|N
+N01AH51|fentanyl|Y
+N01AX03|ketamine|N
+N01AX04|propanidid|N
+N01AX05|alfaxalone|N
+N01AX07|etomidate|N
+N01AX10|propofol|N
+N01AX11|sodium oxybate|N
+N01AX13|nitrous oxide|N
+N01AX14|esketamine|N
+N01AX15|xenon|N
+N01AX63|nitrous oxide|Y
+N01BA01|metabutethamine|N
+N01BA02|procaine|N
+N01BA03|tetracaine|N
+N01BA04|chloroprocaine|N
+N01BA05|benzocaine|N
+N01BA52|procaine|Y
+N01BA53|tetracaine|Y
+N01BB01|bupivacaine|N
+N01BB02|lidocaine|N
+N01BB03|mepivacaine|N
+N01BB04|prilocaine|N
+N01BB05|butanilicaine|N
+N01BB06|cinchocaine|N
+N01BB07|etidocaine|N
+N01BB08|articaine|N
+N01BB09|ropivacaine|N
+N01BB10|levobupivacaine|N
+N01BB20|combinations|N
+N01BB51|bupivacaine|Y
+N01BB52|lidocaine|Y
+N01BB53|mepivacaine|Y
+N01BB54|prilocaine|Y
+N01BB57|etidocaine|Y
+N01BB58|articaine|Y
+N01BB59|bupivacaine and meloxicam|N
+N01BC01|cocaine|N
+N01BX01|ethyl chloride|N
+N01BX02|dyclonine|N
+N01BX03|phenol|N
+N01BX04|capsaicin|N
+N02AA01|morphine|N
+N02AA02|opium|N
+N02AA03|hydromorphone|N
+N02AA04|nicomorphine|N
+N02AA05|oxycodone|N
+N02AA08|dihydrocodeine|N
+N02AA10|papaveretum|N
+N02AA11|oxymorphone|N
+N02AA51|morphine|Y
+N02AA53|hydromorphone and naloxone|N
+N02AA55|oxycodone and naloxone|N
+N02AA56|oxycodone and naltrexone|N
+N02AA58|dihydrocodeine|Y
+N02AA59|codeine|Y
+N02AA79|codeine|Y
+N02AB01|ketobemidone|N
+N02AB02|pethidine|N
+N02AB03|fentanyl|N
+N02AB52|pethidine|Y
+N02AB72|pethidine|Y
+N02AC01|dextromoramide|N
+N02AC03|piritramide|N
+N02AC04|dextropropoxyphene|N
+N02AC05|bezitramide|N
+N02AC52|methadone|Y
+N02AC54|dextropropoxyphene|Y
+N02AC74|dextropropoxyphene|Y
+N02AD01|pentazocine|N
+N02AD02|phenazocine|N
+N02AE01|buprenorphine|N
+N02AF01|butorphanol|N
+N02AF02|nalbuphine|N
+N02AG01|morphine and antispasmodics|N
+N02AG02|ketobemidone and antispasmodics|N
+N02AG03|pethidine and antispasmodics|N
+N02AG04|hydromorphone and antispasmodics|N
+N02AJ01|dihydrocodeine and paracetamol|N
+N02AJ02|dihydrocodeine and acetylsalicylic acid|N
+N02AJ03|dihydrocodeine and other non-opioid analgesics|N
+N02AJ06|codeine and paracetamol|N
+N02AJ07|codeine and acetylsalicylic acid|N
+N02AJ08|codeine and ibuprofen|N
+N02AJ09|codeine and other non-opioid analgesics|N
+N02AJ13|tramadol and paracetamol|N
+N02AJ14|tramadol and dexketoprofen|N
+N02AJ15|tramadol and other non-opioid analgesics|N
+N02AJ17|oxycodone and paracetamol|N
+N02AJ18|oxycodone and acetylsalicylic acid|N
+N02AJ19|oxycodone and ibuprofen|N
+N02AX01|tilidine|N
+N02AX02|tramadol|N
+N02AX03|dezocine|N
+N02AX05|meptazinol|N
+N02AX06|tapentadol|N
+N02BA01|acetylsalicylic acid|N
+N02BA02|aloxiprin|N
+N02BA03|choline salicylate|N
+N02BA04|sodium salicylate|N
+N02BA05|salicylamide|N
+N02BA06|salsalate|N
+N02BA07|ethenzamide|N
+N02BA08|morpholine salicylate|N
+N02BA09|dipyrocetyl|N
+N02BA10|benorilate|N
+N02BA11|diflunisal|N
+N02BA12|potassium salicylate|N
+N02BA14|guacetisal|N
+N02BA15|carbasalate calcium|N
+N02BA16|imidazole salicylate|N
+N02BA51|acetylsalicylic acid|Y
+N02BA55|salicylamide|Y
+N02BA57|ethenzamide|Y
+N02BA59|dipyrocetyl|Y
+N02BA65|carbasalate calcium combinations excl. psycholeptics|N
+N02BA71|acetylsalicylic acid|Y
+N02BA75|salicylamide|Y
+N02BA77|ethenzamide|Y
+N02BA79|dipyrocetyl|Y
+N02BB01|phenazone|N
+N02BB02|metamizole sodium|N
+N02BB03|aminophenazone|N
+N02BB04|propyphenazone|N
+N02BB05|nifenazone|N
+N02BB51|phenazone|Y
+N02BB52|metamizole sodium|Y
+N02BB53|aminophenazone|Y
+N02BB54|propyphenazone|Y
+N02BB71|phenazone|Y
+N02BB72|metamizole sodium|Y
+N02BB73|aminophenazone|Y
+N02BB74|propyphenazone|Y
+N02BE01|paracetamol|N
+N02BE03|phenacetin|N
+N02BE04|bucetin|N
+N02BE05|propacetamol|N
+N02BE51|paracetamol|Y
+N02BE53|phenacetin|Y
+N02BE54|bucetin|Y
+N02BE71|paracetamol|Y
+N02BE73|phenacetin|Y
+N02BE74|bucetin|Y
+N02BG02|rimazolium|N
+N02BG03|glafenine|N
+N02BG04|floctafenine|N
+N02BG05|viminol|N
+N02BG06|nefopam|N
+N02BG07|flupirtine|N
+N02BG08|ziconotide|N
+N02BG09|methoxyflurane|N
+N02BG10|cannabinoids|N
+N02BG11|mirogabalin|N
+N02CA01|dihydroergotamine|N
+N02CA02|ergotamine|N
+N02CA04|methysergide|N
+N02CA07|lisuride|N
+N02CA51|dihydroergotamine|Y
+N02CA52|ergotamine|Y
+N02CA72|ergotamine|Y
+N02CB01|flumedroxone|N
+N02CC01|sumatriptan|N
+N02CC02|naratriptan|N
+N02CC03|zolmitriptan|N
+N02CC04|rizatriptan|N
+N02CC05|almotriptan|N
+N02CC06|eletriptan|N
+N02CC07|frovatriptan|N
+N02CD01|erenumab|N
+N02CD02|galcanezumab|N
+N02CD03|fremanezumab|N
+N02CX01|pizotifen|N
+N02CX02|clonidine|N
+N02CX03|iprazochrome|N
+N02CX05|dimetotiazine|N
+N02CX06|oxetorone|N
+N03AA01|methylphenobarbital|N
+N03AA02|phenobarbital|N
+N03AA03|primidone|N
+N03AA04|barbexaclone|N
+N03AA30|metharbital|N
+N03AB01|ethotoin|N
+N03AB02|phenytoin|N
+N03AB03|amino(diphenylhydantoin) valeric acid|N
+N03AB04|mephenytoin|N
+N03AB05|fosphenytoin|N
+N03AB52|phenytoin|Y
+N03AB54|mephenytoin|Y
+N03AC01|paramethadione|N
+N03AC02|trimethadione|N
+N03AC03|ethadione|N
+N03AD01|ethosuximide|N
+N03AD02|phensuximide|N
+N03AD03|mesuximide|N
+N03AD51|ethosuximide|Y
+N03AE01|clonazepam|N
+N03AF01|carbamazepine|N
+N03AF02|oxcarbazepine|N
+N03AF03|rufinamide|N
+N03AF04|eslicarbazepine|N
+N03AG01|valproic acid|N
+N03AG02|valpromide|N
+N03AG03|aminobutyric acid|N
+N03AG04|vigabatrin|N
+N03AG05|progabide|N
+N03AG06|tiagabine|N
+N03AX03|sultiame|N
+N03AX07|phenacemide|N
+N03AX09|lamotrigine|N
+N03AX10|felbamate|N
+N03AX11|topiramate|N
+N03AX12|gabapentin|N
+N03AX13|pheneturide|N
+N03AX14|levetiracetam|N
+N03AX15|zonisamide|N
+N03AX16|pregabalin|N
+N03AX17|stiripentol|N
+N03AX18|lacosamide|N
+N03AX19|carisbamate|N
+N03AX21|retigabine|N
+N03AX22|perampanel|N
+N03AX23|brivaracetam|N
+N03AX24|cannabidiol|N
+N03AX25|cenobamate|N
+N03AX26|fenfluramine|N
+N03AX30|beclamide|N
+N04AA01|trihexyphenidyl|N
+N04AA02|biperiden|N
+N04AA03|metixene|N
+N04AA04|procyclidine|N
+N04AA05|profenamine|N
+N04AA08|dexetimide|N
+N04AA09|phenglutarimide|N
+N04AA10|mazaticol|N
+N04AA11|bornaprine|N
+N04AA12|tropatepine|N
+N04AB01|etanautine|N
+N04AB02|orphenadrine (chloride)|N
+N04AC01|benzatropine|N
+N04AC30|etybenzatropine|N
+N04BA01|levodopa|N
+N04BA02|levodopa and decarboxylase inhibitor|N
+N04BA03|levodopa, decarboxylase inhibitor and COMT inhibitor|N
+N04BA04|melevodopa|N
+N04BA05|melevodopa and decarboxylase inhibitor|N
+N04BA06|etilevodopa and decarboxylase inhibitor|N
+N04BB01|amantadine|N
+N04BC01|bromocriptine|N
+N04BC02|pergolide|N
+N04BC03|dihydroergocryptine mesylate|N
+N04BC04|ropinirole|N
+N04BC05|pramipexole|N
+N04BC06|cabergoline|N
+N04BC07|apomorphine|N
+N04BC08|piribedil|N
+N04BC09|rotigotine|N
+N04BD01|selegiline|N
+N04BD02|rasagiline|N
+N04BD03|safinamide|N
+N04BX01|tolcapone|N
+N04BX02|entacapone|N
+N04BX03|budipine|N
+N04BX04|opicapone|N
+N04CX01|istradefylline|N
+N05AA01|chlorpromazine|N
+N05AA02|levomepromazine|N
+N05AA03|promazine|N
+N05AA04|acepromazine|N
+N05AA05|triflupromazine|N
+N05AA06|cyamemazine|N
+N05AA07|chlorproethazine|N
+N05AB01|dixyrazine|N
+N05AB02|fluphenazine|N
+N05AB03|perphenazine|N
+N05AB04|prochlorperazine|N
+N05AB05|thiopropazate|N
+N05AB06|trifluoperazine|N
+N05AB07|acetophenazine|N
+N05AB08|thioproperazine|N
+N05AB09|butaperazine|N
+N05AB10|perazine|N
+N05AC01|periciazine|N
+N05AC02|thioridazine|N
+N05AC03|mesoridazine|N
+N05AC04|pipotiazine|N
+N05AD01|haloperidol|N
+N05AD02|trifluperidol|N
+N05AD03|melperone|N
+N05AD04|moperone|N
+N05AD05|pipamperone|N
+N05AD06|bromperidol|N
+N05AD07|benperidol|N
+N05AD08|droperidol|N
+N05AD09|fluanisone|N
+N05AE01|oxypertine|N
+N05AE02|molindone|N
+N05AE03|sertindole|N
+N05AE04|ziprasidone|N
+N05AE05|lurasidone|N
+N05AF01|flupentixol|N
+N05AF02|clopenthixol|N
+N05AF03|chlorprothixene|N
+N05AF04|tiotixene|N
+N05AF05|zuclopenthixol|N
+N05AG01|fluspirilene|N
+N05AG02|pimozide|N
+N05AG03|penfluridol|N
+N05AH01|loxapine|N
+N05AH02|clozapine|N
+N05AH03|olanzapine|N
+N05AH04|quetiapine|N
+N05AH05|asenapine|N
+N05AH06|clotiapine|N
+N05AL01|sulpiride|N
+N05AL02|sultopride|N
+N05AL03|tiapride|N
+N05AL04|remoxipride|N
+N05AL05|amisulpride|N
+N05AL06|veralipride|N
+N05AL07|levosulpiride|N
+N05AN01|lithium|N
+N05AX07|prothipendyl|N
+N05AX08|risperidone|N
+N05AX10|mosapramine|N
+N05AX11|zotepine|N
+N05AX12|aripiprazole|N
+N05AX13|paliperidone|N
+N05AX14|iloperidone|N
+N05AX15|cariprazine|N
+N05AX16|brexpiprazole|N
+N05AX17|pimavanserin|N
+N05BA01|diazepam|N
+N05BA02|chlordiazepoxide|N
+N05BA03|medazepam|N
+N05BA04|oxazepam|N
+N05BA05|potassium clorazepate|N
+N05BA06|lorazepam|N
+N05BA07|adinazolam|N
+N05BA08|bromazepam|N
+N05BA09|clobazam|N
+N05BA10|ketazolam|N
+N05BA11|prazepam|N
+N05BA12|alprazolam|N
+N05BA13|halazepam|N
+N05BA14|pinazepam|N
+N05BA15|camazepam|N
+N05BA16|nordazepam|N
+N05BA17|fludiazepam|N
+N05BA18|ethyl loflazepate|N
+N05BA19|etizolam|N
+N05BA21|clotiazepam|N
+N05BA22|cloxazolam|N
+N05BA23|tofisopam|N
+N05BA24|bentazepam|N
+N05BA56|lorazepam|Y
+N05BB01|hydroxyzine|N
+N05BB02|captodiame|N
+N05BB51|hydroxyzine|Y
+N05BC01|meprobamate|N
+N05BC03|emylcamate|N
+N05BC04|mebutamate|N
+N05BC51|meprobamate|Y
+N05BD01|benzoctamine|N
+N05BE01|buspirone|N
+N05BX01|mephenoxalone|N
+N05BX02|gedocarnil|N
+N05BX03|etifoxine|N
+N05BX04|fabomotizole|N
+N05BX05|Lavandulae aetheroleum|N
+N05CA01|pentobarbital|N
+N05CA02|amobarbital|N
+N05CA03|butobarbital|N
+N05CA04|barbital|N
+N05CA05|aprobarbital|N
+N05CA06|secobarbital|N
+N05CA07|talbutal|N
+N05CA08|vinylbital|N
+N05CA09|vinbarbital|N
+N05CA10|cyclobarbital|N
+N05CA11|heptabarbital|N
+N05CA12|reposal|N
+N05CA15|methohexital|N
+N05CA16|hexobarbital|N
+N05CA19|thiopental|N
+N05CA20|etallobarbital|N
+N05CA21|allobarbital|N
+N05CA22|proxibarbal|N
+N05CB01|combinations of barbiturates|N
+N05CB02|barbiturates in combination with other drugs|N
+N05CC01|chloral hydrate|N
+N05CC02|chloralodol|N
+N05CC03|acetylglycinamide chloral hydrate|N
+N05CC04|dichloralphenazone|N
+N05CC05|paraldehyde|N
+N05CD01|flurazepam|N
+N05CD02|nitrazepam|N
+N05CD03|flunitrazepam|N
+N05CD04|estazolam|N
+N05CD05|triazolam|N
+N05CD06|lormetazepam|N
+N05CD07|temazepam|N
+N05CD08|midazolam|N
+N05CD09|brotizolam|N
+N05CD10|quazepam|N
+N05CD11|loprazolam|N
+N05CD12|doxefazepam|N
+N05CD13|cinolazepam|N
+N05CD14|remimazolam|N
+N05CD15|nimetazepam|N
+N05CE01|glutethimide|N
+N05CE02|methyprylon|N
+N05CE03|pyrithyldione|N
+N05CF01|zopiclone|N
+N05CF02|zolpidem|N
+N05CF03|zaleplon|N
+N05CF04|eszopiclone|N
+N05CH01|melatonin|N
+N05CH02|ramelteon|N
+N05CH03|tasimelteon|N
+N05CM01|methaqualone|N
+N05CM02|clomethiazole|N
+N05CM03|bromisoval|N
+N05CM04|carbromal|N
+N05CM05|scopolamine|N
+N05CM06|propiomazine|N
+N05CM07|triclofos|N
+N05CM08|ethchlorvynol|N
+N05CM09|Valerianae radix|N
+N05CM10|hexapropymate|N
+N05CM11|bromides|N
+N05CM12|apronal|N
+N05CM13|valnoctamide|N
+N05CM15|methylpentynol|N
+N05CM16|niaprazine|N
+N05CM18|dexmedetomidine|N
+N05CM19|suvorexant|N
+N05CX01|meprobamate|Y
+N05CX02|methaqualone|Y
+N05CX03|methylpentynol|Y
+N05CX04|clomethiazole|Y
+N05CX05|emepronium|Y
+N05CX06|dipiperonylaminoethanol|Y
+N06AA01|desipramine|N
+N06AA02|imipramine|N
+N06AA03|imipramine oxide|N
+N06AA04|clomipramine|N
+N06AA05|opipramol|N
+N06AA06|trimipramine|N
+N06AA07|lofepramine|N
+N06AA08|dibenzepin|N
+N06AA09|amitriptyline|N
+N06AA10|nortriptyline|N
+N06AA11|protriptyline|N
+N06AA12|doxepin|N
+N06AA13|iprindole|N
+N06AA14|melitracen|N
+N06AA15|butriptyline|N
+N06AA16|dosulepin|N
+N06AA17|amoxapine|N
+N06AA18|dimetacrine|N
+N06AA19|amineptine|N
+N06AA21|maprotiline|N
+N06AA23|quinupramine|N
+N06AB02|zimeldine|N
+N06AB03|fluoxetine|N
+N06AB04|citalopram|N
+N06AB05|paroxetine|N
+N06AB06|sertraline|N
+N06AB07|alaproclate|N
+N06AB08|fluvoxamine|N
+N06AB09|etoperidone|N
+N06AB10|escitalopram|N
+N06AF01|isocarboxazid|N
+N06AF02|nialamide|N
+N06AF03|phenelzine|N
+N06AF04|tranylcypromine|N
+N06AF05|iproniazide|N
+N06AF06|iproclozide|N
+N06AG02|moclobemide|N
+N06AG03|toloxatone|N
+N06AX01|oxitriptan|N
+N06AX02|tryptophan|N
+N06AX03|mianserin|N
+N06AX04|nomifensine|N
+N06AX05|trazodone|N
+N06AX06|nefazodone|N
+N06AX07|minaprine|N
+N06AX08|bifemelane|N
+N06AX09|viloxazine|N
+N06AX10|oxaflozane|N
+N06AX11|mirtazapine|N
+N06AX12|bupropion|N
+N06AX13|medifoxamine|N
+N06AX14|tianeptine|N
+N06AX15|pivagabine|N
+N06AX16|venlafaxine|N
+N06AX17|milnacipran|N
+N06AX18|reboxetine|N
+N06AX19|gepirone|N
+N06AX21|duloxetine|N
+N06AX22|agomelatine|N
+N06AX23|desvenlafaxine|N
+N06AX24|vilazodone|N
+N06AX25|Hyperici herba|N
+N06AX26|vortioxetine|N
+N06AX27|esketamine|N
+N06BA01|amfetamine|N
+N06BA02|dexamfetamine|N
+N06BA03|metamfetamine|N
+N06BA04|methylphenidate|N
+N06BA05|pemoline|N
+N06BA06|fencamfamin|N
+N06BA07|modafinil|N
+N06BA08|fenozolone|N
+N06BA09|atomoxetine|N
+N06BA10|fenetylline|N
+N06BA11|dexmethylphenidate|N
+N06BA12|lisdexamfetamine|N
+N06BA13|armodafinil|N
+N06BA14|solriamfetol|N
+N06BC01|caffeine|N
+N06BC02|propentofylline|N
+N06BX01|meclofenoxate|N
+N06BX02|pyritinol|N
+N06BX03|piracetam|N
+N06BX04|deanol|N
+N06BX05|fipexide|N
+N06BX06|citicoline|N
+N06BX07|oxiracetam|N
+N06BX08|pirisudanol|N
+N06BX09|linopirdine|N
+N06BX10|nizofenone|N
+N06BX11|aniracetam|N
+N06BX12|acetylcarnitine|N
+N06BX13|idebenone|N
+N06BX14|prolintane|N
+N06BX15|pipradrol|N
+N06BX16|pramiracetam|N
+N06BX17|adrafinil|N
+N06BX18|vinpocetine|N
+N06BX21|tetramethylglycoluril|N
+N06BX22|phenibut|N
+N06CA01|amitriptyline and psycholeptics|N
+N06CA02|melitracen and psycholeptics|N
+N06CA03|fluoxetine and psycholeptics|N
+N06DA01|tacrine|N
+N06DA02|donepezil|N
+N06DA03|rivastigmine|N
+N06DA04|galantamine|N
+N06DA05|ipidacrine|N
+N06DA52|donepezil and memantine|N
+N06DA53|donepezil, memantine and Ginkgo folium|N
+N06DX01|memantine|N
+N06DX02|Ginkgo folium|N
+N06DX30|combinations|N
+N07AA01|neostigmine|N
+N07AA02|pyridostigmine|N
+N07AA03|distigmine|N
+N07AA30|ambenonium|N
+N07AA51|neostigmine|Y
+N07AB01|carbachol|N
+N07AB02|bethanechol|N
+N07AX01|pilocarpine|N
+N07AX02|choline alfoscerate|N
+N07AX03|cevimeline|N
+N07BA01|nicotine|N
+N07BA03|varenicline|N
+N07BA04|cytisine|N
+N07BB01|disulfiram|N
+N07BB02|calcium carbimide|N
+N07BB03|acamprosate|N
+N07BB04|naltrexone|N
+N07BB05|nalmefene|N
+N07BC01|buprenorphine|N
+N07BC02|methadone|N
+N07BC03|levacetylmethadol|N
+N07BC04|lofexidine|N
+N07BC05|levomethadone|N
+N07BC06|diamorphine|N
+N07BC51|buprenorphine|Y
+N07CA01|betahistine|N
+N07CA02|cinnarizine|N
+N07CA03|flunarizine|N
+N07CA04|acetylleucine|N
+N07CA52|cinnarizine|Y
+N07XX01|tirilazad|N
+N07XX02|riluzole|N
+N07XX03|xaliproden|N
+N07XX04|sodium oxybate|N
+N07XX05|amifampridine|N
+N07XX06|tetrabenazine|N
+N07XX07|fampridine|N
+N07XX08|tafamidis|N
+N07XX10|laquinimod|N
+N07XX11|pitolisant|N
+N07XX12|patisiran|N
+N07XX13|valbenazine|N
+N07XX14|edaravone|N
+N07XX15|inotersen|N
+N07XX59|dextromethorphan|Y
+P01AA01|broxyquinoline|N
+P01AA02|clioquinol|N
+P01AA04|chlorquinaldol|N
+P01AA05|tilbroquinol|N
+P01AA52|clioquinol|Y
+P01AB01|metronidazole|N
+P01AB02|tinidazole|N
+P01AB03|ornidazole|N
+P01AB04|azanidazole|N
+P01AB05|propenidazole|N
+P01AB06|nimorazole|N
+P01AB07|secnidazole|N
+P01AB51|metronidazole|Y
+P01AC01|diloxanide|N
+P01AC02|clefamide|N
+P01AC03|etofamide|N
+P01AC04|teclozan|N
+P01AR01|arsthinol|N
+P01AR02|difetarsone|N
+P01AR03|glycobiarsol|N
+P01AR53|glycobiarsol|Y
+P01AX01|chiniofon|N
+P01AX02|emetine|N
+P01AX04|phanquinone|N
+P01AX05|mepacrine|N
+P01AX06|atovaquone|N
+P01AX07|trimetrexate|N
+P01AX08|tenonitrozole|N
+P01AX09|dehydroemetine|N
+P01AX10|fumagillin|N
+P01AX11|nitazoxanide|N
+P01AX52|emetine|Y
+P01BA01|chloroquine|N
+P01BA02|hydroxychloroquine|N
+P01BA03|primaquine|N
+P01BA06|amodiaquine|N
+P01BA07|tafenoquine|N
+P01BB01|proguanil|N
+P01BB02|cycloguanil embonate|N
+P01BB51|proguanil|Y
+P01BC01|quinine|N
+P01BC02|mefloquine|N
+P01BD01|pyrimethamine|N
+P01BD51|pyrimethamine|Y
+P01BE01|artemisinin|N
+P01BE02|artemether|N
+P01BE03|artesunate|N
+P01BE04|artemotil|N
+P01BE05|artenimol|N
+P01BF01|artemether and lumefantrine|N
+P01BF02|artesunate and mefloquine|N
+P01BF03|artesunate and amodiaquine|N
+P01BF04|artesunate, sulfalene and pyrimethamine|N
+P01BF05|artenimol and piperaquine|N
+P01BF06|artesunate and pyronaridine|N
+P01BX01|halofantrine|N
+P01BX02|arterolane and piperaquine|N
+P01CA02|benznidazole|N
+P01CA03|fexinidazole|N
+P01CB01|meglumine antimonate|N
+P01CB02|sodium stibogluconate|N
+P01CC01|nifurtimox|N
+P01CC02|nitrofural|N
+P01CD01|melarsoprol|N
+P01CD02|acetarsol|N
+P01CX01|pentamidine isethionate|N
+P01CX02|suramin sodium|N
+P01CX03|eflornithine|N
+P01CX04|miltefosine|N
+P02BA01|praziquantel|N
+P02BA02|oxamniquine|N
+P02BB01|metrifonate|N
+P02BX01|bithionol|N
+P02BX02|niridazole|N
+P02BX03|stibophen|N
+P02BX04|triclabendazole|N
+P02CA01|mebendazole|N
+P02CA02|tiabendazole|N
+P02CA03|albendazole|N
+P02CA04|ciclobendazole|N
+P02CA05|flubendazole|N
+P02CA06|fenbendazole|N
+P02CA51|mebendazole|Y
+P02CB01|piperazine|N
+P02CB02|diethylcarbamazine|N
+P02CC01|pyrantel|N
+P02CC02|oxantel|N
+P02CE01|levamisole|N
+P02CF01|ivermectin|N
+P02CX01|pyrvinium|N
+P02CX02|bephenium|N
+P02CX03|moxidectin|N
+P02DA01|niclosamide|N
+P02DX01|desaspidin|N
+P02DX02|dichlorophen|N
+P03AA01|dixanthogen|N
+P03AA02|potassium polysulfide|N
+P03AA03|mesulfen|N
+P03AA04|disulfiram|N
+P03AA05|thiram|N
+P03AA54|disulfiram|Y
+P03AB01|clofenotane|N
+P03AB02|lindane|N
+P03AB51|clofenotane|Y
+P03AC01|pyrethrum|N
+P03AC02|bioallethrin|N
+P03AC03|phenothrin|N
+P03AC04|permethrin|N
+P03AC51|pyrethrum|Y
+P03AC52|bioallethrin|Y
+P03AC53|phenothrin|Y
+P03AC54|permethrin|Y
+P03AX01|benzyl benzoate|N
+P03AX02|copper oleinate|N
+P03AX03|malathion|N
+P03AX04|quassia|N
+P03AX05|dimeticone|N
+P03AX06|benzyl alcohol|N
+P03BA01|cyfluthrin|N
+P03BA02|cypermethrin|N
+P03BA03|decamethrin|N
+P03BA04|tetramethrin|N
+P03BX01|diethyltoluamide|N
+P03BX02|dimethylphthalate|N
+P03BX03|dibutylphthalate|N
+P03BX04|dibutylsuccinate|N
+P03BX05|dimethylcarbate|N
+P03BX06|etohexadiol|N
+R01AA02|cyclopentamine|N
+R01AA03|ephedrine|N
+R01AA04|phenylephrine|N
+R01AA05|oxymetazoline|N
+R01AA06|tetryzoline|N
+R01AA07|xylometazoline|N
+R01AA08|naphazoline|N
+R01AA09|tramazoline|N
+R01AA10|metizoline|N
+R01AA11|tuaminoheptane|N
+R01AA12|fenoxazoline|N
+R01AA13|tymazoline|N
+R01AA14|epinephrine|N
+R01AA15|indanazoline|N
+R01AB01|phenylephrine|N
+R01AB02|naphazoline|N
+R01AB03|tetryzoline|N
+R01AB05|ephedrine|N
+R01AB06|xylometazoline|N
+R01AB07|oxymetazoline|N
+R01AB08|tuaminoheptane|N
+R01AC01|cromoglicic acid|N
+R01AC02|levocabastine|N
+R01AC03|azelastine|N
+R01AC04|antazoline|N
+R01AC05|spaglumic acid|N
+R01AC06|thonzylamine|N
+R01AC07|nedocromil|N
+R01AC08|olopatadine|N
+R01AC51|cromoglicic acid|Y
+R01AD01|beclometasone|N
+R01AD02|prednisolone|N
+R01AD03|dexamethasone|N
+R01AD04|flunisolide|N
+R01AD05|budesonide|N
+R01AD06|betamethasone|N
+R01AD07|tixocortol|N
+R01AD08|fluticasone|N
+R01AD09|mometasone|N
+R01AD11|triamcinolone|N
+R01AD12|fluticasone furoate|N
+R01AD13|ciclesonide|N
+R01AD52|prednisolone|Y
+R01AD53|dexamethasone|Y
+R01AD57|tixocortol|Y
+R01AD58|fluticasone|Y
+R01AD59|mometasone|Y
+R01AD60|hydrocortisone|Y
+R01AX01|calcium hexamine thiocyanate|N
+R01AX02|retinol|N
+R01AX03|ipratropium bromide|N
+R01AX05|ritiometan|N
+R01AX06|mupirocin|N
+R01AX07|hexamidine|N
+R01AX08|framycetin|N
+R01AX09|hyaluronic acid|N
+R01AX10|various|N
+R01AX30|combinations|N
+R01BA01|phenylpropanolamine|N
+R01BA02|pseudoephedrine|N
+R01BA03|phenylephrine|N
+R01BA51|phenylpropanolamine|Y
+R01BA52|pseudoephedrine|Y
+R01BA53|phenylephrine|Y
+R02AA01|ambazone|N
+R02AA02|dequalinium|N
+R02AA03|dichlorobenzyl alcohol|N
+R02AA05|chlorhexidine|N
+R02AA06|cetylpyridinium|N
+R02AA09|benzethonium|N
+R02AA10|myristyl-benzalkonium|N
+R02AA11|chlorquinaldol|N
+R02AA12|hexylresorcinol|N
+R02AA13|acriflavinium chloride|N
+R02AA14|oxyquinoline|N
+R02AA15|povidone-iodine|N
+R02AA16|benzalkonium|N
+R02AA17|cetrimonium|N
+R02AA18|hexamidine|N
+R02AA19|phenol|N
+R02AA20|various|N
+R02AA21|octenidine|N
+R02AB01|neomycin|N
+R02AB02|tyrothricin|N
+R02AB03|fusafungine|N
+R02AB04|bacitracin|N
+R02AB30|gramicidin|N
+R02AD01|benzocaine|N
+R02AD02|lidocaine|N
+R02AD03|cocaine|N
+R02AD04|dyclonine|N
+R02AX01|flurbiprofen|N
+R02AX02|ibuprofen|N
+R02AX03|benzydamine|N
+R03AA01|epinephrine|N
+R03AB02|isoprenaline|N
+R03AB03|orciprenaline|N
+R03AC02|salbutamol|N
+R03AC03|terbutaline|N
+R03AC04|fenoterol|N
+R03AC05|rimiterol|N
+R03AC06|hexoprenaline|N
+R03AC07|isoetarine|N
+R03AC08|pirbuterol|N
+R03AC09|tretoquinol|N
+R03AC10|carbuterol|N
+R03AC11|tulobuterol|N
+R03AC12|salmeterol|N
+R03AC13|formoterol|N
+R03AC14|clenbuterol|N
+R03AC15|reproterol|N
+R03AC16|procaterol|N
+R03AC17|bitolterol|N
+R03AC18|indacaterol|N
+R03AC19|olodaterol|N
+R03AK01|epinephrine and other drugs for obstructive airway diseases|N
+R03AK02|isoprenaline and other drugs for obstructive airway diseases|N
+R03AK04|salbutamol and sodium cromoglicate|N
+R03AK05|reproterol and sodium cromoglicate|N
+R03AK06|salmeterol and fluticasone|N
+R03AK07|formoterol and budesonide|N
+R03AK08|formoterol and beclometasone|N
+R03AK09|formoterol and mometasone|N
+R03AK10|vilanterol and fluticasone furoate|N
+R03AK11|formoterol and fluticasone|N
+R03AK12|salmeterol and budesonide|N
+R03AK13|salbutamol and beclometasone|N
+R03AK14|indacaterol and mometasone|N
+R03AL01|fenoterol and ipratropium bromide|N
+R03AL02|salbutamol and ipratropium bromide|N
+R03AL03|vilanterol and umeclidinium bromide|N
+R03AL04|indacaterol and glycopyrronium bromide|N
+R03AL05|formoterol and aclidinium bromide|N
+R03AL06|olodaterol and tiotropium bromide|N
+R03AL07|formoterol and glycopyrronium bromide|N
+R03AL08|vilanterol, umeclidinium bromide and fluticasone furoate|N
+R03AL09|formoterol, glycopyrronium bromide and beclometasone|N
+R03AL10|formoterol and tiotropium bromide|N
+R03AL11|formoterol, glycopyrronium bromide and budesonide|N
+R03AL12|indacaterol, glycopyrronium bromide and mometasone|N
+R03BA01|beclometasone|N
+R03BA02|budesonide|N
+R03BA03|flunisolide|N
+R03BA04|betamethasone|N
+R03BA05|fluticasone|N
+R03BA06|triamcinolone|N
+R03BA07|mometasone|N
+R03BA08|ciclesonide|N
+R03BA09|fluticasone furoate|N
+R03BB01|ipratropium bromide|N
+R03BB02|oxitropium bromide|N
+R03BB03|stramoni preparations|N
+R03BB04|tiotropium bromide|N
+R03BB05|aclidinium bromide|N
+R03BB06|glycopyrronium bromide|N
+R03BB07|umeclidinium bromide|N
+R03BB08|revefenacin|N
+R03BB54|tiotropium bromide|Y
+R03BC01|cromoglicic acid|N
+R03BC03|nedocromil|N
+R03BX01|fenspiride|N
+R03CA02|ephedrine|N
+R03CB01|isoprenaline|N
+R03CB02|methoxyphenamine|N
+R03CB03|orciprenaline|N
+R03CB51|isoprenaline|Y
+R03CB53|orciprenaline|Y
+R03CC02|salbutamol|N
+R03CC03|terbutaline|N
+R03CC04|fenoterol|N
+R03CC05|hexoprenaline|N
+R03CC06|isoetarine|N
+R03CC07|pirbuterol|N
+R03CC08|procaterol|N
+R03CC09|tretoquinol|N
+R03CC10|carbuterol|N
+R03CC11|tulobuterol|N
+R03CC12|bambuterol|N
+R03CC13|clenbuterol|N
+R03CC14|reproterol|N
+R03CC53|terbutaline|Y
+R03CC63|clenbuterol and ambroxol|N
+R03DA01|diprophylline|N
+R03DA02|choline theophyllinate|N
+R03DA03|proxyphylline|N
+R03DA04|theophylline|N
+R03DA05|aminophylline|N
+R03DA06|etamiphylline|N
+R03DA07|theobromine|N
+R03DA08|bamifylline|N
+R03DA09|acefylline piperazine|N
+R03DA10|bufylline|N
+R03DA11|doxofylline|N
+R03DA12|mepyramine theophyllinacetate|N
+R03DA20|combinations of xanthines|N
+R03DA51|diprophylline|Y
+R03DA54|theophylline|Y
+R03DA55|aminophylline|Y
+R03DA57|theobromine|Y
+R03DA74|theophylline|Y
+R03DB01|diprophylline and adrenergics|N
+R03DB02|choline theophyllinate and adrenergics|N
+R03DB03|proxyphylline and adrenergics|N
+R03DB04|theophylline and adrenergics|N
+R03DB05|aminophylline and adrenergics|N
+R03DB06|etamiphylline and adrenergics|N
+R03DC01|zafirlukast|N
+R03DC02|pranlukast|N
+R03DC03|montelukast|N
+R03DC04|ibudilast|N
+R03DC53|montelukast|Y
+R03DX01|amlexanox|N
+R03DX02|eprozinol|N
+R03DX03|fenspiride|N
+R03DX05|omalizumab|N
+R03DX06|seratrodast|N
+R03DX07|roflumilast|N
+R03DX08|reslizumab|N
+R03DX09|mepolizumab|N
+R03DX10|benralizumab|N
+R05CA01|tyloxapol|N
+R05CA02|potassium iodide|N
+R05CA03|guaifenesin|N
+R05CA04|ipecacuanha|N
+R05CA05|althea root|N
+R05CA06|senega|N
+R05CA07|antimony pentasulfide|N
+R05CA08|creosote|N
+R05CA09|guaiacolsulfonate|N
+R05CA10|combinations|N
+R05CA11|levoverbenone|N
+R05CA12|Hederae helicis folium|N
+R05CA13|cineole|N
+R05CB01|acetylcysteine|N
+R05CB02|bromhexine|N
+R05CB03|carbocisteine|N
+R05CB04|eprazinone|N
+R05CB05|mesna|N
+R05CB06|ambroxol|N
+R05CB07|sobrerol|N
+R05CB08|domiodol|N
+R05CB09|letosteine|N
+R05CB10|combinations|N
+R05CB11|stepronin|N
+R05CB13|dornase alfa (desoxyribonuclease)|N
+R05CB14|neltenexine|N
+R05CB15|erdosteine|N
+R05CB16|mannitol|N
+R05DA01|ethylmorphine|N
+R05DA03|hydrocodone|N
+R05DA04|codeine|N
+R05DA05|opium alkaloids with morphine|N
+R05DA06|normethadone|N
+R05DA07|noscapine|N
+R05DA08|pholcodine|N
+R05DA09|dextromethorphan|N
+R05DA10|thebacon|N
+R05DA11|dimemorfan|N
+R05DA12|acetyldihydrocodeine|N
+R05DA20|combinations|N
+R05DB01|benzonatate|N
+R05DB02|benproperine|N
+R05DB03|clobutinol|N
+R05DB04|isoaminile|N
+R05DB05|pentoxyverine|N
+R05DB07|oxolamine|N
+R05DB09|oxeladin|N
+R05DB10|clofedanol|N
+R05DB11|pipazetate|N
+R05DB12|bibenzonium bromide|N
+R05DB13|butamirate|N
+R05DB14|fedrilate|N
+R05DB15|zipeprol|N
+R05DB16|dibunate|N
+R05DB17|droxypropine|N
+R05DB18|prenoxdiazine|N
+R05DB19|dropropizine|N
+R05DB20|combinations|N
+R05DB21|cloperastine|N
+R05DB22|meprotixol|N
+R05DB23|piperidione|N
+R05DB24|tipepidine|N
+R05DB25|morclofone|N
+R05DB26|nepinalone|N
+R05DB27|levodropropizine|N
+R05DB28|dimethoxanate|N
+R05FA01|opium derivatives and mucolytics|N
+R05FA02|opium derivatives and expectorants|N
+R05FB01|cough suppressants and mucolytics|N
+R05FB02|cough suppressants and expectorants|N
+R06AA01|bromazine|N
+R06AA02|diphenhydramine|N
+R06AA04|clemastine|N
+R06AA06|chlorphenoxamine|N
+R06AA07|diphenylpyraline|N
+R06AA08|carbinoxamine|N
+R06AA09|doxylamine|N
+R06AA10|trimethobenzamide|N
+R06AA52|diphenhydramine|Y
+R06AA54|clemastine|Y
+R06AA56|chlorphenoxamine|Y
+R06AA57|diphenylpyraline|Y
+R06AA59|doxylamine|Y
+R06AB01|brompheniramine|N
+R06AB02|dexchlorpheniramine|N
+R06AB03|dimetindene|N
+R06AB04|chlorphenamine|N
+R06AB05|pheniramine|N
+R06AB06|dexbrompheniramine|N
+R06AB07|talastine|N
+R06AB51|brompheniramine|Y
+R06AB52|dexchlorpheniramine|Y
+R06AB54|chlorphenamine|Y
+R06AB56|dexbrompheniramine|Y
+R06AC01|mepyramine|N
+R06AC02|histapyrrodine|N
+R06AC03|chloropyramine|N
+R06AC04|tripelennamine|N
+R06AC05|methapyrilene|N
+R06AC06|thonzylamine|N
+R06AC52|histapyrrodine|Y
+R06AC53|chloropyramine|Y
+R06AD01|alimemazine|N
+R06AD02|promethazine|N
+R06AD03|thiethylperazine|N
+R06AD04|methdilazine|N
+R06AD05|hydroxyethylpromethazine|N
+R06AD06|thiazinam|N
+R06AD07|mequitazine|N
+R06AD08|oxomemazine|N
+R06AD09|isothipendyl|N
+R06AD52|promethazine|Y
+R06AD55|hydroxyethylpromethazine|Y
+R06AE01|buclizine|N
+R06AE03|cyclizine|N
+R06AE04|chlorcyclizine|N
+R06AE05|meclozine|N
+R06AE06|oxatomide|N
+R06AE07|cetirizine|N
+R06AE09|levocetirizine|N
+R06AE51|buclizine|Y
+R06AE53|cyclizine|Y
+R06AE55|meclozine|Y
+R06AX01|bamipine|N
+R06AX02|cyproheptadine|N
+R06AX03|thenalidine|N
+R06AX04|phenindamine|N
+R06AX05|antazoline|N
+R06AX07|triprolidine|N
+R06AX08|pyrrobutamine|N
+R06AX09|azatadine|N
+R06AX11|astemizole|N
+R06AX12|terfenadine|N
+R06AX13|loratadine|N
+R06AX15|mebhydrolin|N
+R06AX16|deptropine|N
+R06AX17|ketotifen|N
+R06AX18|acrivastine|N
+R06AX19|azelastine|N
+R06AX21|tritoqualine|N
+R06AX22|ebastine|N
+R06AX23|pimethixene|N
+R06AX24|epinastine|N
+R06AX25|mizolastine|N
+R06AX26|fexofenadine|N
+R06AX27|desloratadine|N
+R06AX28|rupatadine|N
+R06AX29|bilastine|N
+R06AX31|quifenadine|N
+R06AX32|sequifenadine|N
+R06AX53|thenalidine|Y
+R06AX58|pyrrobutamine|Y
+R07AA01|colfosceril palmitate|N
+R07AA02|natural phospholipids|N
+R07AA30|combinations|N
+R07AB01|doxapram|N
+R07AB02|nikethamide|N
+R07AB03|pentetrazol|N
+R07AB04|etamivan|N
+R07AB05|bemegride|N
+R07AB06|prethcamide|N
+R07AB07|almitrine|N
+R07AB08|dimefline|N
+R07AB09|mepixanox|N
+R07AB52|nikethamide|Y
+R07AB53|pentetrazol|Y
+R07AX01|nitric oxide|N
+R07AX02|ivacaftor|N
+R07AX30|ivacaftor and lumacaftor|N
+R07AX31|ivacaftor and tezacaftor|N
+R07AX32|ivacaftor, tezacaftor and elexacaftor|N
+S01AA01|chloramphenicol|N
+S01AA02|chlortetracycline|N
+S01AA03|neomycin|N
+S01AA04|oxytetracycline|N
+S01AA05|tyrothricin|N
+S01AA07|framycetin|N
+S01AA09|tetracycline|N
+S01AA10|natamycin|N
+S01AA11|gentamicin|N
+S01AA12|tobramycin|N
+S01AA13|fusidic acid|N
+S01AA14|benzylpenicillin|N
+S01AA15|dihydrostreptomycin|N
+S01AA16|rifamycin|N
+S01AA17|erythromycin|N
+S01AA18|polymyxin B|N
+S01AA19|ampicillin|N
+S01AA20|antibiotics in combination with other drugs|N
+S01AA21|amikacin|N
+S01AA22|micronomicin|N
+S01AA23|netilmicin|N
+S01AA24|kanamycin|N
+S01AA25|azidamfenicol|N
+S01AA26|azithromycin|N
+S01AA27|cefuroxime|N
+S01AA28|vancomycin|N
+S01AA30|combinations of different antibiotics|N
+S01AB01|sulfamethizole|N
+S01AB02|sulfafurazole|N
+S01AB03|sulfadicramide|N
+S01AB04|sulfacetamide|N
+S01AB05|sulfafenazol|N
+S01AD01|idoxuridine|N
+S01AD02|trifluridine|N
+S01AD03|aciclovir|N
+S01AD05|interferon|N
+S01AD06|vidarabine|N
+S01AD07|famciclovir|N
+S01AD08|fomivirsen|N
+S01AD09|ganciclovir|N
+S01AE01|ofloxacin|N
+S01AE02|norfloxacin|N
+S01AE03|ciprofloxacin|N
+S01AE04|lomefloxacin|N
+S01AE05|levofloxacin|N
+S01AE06|gatifloxacin|N
+S01AE07|moxifloxacin|N
+S01AE08|besifloxacin|N
+S01AX01|mercury compounds|N
+S01AX02|silver compounds|N
+S01AX03|zinc compounds|N
+S01AX04|nitrofural|N
+S01AX05|bibrocathol|N
+S01AX06|resorcinol|N
+S01AX07|sodium borate|N
+S01AX08|hexamidine|N
+S01AX09|chlorhexidine|N
+S01AX10|sodium propionate|N
+S01AX14|dibrompropamidine|N
+S01AX15|propamidine|N
+S01AX16|picloxydine|N
+S01AX18|povidone-iodine|N
+S01BA01|dexamethasone|N
+S01BA02|hydrocortisone|N
+S01BA03|cortisone|N
+S01BA04|prednisolone|N
+S01BA05|triamcinolone|N
+S01BA06|betamethasone|N
+S01BA07|fluorometholone|N
+S01BA08|medrysone|N
+S01BA09|clobetasone|N
+S01BA10|alclometasone|N
+S01BA11|desonide|N
+S01BA12|formocortal|N
+S01BA13|rimexolone|N
+S01BA14|loteprednol|N
+S01BA15|fluocinolone acetonide|N
+S01BB01|hydrocortisone and mydriatics|N
+S01BB02|prednisolone and mydriatics|N
+S01BB03|fluorometholone and mydriatics|N
+S01BB04|betamethasone and mydriatics|N
+S01BC01|indometacin|N
+S01BC02|oxyphenbutazone|N
+S01BC03|diclofenac|N
+S01BC04|flurbiprofen|N
+S01BC05|ketorolac|N
+S01BC06|piroxicam|N
+S01BC07|bendazac|N
+S01BC08|salicylic acid|N
+S01BC09|pranoprofen|N
+S01BC10|nepafenac|N
+S01BC11|bromfenac|N
+S01CA01|dexamethasone and antiinfectives|N
+S01CA02|prednisolone and antiinfectives|N
+S01CA03|hydrocortisone and antiinfectives|N
+S01CA04|fluocortolone and antiinfectives|N
+S01CA05|betamethasone and antiinfectives|N
+S01CA06|fludrocortisone and antiinfectives|N
+S01CA07|fluorometholone and antiinfectives|N
+S01CA08|methylprednisolone and antiinfectives|N
+S01CA09|chloroprednisone and antiinfectives|N
+S01CA10|fluocinolone acetonide and antiinfectives|N
+S01CA11|clobetasone and antiinfectives|N
+S01CB01|dexamethasone|N
+S01CB02|prednisolone|N
+S01CB03|hydrocortisone|N
+S01CB04|betamethasone|N
+S01CB05|fluorometholone|N
+S01CC01|diclofenac and antiinfectives|N
+S01CC02|indometacin and antiinfectives|N
+S01EA01|epinephrine|N
+S01EA02|dipivefrine|N
+S01EA03|apraclonidine|N
+S01EA04|clonidine|N
+S01EA05|brimonidine|N
+S01EA51|epinephrine|Y
+S01EB01|pilocarpine|N
+S01EB02|carbachol|N
+S01EB03|ecothiopate|N
+S01EB04|demecarium|N
+S01EB05|physostigmine|N
+S01EB06|neostigmine|N
+S01EB07|fluostigmine|N
+S01EB08|aceclidine|N
+S01EB09|acetylcholine|N
+S01EB10|paraoxon|N
+S01EB51|pilocarpine|Y
+S01EB58|aceclidine|Y
+S01EC01|acetazolamide|N
+S01EC02|diclofenamide|N
+S01EC03|dorzolamide|N
+S01EC04|brinzolamide|N
+S01EC05|methazolamide|N
+S01EC54|brinzolamide|Y
+S01ED01|timolol|N
+S01ED02|betaxolol|N
+S01ED03|levobunolol|N
+S01ED04|metipranolol|N
+S01ED05|carteolol|N
+S01ED06|befunolol|N
+S01ED51|timolol|Y
+S01ED52|betaxolol|Y
+S01ED54|metipranolol|Y
+S01ED55|carteolol|Y
+S01EE01|latanoprost|N
+S01EE02|unoprostone|N
+S01EE03|bimatoprost|N
+S01EE04|travoprost|N
+S01EE05|tafluprost|N
+S01EE06|latanoprostene bunod|N
+S01EE51|latanoprost and netarsudil|N
+S01EX01|guanethidine|N
+S01EX02|dapiprazole|N
+S01EX05|netarsudil|N
+S01EX06|omidenepag|N
+S01FA01|atropine|N
+S01FA02|scopolamine|N
+S01FA03|methylscopolamine|N
+S01FA04|cyclopentolate|N
+S01FA05|homatropine|N
+S01FA06|tropicamide|N
+S01FA54|cyclopentolate|Y
+S01FA56|tropicamide|Y
+S01FB01|phenylephrine|N
+S01FB02|ephedrine|N
+S01FB03|ibopamine|N
+S01FB51|phenylephrine and ketorolac|N
+S01GA01|naphazoline|N
+S01GA02|tetryzoline|N
+S01GA03|xylometazoline|N
+S01GA04|oxymetazoline|N
+S01GA05|phenylephrine|N
+S01GA06|oxedrine|N
+S01GA07|brimonidine|N
+S01GA51|naphazoline|Y
+S01GA52|tetryzoline|Y
+S01GA53|xylometazoline|Y
+S01GA55|phenylephrine|Y
+S01GA56|oxedrine|Y
+S01GX01|cromoglicic acid|N
+S01GX02|levocabastine|N
+S01GX03|spaglumic acid|N
+S01GX04|nedocromil|N
+S01GX05|lodoxamide|N
+S01GX06|emedastine|N
+S01GX07|azelastine|N
+S01GX08|ketotifen|N
+S01GX09|olopatadine|N
+S01GX10|epinastine|N
+S01GX11|alcaftadine|N
+S01GX51|cromoglicic acid|Y
+S01HA01|cocaine|N
+S01HA02|oxybuprocaine|N
+S01HA03|tetracaine|N
+S01HA04|proxymetacaine|N
+S01HA05|procaine|N
+S01HA06|cinchocaine|N
+S01HA07|lidocaine|N
+S01HA30|combinations|N
+S01JA01|fluorescein|N
+S01JA02|rose bengal sodium|N
+S01JA51|fluorescein|Y
+S01KA01|hyaluronic acid|N
+S01KA02|hypromellose|N
+S01KA51|hyaluronic acid|Y
+S01KX01|chymotrypsin|N
+S01LA01|verteporfin|N
+S01LA02|anecortave|N
+S01LA03|pegaptanib|N
+S01LA04|ranibizumab|N
+S01LA05|aflibercept|N
+S01LA06|brolucizumab|N
+S01LA07|abicipar pegol|N
+S01XA01|guaiazulen|N
+S01XA02|retinol|N
+S01XA03|sodium chloride, hypertonic|N
+S01XA04|potassium iodide|N
+S01XA05|sodium edetate|N
+S01XA06|ethylmorphine|N
+S01XA07|alum|N
+S01XA08|acetylcysteine|N
+S01XA09|iodoheparinate|N
+S01XA10|inosine|N
+S01XA11|nandrolone|N
+S01XA12|dexpanthenol|N
+S01XA13|alteplase|N
+S01XA14|heparin|N
+S01XA15|ascorbic acid|N
+S01XA18|ciclosporin|N
+S01XA19|limbal stem cells, autologous|N
+S01XA20|artificial tears and other indifferent preparations|N
+S01XA21|mercaptamine|N
+S01XA22|ocriplasmin|N
+S01XA23|sirolimus|N
+S01XA24|cenegermin|N
+S01XA25|lifitegrast|N
+S01XA26|riboflavin|N
+S01XA27|voretigene neparvovec|N
+S02AA01|chloramphenicol|N
+S02AA02|nitrofural|N
+S02AA03|boric acid|N
+S02AA04|aluminium acetotartrate|N
+S02AA05|clioquinol|N
+S02AA06|hydrogen peroxide|N
+S02AA07|neomycin|N
+S02AA08|tetracycline|N
+S02AA09|chlorhexidine|N
+S02AA10|acetic acid|N
+S02AA11|polymyxin B|N
+S02AA12|rifamycin|N
+S02AA13|miconazole|N
+S02AA14|gentamicin|N
+S02AA15|ciprofloxacin|N
+S02AA16|ofloxacin|N
+S02AA30|antiinfectives|Y
+S02BA01|hydrocortisone|N
+S02BA03|prednisolone|N
+S02BA06|dexamethasone|N
+S02BA07|betamethasone|N
+S02BA08|fluocinolone acetonide|N
+S02CA01|prednisolone and antiinfectives|N
+S02CA02|flumetasone and antiinfectives|N
+S02CA03|hydrocortisone and antiinfectives|N
+S02CA04|triamcinolone and antiinfectives|N
+S02CA05|fluocinolone acetonide and antiinfectives|N
+S02CA06|dexamethasone and antiinfectives|N
+S02CA07|fludrocortisone and antiinfectives|N
+S02DA01|lidocaine|N
+S02DA02|cocaine|N
+S02DA03|phenazone|N
+S02DA04|cinchocaine|N
+S02DA30|combinations|N
+S03AA01|neomycin|N
+S03AA02|tetracycline|N
+S03AA03|polymyxin B|N
+S03AA04|chlorhexidine|N
+S03AA05|hexamidine|N
+S03AA06|gentamicin|N
+S03AA07|ciprofloxacin|N
+S03AA08|chloramphenicol|N
+S03AA30|antiinfectives|Y
+S03BA01|dexamethasone|N
+S03BA02|prednisolone|N
+S03BA03|betamethasone|N
+S03CA01|dexamethasone and antiinfectives|N
+S03CA02|prednisolone and antiinfectives|N
+S03CA04|hydrocortisone and antiinfectives|N
+S03CA05|fludrocortisone and antiinfectives|N
+S03CA06|betamethasone and antiinfectives|N
+V01AA01|feather|N
+V01AA02|grass pollen|N
+V01AA03|house dust mites|N
+V01AA04|mould fungus and yeast fungus|N
+V01AA05|tree pollen|N
+V01AA07|insects|N
+V01AA08|food|N
+V01AA09|textiles|N
+V01AA10|flowers|N
+V01AA11|animals|N
+V01AA20|various|N
+V03AB01|ipecacuanha|N
+V03AB02|nalorphine|N
+V03AB03|edetates|N
+V03AB04|pralidoxime|N
+V03AB05|prednisolone and promethazine|N
+V03AB06|thiosulfate|N
+V03AB08|sodium nitrite|N
+V03AB09|dimercaprol|N
+V03AB13|obidoxime|N
+V03AB14|protamine|N
+V03AB15|naloxone|N
+V03AB16|ethanol|N
+V03AB17|methylthioninium chloride|N
+V03AB18|potassium permanganate|N
+V03AB19|physostigmine|N
+V03AB20|copper sulfate|N
+V03AB21|potassium iodide|N
+V03AB22|amyl nitrite|N
+V03AB23|acetylcysteine|N
+V03AB24|digitalis antitoxin|N
+V03AB25|flumazenil|N
+V03AB26|methionine|N
+V03AB27|4-dimethylaminophenol|N
+V03AB29|cholinesterase|N
+V03AB31|prussian blue|N
+V03AB32|glutathione|N
+V03AB33|hydroxocobalamin|N
+V03AB34|fomepizole|N
+V03AB35|sugammadex|N
+V03AB36|phentolamine|N
+V03AB37|idarucizumab|N
+V03AB38|andexanet alfa|N
+V03AC01|deferoxamine|N
+V03AC02|deferiprone|N
+V03AC03|deferasirox|N
+V03AE01|polystyrene sulfonate|N
+V03AE02|sevelamer|N
+V03AE03|lanthanum carbonate|N
+V03AE04|calcium acetate and magnesium carbonate|N
+V03AE05|sucroferric oxyhydroxide|N
+V03AE06|colestilan|N
+V03AE07|calcium acetate|N
+V03AE08|ferric citrate|N
+V03AE09|patiromer calcium|N
+V03AE10|sodium zirconium cyclosilicate|N
+V03AF01|mesna|N
+V03AF02|dexrazoxane|N
+V03AF03|calcium folinate|N
+V03AF04|calcium levofolinate|N
+V03AF05|amifostine|N
+V03AF06|sodium folinate|N
+V03AF07|rasburicase|N
+V03AF08|palifermin|N
+V03AF09|glucarpidase|N
+V03AF10|sodium levofolinate|N
+V03AF11|arginine and lysine|N
+V03AG01|sodium cellulose phosphate|N
+V03AH01|diazoxide|N
+V03AN01|oxygen|N
+V03AN02|carbon dioxide|N
+V03AN03|helium|N
+V03AN04|nitrogen|N
+V03AN05|medical air|N
+V03AX02|nalfurafine|N
+V03AX03|cobicistat|N
+V03AZ01|ethanol|N
+V04CA01|tolbutamide|N
+V04CA02|glucose|N
+V04CB01|vitamin A concentrates|N
+V04CC01|sorbitol|N
+V04CC02|magnesium sulfate|N
+V04CC03|sincalide|N
+V04CC04|ceruletide|N
+V04CD01|metyrapone|N
+V04CD03|sermorelin|N
+V04CD04|corticorelin|N
+V04CD05|somatorelin|N
+V04CD06|macimorelin|N
+V04CE01|galactose|N
+V04CE02|sulfobromophthalein|N
+V04CE03|methacetin (13C)|N
+V04CF01|tuberculin|N
+V04CG01|cation exchange resins|N
+V04CG02|betazole|N
+V04CG03|histamine phosphate|N
+V04CG04|pentagastrin|N
+V04CG05|methylthioninium chloride|N
+V04CG30|caffeine and sodium benzoate|N
+V04CH01|inulin and other polyfructosans|N
+V04CH02|indigo carmine|N
+V04CH03|phenolsulfonphthalein|N
+V04CH04|alsactide|N
+V04CH30|aminohippuric acid|N
+V04CJ01|thyrotropin|N
+V04CJ02|protirelin|N
+V04CK01|secretin|N
+V04CK02|pancreozymin (cholecystokinin)|N
+V04CK03|bentiromide|N
+V04CM01|gonadorelin|N
+V04CX01|indocyanine green|N
+V04CX02|folic acid|N
+V04CX03|methacholine|N
+V04CX04|mannitol|N
+V04CX05|13C-urea|N
+V04CX06|hexaminolevulinate|N
+V04CX07|edrophonium|N
+V04CX08|carbon monoxide|N
+V04CX09|patent blue|N
+V06DC01|glucose|N
+V06DC02|fructose|N
+V08AA01|diatrizoic acid|N
+V08AA02|metrizoic acid|N
+V08AA03|iodamide|N
+V08AA04|iotalamic acid|N
+V08AA05|ioxitalamic acid|N
+V08AA06|ioglicic acid|N
+V08AA07|acetrizoic acid|N
+V08AA08|iocarmic acid|N
+V08AA09|methiodal|N
+V08AA10|diodone|N
+V08AB01|metrizamide|N
+V08AB02|iohexol|N
+V08AB03|ioxaglic acid|N
+V08AB04|iopamidol|N
+V08AB05|iopromide|N
+V08AB06|iotrolan|N
+V08AB07|ioversol|N
+V08AB08|iopentol|N
+V08AB09|iodixanol|N
+V08AB10|iomeprol|N
+V08AB11|iobitridol|N
+V08AB12|ioxilan|N
+V08AC01|iodoxamic acid|N
+V08AC02|iotroxic acid|N
+V08AC03|ioglycamic acid|N
+V08AC04|adipiodone|N
+V08AC05|iobenzamic acid|N
+V08AC06|iopanoic acid|N
+V08AC07|iocetamic acid|N
+V08AC08|sodium iopodate|N
+V08AC09|tyropanoic acid|N
+V08AC10|calcium iopodate|N
+V08AD01|ethyl esters of iodised fatty acids|N
+V08AD02|iopydol|N
+V08AD03|propyliodone|N
+V08AD04|iofendylate|N
+V08BA01|barium sulfate with suspending agents|N
+V08BA02|barium sulfate without suspending agents|N
+V08CA01|gadopentetic acid|N
+V08CA02|gadoteric acid|N
+V08CA03|gadodiamide|N
+V08CA04|gadoteridol|N
+V08CA05|mangafodipir|N
+V08CA06|gadoversetamide|N
+V08CA07|ferric ammonium citrate|N
+V08CA08|gadobenic acid|N
+V08CA09|gadobutrol|N
+V08CA10|gadoxetic acid|N
+V08CA11|gadofosveset|N
+V08CB01|ferumoxsil|N
+V08CB02|ferristene|N
+V08CB03|iron oxide, nanoparticles|N
+V08CX01|perflubron|N
+V08DA01|perflutren, human albumin microspheres|N
+V08DA02|microparticles of galactose|N
+V08DA03|perflenapent|N
+V08DA04|perflutren, phospholipid microspheres|N
+V08DA05|sulfur hexafluoride, phospholipid microspheres|N
+V08DA06|perflubutane, phospholipid microspheres|N
+V09AA01|technetium (99mTc) exametazime|N
+V09AA02|technetium (99mTc) bicisate|N
+V09AB01|iodine iofetamine (123I)|N
+V09AB02|iodine iolopride (123I)|N
+V09AB03|iodine ioflupane (123I)|N
+V09AX01|indium (111In) pentetic acid|N
+V09AX03|iodine (124I) 2beta-carbomethoxy-3beta-(4 iodophenyl)-tropane|N
+V09AX04|flutemetamol (18F)|N
+V09AX05|florbetapir (18F)|N
+V09AX06|florbetaben (18F)|N
+V09BA01|technetium (99mTc) oxidronic acid|N
+V09BA02|technetium (99mTc) medronic acid|N
+V09BA03|technetium (99mTc) pyrophosphate|N
+V09BA04|technetium (99mTc) butedronic acid|N
+V09CA01|technetium (99mTc) pentetic acid|N
+V09CA02|technetium (99mTc) succimer|N
+V09CA03|technetium (99mTc) mertiatide|N
+V09CA04|technetium (99mTc) gluceptate|N
+V09CA05|technetium (99mTc) gluconate|N
+V09CA06|technetium (99mTc) ethylenedicysteine|N
+V09CX01|sodium iodohippurate (123I)|N
+V09CX02|sodium iodohippurate (131I)|N
+V09CX03|sodium iothalamate (125I)|N
+V09CX04|chromium (51Cr) edetate|N
+V09DA01|technetium (99mTc) disofenin|N
+V09DA02|technetium (99mTc) etifenin|N
+V09DA03|technetium (99mTc) lidofenin|N
+V09DA04|technetium (99mTc) mebrofenin|N
+V09DA05|technetium (99mTc) galtifenin|N
+V09DB01|technetium (99mTc) nanocolloid|N
+V09DB02|technetium (99mTc) microcolloid|N
+V09DB03|technetium (99mTc) millimicrospheres|N
+V09DB04|technetium (99mTc) tin colloid|N
+V09DB05|technetium (99mTc) sulfur colloid|N
+V09DB06|technetium (99mTc) rheniumsulfide colloid|N
+V09DB07|technetium (99mTc) phytate|N
+V09DX01|selenium (75Se) tauroselcholic acid|N
+V09EA01|technetium (99mTc) pentetic acid|N
+V09EA02|technetium (99mTc) technegas|N
+V09EA03|technetium (99mTc) nanocolloid|N
+V09EB01|technetium (99mTc) macrosalb|N
+V09EB02|technetium (99mTc) microspheres|N
+V09EX01|krypton (81mKr) gas|N
+V09EX02|xenon (127Xe) gas|N
+V09EX03|xenon (133Xe) gas|N
+V09FX01|technetium (99mTc) pertechnetate|N
+V09FX02|sodium iodide (123I)|N
+V09FX03|sodium iodide (131I)|N
+V09FX04|sodium iodide (124I)|N
+V09GA01|technetium (99mTc) sestamibi|N
+V09GA02|technetium (99mTc) tetrofosmin|N
+V09GA03|technetium (99mTc) teboroxime|N
+V09GA04|technetium (99mTc) human albumin|N
+V09GA05|technetium (99mTc) furifosmin|N
+V09GA06|technetium (99mTc) stannous agent labelled cells|N
+V09GA07|technetium (99mTc) apcitide|N
+V09GB01|fibrinogen (125I)|N
+V09GB02|iodine (125I) human albumin|N
+V09GX01|thallium (201Tl) chloride|N
+V09GX02|indium (111In) imciromab|N
+V09GX03|chromium (51Cr) chromate labelled cells|N
+V09GX04|rubidium (82Rb) chloride|N
+V09HA01|technetium (99mTc) human immunoglobulin|N
+V09HA02|technetium (99mTc) exametazime labelled cells|N
+V09HA03|technetium (99mTc) antigranulocyte antibody|N
+V09HA04|technetium (99mTc) sulesomab|N
+V09HB01|indium (111In) oxinate labelled cells|N
+V09HB02|indium (111In) tropolonate labelled cells|N
+V09HX01|gallium (67Ga) citrate|N
+V09IA01|technetium (99mTc) antiCarcinoEmbryonicAntigen antibody|N
+V09IA02|technetium (99mTc) antimelanoma antibody|N
+V09IA03|technetium (99mTc) pentavalent succimer|N
+V09IA04|technetium (99mTc) votumumab|N
+V09IA05|technetium (99mTc) depreotide|N
+V09IA06|technetium (99mTc) arcitumomab|N
+V09IA07|technetium (99mTc) hynic-octreotide|N
+V09IA08|technetium (99mTc) etarfolatide|N
+V09IA09|technetium (99mTc) tilmanocept|N
+V09IB01|indium (111In) pentetreotide|N
+V09IB02|indium (111In) satumomab pendetide|N
+V09IB03|indium (111In) antiovariumcarcinoma antibody|N
+V09IB04|indium (111In) capromab pendetide|N
+V09IX01|iobenguane (123I)|N
+V09IX02|iobenguane (131I)|N
+V09IX03|iodine (125I) CC49-monoclonal antibody|N
+V09IX04|fludeoxyglucose (18F)|N
+V09IX05|fluorodopa (18F)|N
+V09IX06|sodium fluoride (18F)|N
+V09IX07|fluorocholine(18F)|N
+V09IX08|fluoroethylcholine (18F)|N
+V09IX09|gallium (68Ga) edotreotide|N
+V09IX10|fluoroethyl-L-tyrosine (18F)|N
+V09IX11|fluoroestradiol (18F)|N
+V09IX12|fluciclovine (18F)|N
+V09IX13|methionine (11C)|N
+V09XA01|iodine (131I) norcholesterol|N
+V09XA02|iodocholesterol (131I)|N
+V09XA03|iodine (131I) human albumin|N
+V09XX01|cobalt (57Co) cyanocobalamine|N
+V09XX02|cobalt (58Co) cyanocobalamine|N
+V09XX03|selenium (75Se) norcholesterol|N
+V09XX04|ferric (59Fe) citrate|N
+V10AA01|yttrium (90Y) citrate colloid|N
+V10AA02|yttrium (90Y) ferrihydroxide colloid|N
+V10AA03|yttrium (90Y) silicate colloid|N
+V10AX01|phosphorous (32P) chromicphosphate colloid|N
+V10AX02|samarium (153Sm) hydroxyapatite colloid|N
+V10AX03|dysprosium (165Dy) colloid|N
+V10AX04|erbium (169Er) citrate colloid|N
+V10AX05|rhenium (186Re) sulfide colloid|N
+V10AX06|gold (198Au) colloidal|N
+V10BX01|strontium (89Sr) chloride|N
+V10BX02|samarium (153Sm) lexidronam|N
+V10BX03|rhenium (186Re) etidronic acid|N
+V10XA01|sodium iodide (131I)|N
+V10XA02|iobenguane (131I)|N
+V10XA53|tositumomab/iodine (131I) tositumomab|N
+V10XX01|sodium phosphate (32P)|N
+V10XX02|ibritumomab tiuxetan (90Y)|N
+V10XX03|radium (223Ra) dichloride|N
+V10XX04|lutetium (177Lu) oxodotreotide|N

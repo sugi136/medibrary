@@ -21,9 +21,25 @@ const sections = [
 </template>
 
 <style scoped>
-.tab-panel { display: grid; gap: 25px; padding: 28px; }
-.tab-panel > h2 { margin-bottom: -12px; }
-.text-section h3 { color: var(--primary-dark); }
-.text-section p { color: var(--muted); line-height: 1.8; white-space: pre-line; }
-@media (max-width: 600px) { .tab-panel { padding: 20px; } }
+.tab-panel {
+  display: grid;
+  gap: 25px;
+  padding: 28px;
+}
+.tab-panel > h2 {
+  margin-bottom: -12px;
+}
+.text-section h3 {
+  color: var(--primary-dark);
+}
+.text-section p {
+  color: var(--muted);
+  line-height: 1.8;
+  white-space: pre-line;
+}
+@media (max-width: 600px) {
+  .tab-panel {
+    padding: 20px;
+  }
+}
 </style>

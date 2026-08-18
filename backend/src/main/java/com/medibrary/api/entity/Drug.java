@@ -39,6 +39,9 @@ public class Drug {
     @Column(name = "ingredient_en", length = 200)
     private String ingredientEn;
 
+    @Column(name = "atc_code", length = 10)
+    private String atcCode;
+
     @Column(name = "image_url", length = 500)
     private String imageUrl;
 

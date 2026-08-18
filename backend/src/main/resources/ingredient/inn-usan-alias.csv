@@ -1,0 +1,36 @@
+# WHO INN(ATC 명칭) -> openFDA 검색 시 함께 시도할 미국 통용명(USAN) 별칭
+# 형식: inn|alias1|alias2 ... (구분자 파이프, 대소문자 무시)
+# openFDA 는 미국 라벨 기준이라 INN 만으로는 조회 실패하는 성분이 있어 OR 검색에 사용한다.
+inn|aliases
+paracetamol|acetaminophen
+acetylsalicylic acid|aspirin
+salbutamol|albuterol
+adrenaline|epinephrine
+noradrenaline|norepinephrine
+glibenclamide|glyburide
+rifampicin|rifampin
+ciclosporin|cyclosporine
+dimeticone|simeticone|simethicone
+beclometasone|beclomethasone
+lidocaine|lignocaine
+furosemide|frusemide
+amoxicillin|amoxycillin
+bendroflumethiazide|bendrofluazide
+chlortalidone|chlorthalidone
+hydroxycarbamide|hydroxyurea
+levomepromazine|methotrimeprazine
+methylthioninium chloride|methylene blue
+sulfamethoxazole|sulphamethoxazole
+sulfasalazine|sulphasalazine
+tetracaine|amethocaine
+trimetazidine|trimetazidine hydrochloride
+guaifenesin|guaiphenesin
+isoprenaline|isoproterenol
+pethidine|meperidine
+phytomenadione|phytonadione
+retinol|vitamin a
+colecalciferol|cholecalciferol|vitamin d3
+thiamine|vitamin b1
+riboflavin|vitamin b2
+ascorbic acid|vitamin c
+tocopherol|vitamin e

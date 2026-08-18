@@ -5,6 +5,7 @@ import com.medibrary.api.service.DrugService;
 import com.medibrary.api.service.DuplicateWarningService;
 import com.medibrary.api.service.DurService;
 import com.medibrary.api.service.SideEffectService;
+import com.medibrary.api.service.OverseasProductService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,15 +19,18 @@ public class DrugController {
     private final SideEffectService sideEffectService;
     private final DurService durService;
     private final DuplicateWarningService duplicateWarningService;
+    private final OverseasProductService overseasProductService;
 
     public DrugController(DrugService drugService,
                           SideEffectService sideEffectService,
                           DurService durService,
-                          DuplicateWarningService duplicateWarningService) {
+                          DuplicateWarningService duplicateWarningService,
+                          OverseasProductService overseasProductService) {
         this.drugService = drugService;
         this.sideEffectService = sideEffectService;
         this.durService = durService;
         this.duplicateWarningService = duplicateWarningService;
+        this.overseasProductService = overseasProductService;
     }
 
     @GetMapping("/search")
@@ -59,5 +63,10 @@ public class DrugController {
     @GetMapping("/{drugId}/contraindications")
     public DrugDtos.ContraindicationResponse getContraindications(@PathVariable String drugId) {
         return durService.getContraindications(drugId);
+    }
+
+    @GetMapping("/{drugId}/overseas-products")
+    public DrugDtos.OverseasProductResponse getOverseasProducts(@PathVariable String drugId) {
+        return overseasProductService.getOverseasProducts(drugId);
     }
 }

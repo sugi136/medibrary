@@ -19,7 +19,7 @@ class OpenFdaClientResponseTest {
                 "https://api.fda.gov",
                 new ObjectMapper(),
                 new ExternalRestClientFactory(1_000),
-                new IngredientEnglishMapper()
+                new AtcIngredientResolver(new IngredientEnglishMapper())
         );
         extractReactionCounts = OpenFdaClient.class.getDeclaredMethod("extractReactionCounts", String.class);
         extractReactionCounts.setAccessible(true);

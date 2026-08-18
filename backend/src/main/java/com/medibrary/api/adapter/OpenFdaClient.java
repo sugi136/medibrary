@@ -18,19 +18,19 @@ public class OpenFdaClient {
 
     private final ObjectMapper objectMapper;
     private final RestClient restClient;
-    private final IngredientEnglishMapper ingredientEnglishMapper;
+    private final AtcIngredientResolver ingredientResolver;
 
     public OpenFdaClient(@Value("${app.external.openfda-base-url}") String baseUrl,
                          ObjectMapper objectMapper,
                          ExternalRestClientFactory restClientFactory,
-                         IngredientEnglishMapper ingredientEnglishMapper) {
+                         AtcIngredientResolver ingredientResolver) {
         this.objectMapper = objectMapper;
         this.restClient = restClientFactory.create(baseUrl);
-        this.ingredientEnglishMapper = ingredientEnglishMapper;
+        this.ingredientResolver = ingredientResolver;
     }
 
     public ExternalCountLookupResult fetchOverseasSideEffectCounts(Drug drug) {
-        String ingredientEn = ingredientEnglishMapper.resolve(drug).orElse("");
+        String ingredientEn = ingredientResolver.resolvePrimary(drug).orElse("");
         if (ingredientEn.isBlank()) {
             return ExternalCountLookupResult.unavailable("해외 부작용 정보를 위한 영문 성분명 매핑 정보가 없습니다.");
         }

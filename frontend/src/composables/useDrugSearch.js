@@ -22,9 +22,8 @@ export function useDrugSearch() {
     loading.value = true
     searched.value = true
     try {
-      const params = mode.value === 'name'
-        ? { name: keyword.value }
-        : { shape: shape.value, color: color.value }
+      const params =
+        mode.value === 'name' ? { name: keyword.value } : { shape: shape.value, color: color.value }
       items.value = (await drugApi.search(params)).data.items || []
     } catch (requestError) {
       error.value = normalizeApiError(requestError, '검색 정보를 불러오지 못했습니다.').message
