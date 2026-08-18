@@ -6,10 +6,12 @@ Table users {
   id            bigint       [pk, increment]
   email         varchar(255) [unique, not null]
   password_hash varchar(255) [not null]
-  name          varchar(100)
-  created_at    timestamp    [default: `now()`]
+  name                     varchar(100)
+  created_at               timestamp    [default: `now()`]
+  terms_agreed_at          timestamp    [note: '서비스 약관 필수 동의 시각']
+  medical_notice_agreed_at timestamp    [note: '의료정보 고지 필수 동의 시각']
 
-  Note: '서비스 회원'
+  Note: '서비스 회원. 신규 가입 시 영문·숫자·기호 조합 비밀번호와 약관·의료정보 고지 동의를 검증하고 동의 시각을 보관한다.'
 }
 
 Table drugs {

@@ -36,7 +36,6 @@ onMounted(load)
 
 <template>
   <section>
-    <span class="eyebrow">SCR-DASH-001</span>
     <h1>안녕하세요,<br />오늘도 건강한 하루예요.</h1>
     <p class="page-intro">최근 검색과 즐겨찾기한 약의 상태를 빠르게 확인하세요.</p>
     <div v-if="loading" class="loading">대시보드를 준비하는 중입니다…</div>
@@ -81,13 +80,8 @@ onMounted(load)
 </template>
 
 <style scoped>
-.eyebrow {
-  color: var(--primary-dark);
-  font-size: 12px;
-  font-weight: 700;
-}
 h1 {
-  margin: 7px 0 10px;
+  margin: 0 0 10px;
 }
 .dashboard-grid {
   display: grid;

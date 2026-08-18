@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.time.LocalDateTime;
+
 @Service
 public class AuthService {
     private final UserRepository userRepository;
@@ -27,7 +29,14 @@ public class AuthService {
         if (userRepository.existsByEmail(request.email())) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, "이미 사용 중인 이메일입니다.");
         }
-        userRepository.save(new User(request.email(), passwordEncoder.encode(request.password()), request.name()));
+        LocalDateTime agreedAt = LocalDateTime.now();
+        userRepository.save(new User(
+                request.email(),
+                passwordEncoder.encode(request.password()),
+                request.name(),
+                agreedAt,
+                agreedAt
+        ));
     }
 
     @Transactional(readOnly = true)

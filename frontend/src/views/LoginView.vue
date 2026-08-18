@@ -32,7 +32,6 @@ async function login() {
 <template>
   <section class="auth-wrap">
     <div class="auth-copy">
-      <span>SCR-AUTH-001</span>
       <h1>다시 만나서 반가워요.</h1>
       <p>로그인하고 즐겨찾기한 약과 병용금기 정보를 관리하세요.</p>
     </div>
@@ -78,11 +77,6 @@ async function login() {
   gap: 70px;
   min-height: 540px;
   align-items: center;
-}
-.auth-copy span {
-  color: var(--primary-dark);
-  font-size: 12px;
-  font-weight: 700;
 }
 .auth-copy h1 {
   margin-top: 12px;

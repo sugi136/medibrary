@@ -1,11 +1,9 @@
 <script setup>
-import { computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from './stores/auth'
 
 const router = useRouter()
 const auth = useAuthStore()
-const currentScreen = computed(() => router.currentRoute.value.meta.screenId || '')
 
 function logout() {
   auth.logout()
@@ -45,7 +43,6 @@ function logout() {
         메디브러리는 의약품 정보를 쉽게 확인할 수 있도록 돕는 서비스입니다. 복용 전에는 의사 또는
         약사와 상담하세요.
       </p>
-      <span v-if="currentScreen" class="screen-id">{{ currentScreen }}</span>
     </footer>
   </div>
 </template>

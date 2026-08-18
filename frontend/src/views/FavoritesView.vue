@@ -31,7 +31,6 @@ onMounted(favoritesState.load)
   <section>
     <div class="section-header">
       <div>
-        <span class="eyebrow">SCR-MY-001</span>
         <h1>나의 즐겨찾기</h1>
         <p class="page-intro">자주 찾는 약을 모아보고, 함께 복용할 때 주의할 조합을 확인하세요.</p>
       </div>
@@ -98,16 +97,11 @@ onMounted(favoritesState.load)
 </template>
 
 <style scoped>
-.eyebrow {
-  color: var(--primary-dark);
-  font-size: 12px;
-  font-weight: 700;
-}
 .section-header {
   margin-bottom: 26px;
 }
 .section-header h1 {
-  margin: 7px 0;
+  margin: 0 0 7px;
 }
 .warning-banner {
   display: grid;

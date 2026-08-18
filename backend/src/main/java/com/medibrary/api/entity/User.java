@@ -29,14 +29,23 @@ public class User {
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
 
+    @Column(name = "terms_agreed_at")
+    private LocalDateTime termsAgreedAt;
+
+    @Column(name = "medical_notice_agreed_at")
+    private LocalDateTime medicalNoticeAgreedAt;
+
     @PrePersist
     void prePersist() {
         createdAt = LocalDateTime.now();
     }
 
-    public User(String email, String passwordHash, String name) {
+    public User(String email, String passwordHash, String name,
+                LocalDateTime termsAgreedAt, LocalDateTime medicalNoticeAgreedAt) {
         this.email = email;
         this.passwordHash = passwordHash;
         this.name = name;
+        this.termsAgreedAt = termsAgreedAt;
+        this.medicalNoticeAgreedAt = medicalNoticeAgreedAt;
     }
 }

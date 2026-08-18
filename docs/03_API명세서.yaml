@@ -24,13 +24,25 @@ paths:
           application/json:
             schema:
               type: object
-              required: [email, password, name]
+              required: [email, password, name, termsAgreed, medicalNoticeAgreed]
               properties:
                 email: { type: string, format: email }
-                password: { type: string, minLength: 4 }
-                name: { type: string }
+                password:
+                  type: string
+                  minLength: 8
+                  maxLength: 72
+                  pattern: '^(?=.*[A-Za-z])(?=.*\\d)(?=.*[^A-Za-z0-9])\\S+$'
+                  description: 영문·숫자·기호를 각각 하나 이상 포함하는 8~72자 비밀번호
+                name: { type: string, maxLength: 100 }
+                termsAgreed:
+                  type: boolean
+                  description: 서비스 약관 필수 동의. true만 허용
+                medicalNoticeAgreed:
+                  type: boolean
+                  description: 의료정보 참고용 고지 필수 동의. true만 허용
       responses:
-        '201': { description: 가입 성공 }
+        '201': { description: 가입 성공 및 약관·의료정보 고지 동의 시각 저장 }
+        '400': { description: 비밀번호 정책 또는 필수 동의 검증 실패 }
         '409': { description: 이메일 중복 }
 
   /auth/login:
