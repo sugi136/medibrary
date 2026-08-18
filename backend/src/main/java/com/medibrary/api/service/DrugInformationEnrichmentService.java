@@ -3,6 +3,7 @@ package com.medibrary.api.service;
 import com.medibrary.api.adapter.ExternalDrugInformation;
 import com.medibrary.api.adapter.EyakClient;
 import com.medibrary.api.adapter.IngredientEnglishMapper;
+import com.medibrary.api.adapter.IngredientKoreanNameExtractor;
 import com.medibrary.api.entity.Drug;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,8 @@ public class DrugInformationEnrichmentService {
     }
 
     public void enrichMissingFields(Drug drug) {
+        IngredientKoreanNameExtractor.extract(drug.getName())
+                .ifPresent(ingredientKr -> setIfBlank(drug::getIngredientKr, drug::setIngredientKr, ingredientKr));
         ingredientEnglishMapper.resolve(drug)
                 .ifPresent(ingredientEn -> setIfBlank(drug::getIngredientEn, drug::setIngredientEn, ingredientEn));
         if (hasAllDetailFields(drug)) {

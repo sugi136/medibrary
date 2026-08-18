@@ -1,6 +1,7 @@
 package com.medibrary.api.service.cache;
 
 import com.medibrary.api.adapter.ExternalDrug;
+import com.medibrary.api.adapter.IngredientKoreanNameExtractor;
 import com.medibrary.api.entity.Drug;
 import com.medibrary.api.repository.DrugRepository;
 import org.springframework.stereotype.Service;
@@ -35,6 +36,8 @@ public class DrugCacheService {
 
     private Drug applyExternalFields(Drug drug, ExternalDrug external) {
         drug.setManufacturer(preferNonBlank(external.manufacturer(), drug.getManufacturer()));
+        drug.setIngredientKr(preferNonBlank(
+                IngredientKoreanNameExtractor.extract(external.name()).orElse(null), drug.getIngredientKr()));
         drug.setShape(preferNonBlank(external.shape(), drug.getShape()));
         drug.setColor(preferNonBlank(external.color(), drug.getColor()));
         drug.setMarkFront(preferNonBlank(external.markFront(), drug.getMarkFront()));
