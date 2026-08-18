@@ -134,6 +134,7 @@ public class GranuleClient {
         if (id.isBlank() || name.isBlank()) return;
         results.add(new ExternalDrug(
                 id, name,
+                firstText(item, "ENTP_NAME", "entpName", "COMPANY_NAME", "companyName"),
                 firstText(item, "DRUG_SHAPE", "drugShape"),
                 firstText(item, "COLOR_CLASS1", "colorClass1"),
                 firstText(item, "PRINT_FRONT", "printFront"),

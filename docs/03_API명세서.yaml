@@ -2,7 +2,7 @@ openapi: 3.0.3
 info:
   title: 메디브러리(Medibrary) API
   description: Vue 프론트엔드 - Spring Boot 백엔드로 구성된 의약품 검색/부작용 조회/즐겨찾기/병용금기 서비스 API
-  version: 1.1.0
+  version: 1.2.0
 servers:
   - url: http://localhost:8080/api
     description: 로컬 개발 서버
@@ -113,7 +113,7 @@ paths:
   /drugs/{drugId}/side-effects:
     get:
       tags: [drugs]
-      summary: 국내/해외 부작용 사례 조회 (REQ-F-007, REQ-F-008, REQ-N-001, REQ-N-004)
+      summary: 국내 허가사항·해외 FAERS 부작용 비교 조회 (REQ-F-007, REQ-F-008, REQ-F-013, REQ-N-001, REQ-N-004, REQ-N-008)
       parameters:
         - name: drugId
           in: path
@@ -133,6 +133,25 @@ paths:
                 properties:
                   domestic: { $ref: '#/components/schemas/SideEffectResult' }
                   overseas: { $ref: '#/components/schemas/SideEffectResult' }
+                  disclaimer:
+                    type: string
+                    description: FAERS 자발보고 데이터의 비인과성·비발생빈도 한계 안내
+
+  /drugs/{drugId}/duplicates:
+    get:
+      tags: [drugs]
+      summary: 동일 성분·효능군 중복 경고 조회 (REQ-F-014)
+      parameters:
+        - name: drugId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '200':
+          description: 즐겨찾기 기반 동일 성분 중복과 DUR 효능군 중복 후보. 로그인하지 않은 경우 동일 성분 결과는 빈 목록으로 반환.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/DuplicateWarningResponse' }
 
   /drugs/{drugId}/contraindications:
     get:
@@ -192,7 +211,7 @@ paths:
   /favorites/{favoriteId}:
     delete:
       tags: [favorites]
-      summary: 즐겨찾기 해제 (REQ-F-010)
+      summary: 즐겨찾기 목록의 식별자로 즐겨찾기 해제 (REQ-F-010)
       security: [{ bearerAuth: [] }]
       parameters:
         - name: favoriteId
@@ -202,6 +221,20 @@ paths:
       responses:
         '204': { description: 해제 성공 }
         '404': { description: 존재하지 않음 }
+
+  /favorites/drug/{drugId}:
+    delete:
+      tags: [favorites]
+      summary: 약 식별자로 즐겨찾기 해제 (상세 화면용, REQ-F-010)
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - name: drugId
+          in: path
+          required: true
+          schema: { type: string }
+      responses:
+        '204': { description: 해제 성공 }
+        '404': { description: 해당 약의 즐겨찾기 정보 없음 }
 
   /dashboard/summary:
     get:
@@ -218,6 +251,8 @@ paths:
                 properties:
                   recentSearches:
                     type: array
+                    maxItems: 5
+                    description: 로그인 사용자의 최신 검색 조건(이름·모양·색상) 역순 목록
                     items: { type: string }
                   favoriteCount: { type: integer }
                   hasDurWarning: { type: boolean }
@@ -241,23 +276,29 @@ components:
         imageUrl: { type: string }
 
     FavoriteDrugSummary:
-      type: object
-      properties:
-        favoriteId: { type: integer }
-        id: { type: string }
-        name: { type: string }
-        manufacturer: { type: string, nullable: true }
-        shape: { type: string, nullable: true }
-        color: { type: string, nullable: true }
-        imageUrl: { type: string, nullable: true }
+      allOf:
+        - $ref: '#/components/schemas/DrugSummary'
+        - type: object
+          properties:
+            favoriteId: { type: integer }
 
     DrugDetail:
       allOf:
         - $ref: '#/components/schemas/DrugSummary'
         - type: object
           properties:
+            markFront: { type: string }
+            markBack: { type: string }
+            ingredientKr:
+              type: string
+              nullable: true
+              description: 한글 주성분명. 데이터가 없으면 ingredientEn을 보조 표기로 사용한다.
+            ingredientEn:
+              type: string
+              nullable: true
+              description: openFDA 조회용 영문 주성분명
             efficacy: { type: string }
-            usage: { type: string }
+            usageInfo: { type: string }
             caution: { type: string }
             isFavorite: { type: boolean }
 
@@ -267,10 +308,43 @@ components:
         available: { type: boolean }
         cases:
           type: array
-          items: { type: string }
+          items: { $ref: '#/components/schemas/SideEffectCase' }
         message:
           type: string
           description: available=false 일 때 사용자에게 보여줄 안내 문구
+
+    SideEffectCase:
+      type: object
+      properties:
+        term: { type: string, description: 국내 이상반응 원문 또는 해외 MedDRA 반응 용어 }
+        count:
+          type: integer
+          nullable: true
+          description: 해외 FAERS 보고 건수. 국내 허가사항 원문은 null.
+        domesticMentioned:
+          type: boolean
+          description: 해외 반응 용어가 제한된 국문 동의어 사전 기준 국내 문서에 언급됐는지 여부
+
+    DuplicateWarningItem:
+      type: object
+      properties:
+        drugId: { type: string }
+        name: { type: string }
+        category: { type: string, enum: [SAME_INGREDIENT, SAME_EFFICACY_GROUP] }
+        reason: { type: string }
+
+    DuplicateWarningResponse:
+      type: object
+      properties:
+        drugId: { type: string }
+        available: { type: boolean }
+        sameIngredientItems:
+          type: array
+          items: { $ref: '#/components/schemas/DuplicateWarningItem' }
+        efficacyGroupItems:
+          type: array
+          items: { $ref: '#/components/schemas/DuplicateWarningItem' }
+        message: { type: string, nullable: true }
 
     DurWarning:
       type: object

@@ -1,6 +1,6 @@
-// 내 약 정보 검색 서비스 - ERD
-// dbdiagram.io 에 이 파일 내용을 그대로 붙여넣으면 다이어그램이 생성됩니다.
-// DB: MySQL 8
+// 메디브러리(Medibrary) - 의약품 정보 검색 서비스 ERD
+// dbdiagram.io에 이 파일 내용을 그대로 붙여넣으면 다이어그램이 생성됩니다.
+// DB: PostgreSQL 17 (Supabase)
 
 Table users {
   id            bigint       [pk, increment]
@@ -15,10 +15,12 @@ Table users {
 Table drugs {
   id             varchar(20)  [pk, note: '식약처 품목기준코드']
   name           varchar(200) [not null]
+  manufacturer   varchar(200) [note: '제조·수입사(낱알식별 API ENTP_NAME)']
   shape          varchar(50)
   color          varchar(50)
   mark_front     varchar(100)
   mark_back      varchar(100)
+  ingredient_kr  varchar(200) [note: '한글 주성분명']
   ingredient_en  varchar(200) [note: 'openFDA 매핑용 영문 주성분명']
   image_url      varchar(500)
   efficacy       text         [note: '효능·효과']
@@ -26,30 +28,50 @@ Table drugs {
   caution        text         [note: '주의사항']
   updated_at     timestamp    [default: `now()`]
 
-  Note: '의약품 마스터 (공공데이터포털 낱알식별정보 + e약은요 동기화 결과 캐시)'
+  Note: '의약품 마스터. 낱알식별정보·e약은요 동기화 결과 및 DUR 상대 품목 stub을 포함한다.'
 }
 
 Table favorites {
-  id         bigint    [pk, increment]
-  user_id    bigint    [not null, ref: > users.id]
+  id         bigint      [pk, increment]
+  user_id    bigint      [not null, ref: > users.id]
   drug_id    varchar(20) [not null, ref: > drugs.id]
-  created_at timestamp [default: `now()`]
+  created_at timestamp   [default: `now()`]
 
   indexes {
     (user_id, drug_id) [unique]
   }
 
-  Note: '사용자별 즐겨찾기 (users - drugs 다대다 연결 테이블)'
+  Note: '사용자별 즐겨찾기. 상세 화면은 DELETE /favorites/drug/{drugId}로 해제한다.'
+}
+
+Table search_history {
+  id          bigint      [pk, increment]
+  user_id     bigint      [not null, ref: > users.id]
+  query_text  varchar(300) [not null, note: '이름·모양·색상으로 구성한 표시용 검색 조건']
+  searched_at timestamp   [not null, default: `now()`]
+
+  indexes {
+    (user_id, searched_at)
+  }
+
+  Note: '로그인 사용자의 검색 이력. GET /dashboard/summary에서 최신 5건을 반환한다.'
 }
 
 Table dur_pairs {
-  id         bigint      [pk, increment]
-  drug_id_a  varchar(20) [not null, ref: > drugs.id]
-  drug_id_b  varchar(20) [not null, ref: > drugs.id]
+  id         bigint       [pk, increment]
+  drug_id_a  varchar(20)  [not null, ref: > drugs.id, note: '사전순으로 더 작은 품목코드']
+  drug_id_b  varchar(20)  [not null, ref: > drugs.id, note: '사전순으로 더 큰 품목코드']
   reason     varchar(300) [note: '병용금기 사유']
-  severity   varchar(20)  [note: 'CONTRAINDICATED(금기) | CAUTION(주의) - API의 type 필드와 매핑']
+  severity   varchar(20)  [note: 'CONTRAINDICATED(금기) | CAUTION(주의)']
+  fetched_at timestamp    [not null, default: `now()`]
 
-  Note: 'DUR(병용금기/주의) 조합 캐시. ① 즐겨찾기 약물 간 조합 체크(SCR-MY-001), ② 상세화면에서 특정 약 하나의 병용주의 목록 조회(SCR-DETAIL-001, GET /drugs/{id}/contraindications) 양쪽에 공용으로 사용됨. 조회 시 drug_id_a=X OR drug_id_b=X 로 검색'
+  indexes {
+    (drug_id_a, drug_id_b) [unique]
+    (drug_id_a)
+    (drug_id_b)
+  }
+
+  Note: 'DUR 병용금기·주의 조합 캐시. 상대 약이 미캐시이면 drugs에 최소 stub을 upsert한 뒤 저장한다. 항상 drug_id_a < drug_id_b 규칙을 지킨다.'
 }
 
 Table side_effect_cache {

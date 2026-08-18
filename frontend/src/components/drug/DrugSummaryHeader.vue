@@ -26,14 +26,14 @@ const canShowImage = computed(() => Boolean(props.drug.imageUrl) && !imageFailed
     <div class="summary-text">
       <span class="summary-label">의약품 상세 정보</span>
       <h1>{{ drug.name }}</h1>
-      <p>{{ drug.manufacturer || '제조사 정보 없음' }} <span v-if="drug.ingredientEn">· {{ drug.ingredientEn }}</span></p>
+      <p>{{ drug.manufacturer || '제조사 정보 없음' }} <span v-if="drug.ingredientKr || drug.ingredientEn">· {{ drug.ingredientKr || drug.ingredientEn }}</span></p>
     </div>
     <button
       class="favorite-button"
       :class="{ active: drug.isFavorite }"
       :disabled="favoriteLoading"
       type="button"
-      :aria-label="drug.isFavorite ? '즐겨찾기에 등록됨' : '즐겨찾기 등록'"
+      :aria-label="drug.isFavorite ? '즐겨찾기 해제' : '즐겨찾기 등록'"
       @click="$emit('favorite')"
     >
       {{ drug.isFavorite ? '♥' : '♡' }}

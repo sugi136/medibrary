@@ -62,9 +62,11 @@ public class EyakClient {
         JsonNode payload = root.path("response").isObject() ? root.path("response") : root;
         JsonNode item = firstItem(payload.path("body").path("items"));
         if (item.isMissingNode() || !item.isObject()) {
-            return ExternalDrugInformation.success("", "", "", List.of());
+            return ExternalDrugInformation.success("", "", "", "", List.of());
         }
 
+        String ingredientKr = cleanText(firstText(item,
+                "MATERIAL_NAME", "materialName", "MAIN_INGREDIENT", "mainIngredient", "INGR_NAME", "ingrName"));
         String efficacy = cleanText(firstText(item, "efcyQesitm", "EFCY_QESITM"));
         String usageInfo = cleanText(firstText(item, "useMethodQesitm", "USE_METHOD_QESITM"));
         String caution = joinNonBlank(
@@ -73,7 +75,7 @@ public class EyakClient {
         );
         String sideEffect = cleanText(firstText(item, "seQesitm", "SE_QESITM", "seQ", "SE_Q"));
         List<String> sideEffects = sideEffect.isBlank() ? List.of() : List.of(sideEffect);
-        return ExternalDrugInformation.success(efficacy, usageInfo, caution, sideEffects);
+        return ExternalDrugInformation.success(ingredientKr, efficacy, usageInfo, caution, sideEffects);
     }
 
     private JsonNode firstItem(JsonNode items) {

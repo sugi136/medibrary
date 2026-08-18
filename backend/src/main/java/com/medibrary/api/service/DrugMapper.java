@@ -8,14 +8,14 @@ final class DrugMapper {
 
     static DrugDtos.DrugSummary toSummary(Drug drug) {
         return new DrugDtos.DrugSummary(
-                drug.getId(), drug.getName(), null, drug.getShape(), drug.getColor(), drug.getImageUrl()
+                drug.getId(), drug.getName(), drug.getManufacturer(), drug.getShape(), drug.getColor(), drug.getImageUrl()
         );
     }
 
     static DrugDtos.DrugDetail toDetail(Drug drug, boolean isFavorite) {
         return new DrugDtos.DrugDetail(
-                drug.getId(), drug.getName(), null, drug.getShape(), drug.getColor(), drug.getImageUrl(),
-                drug.getMarkFront(), drug.getMarkBack(), drug.getIngredientEn(), drug.getEfficacy(),
+                drug.getId(), drug.getName(), drug.getManufacturer(), drug.getShape(), drug.getColor(), drug.getImageUrl(),
+                drug.getMarkFront(), drug.getMarkBack(), drug.getIngredientKr(), drug.getIngredientEn(), drug.getEfficacy(),
                 drug.getUsageInfo(), drug.getCaution(), isFavorite
         );
     }

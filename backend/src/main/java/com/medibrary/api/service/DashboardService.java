@@ -5,16 +5,18 @@ import com.medibrary.api.repository.FavoriteRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-
 @Service
 public class DashboardService {
     private final FavoriteRepository favoriteRepository;
     private final DurService durService;
+    private final SearchHistoryService searchHistoryService;
 
-    public DashboardService(FavoriteRepository favoriteRepository, DurService durService) {
+    public DashboardService(FavoriteRepository favoriteRepository,
+                            DurService durService,
+                            SearchHistoryService searchHistoryService) {
         this.favoriteRepository = favoriteRepository;
         this.durService = durService;
+        this.searchHistoryService = searchHistoryService;
     }
 
     @Transactional(readOnly = true)
@@ -22,7 +24,7 @@ public class DashboardService {
         var favorites = favoriteRepository.findAllByUserIdOrderByCreatedAtDesc(userId);
         var drugIds = favorites.stream().map(favorite -> favorite.getDrug().getId()).toList();
         boolean hasDurWarning = !durService.checkFavoritePairs(drugIds).isEmpty();
-        // 현 ERD에는 최근 검색어 저장 테이블이 없으므로 초기 골격에서는 빈 목록을 반환한다.
-        return new FavoriteDtos.DashboardSummary(List.of(), favorites.size(), hasDurWarning);
+        return new FavoriteDtos.DashboardSummary(
+                searchHistoryService.findRecentQueries(userId), favorites.size(), hasDurWarning);
     }
 }

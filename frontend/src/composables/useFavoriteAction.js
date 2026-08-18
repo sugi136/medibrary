@@ -11,24 +11,32 @@ export function useFavoriteAction(drug) {
   const loading = ref(false)
   const error = ref('')
 
-  async function add() {
+  async function toggle() {
     error.value = ''
     if (!auth.isAuthenticated) {
       await router.push({ name: 'login', query: { redirect: route.fullPath } })
       return
     }
-    if (!drug.value || drug.value.isFavorite) return
+    if (!drug.value || loading.value) return
 
     loading.value = true
     try {
-      await favoriteApi.create(drug.value.id)
-      drug.value.isFavorite = true
+      if (drug.value.isFavorite) {
+        await favoriteApi.removeByDrugId(drug.value.id)
+        drug.value.isFavorite = false
+      } else {
+        await favoriteApi.create(drug.value.id)
+        drug.value.isFavorite = true
+      }
     } catch (requestError) {
-      error.value = normalizeApiError(requestError, '즐겨찾기 등록에 실패했습니다.').message
+      const fallbackMessage = drug.value.isFavorite
+        ? '즐겨찾기 해제에 실패했습니다.'
+        : '즐겨찾기 등록에 실패했습니다.'
+      error.value = normalizeApiError(requestError, fallbackMessage).message
     } finally {
       loading.value = false
     }
   }
 
-  return { loading, error, add }
+  return { loading, error, toggle }
 }

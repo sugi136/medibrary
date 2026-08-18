@@ -21,6 +21,9 @@ public class Drug {
     @Column(nullable = false, length = 200)
     private String name;
 
+    @Column(length = 200)
+    private String manufacturer;
+
     private String shape;
     private String color;
 
@@ -30,7 +33,10 @@ public class Drug {
     @Column(name = "mark_back")
     private String markBack;
 
-    @Column(name = "ingredient_en")
+    @Column(name = "ingredient_kr", length = 200)
+    private String ingredientKr;
+
+    @Column(name = "ingredient_en", length = 200)
     private String ingredientEn;
 
     @Column(name = "image_url", length = 500)

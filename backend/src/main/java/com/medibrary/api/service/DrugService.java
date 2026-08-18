@@ -20,27 +20,32 @@ public class DrugService {
     private final FavoriteRepository favoriteRepository;
     private final DrugSearchService drugSearchService;
     private final DrugInformationEnrichmentService drugInformationEnrichmentService;
+    private final SearchHistoryService searchHistoryService;
     private final CurrentUserProvider currentUserProvider;
 
     public DrugService(DrugRepository drugRepository,
                        FavoriteRepository favoriteRepository,
                        DrugSearchService drugSearchService,
                        DrugInformationEnrichmentService drugInformationEnrichmentService,
+                       SearchHistoryService searchHistoryService,
                        CurrentUserProvider currentUserProvider) {
         this.drugRepository = drugRepository;
         this.favoriteRepository = favoriteRepository;
         this.drugSearchService = drugSearchService;
         this.drugInformationEnrichmentService = drugInformationEnrichmentService;
+        this.searchHistoryService = searchHistoryService;
         this.currentUserProvider = currentUserProvider;
     }
 
     @Transactional
     public DrugDtos.SearchResponse search(String name, String shape, String color) {
+        DrugSearchCriteria criteria = new DrugSearchCriteria(name, shape, color);
         List<DrugDtos.DrugSummary> items = drugSearchService
-                .search(new DrugSearchCriteria(name, shape, color))
+                .search(criteria)
                 .stream()
                 .map(DrugMapper::toSummary)
                 .toList();
+        currentUserProvider.getUserId().ifPresent(userId -> searchHistoryService.record(userId, criteria));
         return new DrugDtos.SearchResponse(items.size(), items);
     }
 

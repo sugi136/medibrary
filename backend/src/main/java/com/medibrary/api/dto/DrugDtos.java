@@ -11,8 +11,8 @@ public final class DrugDtos {
 
     public record DrugDetail(
             String id, String name, String manufacturer, String shape, String color, String imageUrl,
-            String markFront, String markBack, String ingredientEn, String efficacy, String usage,
-            String caution, boolean isFavorite
+            String markFront, String markBack, String ingredientKr, String ingredientEn, String efficacy,
+            String usageInfo, String caution, boolean isFavorite
     ) { }
 
     public record SearchResponse(long totalCount, List<DrugSummary> items) { }

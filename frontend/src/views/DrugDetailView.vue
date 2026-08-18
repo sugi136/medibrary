@@ -37,7 +37,7 @@ onMounted(detail.loadDetail)
     <DrugSummaryHeader
       :drug="detail.drug.value"
       :favorite-loading="favorite.loading.value"
-      @favorite="favorite.add"
+      @favorite="favorite.toggle"
     />
 
     <div class="detail-tabs" role="tablist" aria-label="의약품 상세 정보 탭">

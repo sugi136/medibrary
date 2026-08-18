@@ -28,6 +28,12 @@ public class FavoriteController {
         favoriteService.create(userId, request);
     }
 
+    @DeleteMapping("/drug/{drugId}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteByDrugId(@AuthenticationPrincipal Long userId, @PathVariable String drugId) {
+        favoriteService.deleteByDrugId(userId, drugId);
+    }
+
     @DeleteMapping("/{favoriteId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@AuthenticationPrincipal Long userId, @PathVariable Long favoriteId) {

@@ -7,6 +7,19 @@ const error = ref('')
 const summary = ref({ recentSearches: [], favoriteCount: 0, hasDurWarning: false })
 const recent = computed(() => summary.value.recentSearches || [])
 
+function recentSearchLocation(queryText) {
+  const query = {}
+  for (const condition of queryText.split(' · ')) {
+    const [label, ...valueParts] = condition.split(': ')
+    const value = valueParts.join(': ').trim()
+    if (!value) continue
+    if (label === '이름') query.name = value
+    if (label === '모양') query.shape = value
+    if (label === '색상') query.color = value
+  }
+  return { path: '/search', query }
+}
+
 async function load() {
   loading.value = true
   try { summary.value = (await dashboardApi.summary()).data }
@@ -25,7 +38,7 @@ onMounted(load)
     <div v-else class="dashboard-grid">
       <article class="favorite-summary card"><span class="card-icon">♡</span><div><p>즐겨찾기한 약</p><strong>{{ summary.favoriteCount }}<small>개</small></strong></div><RouterLink to="/favorites">관리하기 ›</RouterLink></article>
       <article class="dur-summary card" :class="{ alert: summary.hasDurWarning }"><span class="card-icon">!</span><div><p>병용금기 확인</p><strong>{{ summary.hasDurWarning ? '주의 필요' : '확인 완료' }}</strong><small>{{ summary.hasDurWarning ? '주의 조합이 있습니다.' : '확인된 경고가 없습니다.' }}</small></div><RouterLink to="/favorites">자세히 ›</RouterLink></article>
-      <article class="recent-card card"><div class="section-header"><div><h2>최근 검색어</h2><p class="page-intro">최근 5건까지 표시됩니다.</p></div><RouterLink to="/search">새로 검색 ›</RouterLink></div><div v-if="recent.length" class="recent-list"><RouterLink v-for="item in recent" :key="item" :to="{ path: '/search', query: { q: item } }">{{ item }} <span>›</span></RouterLink></div><div v-else class="notice">최근 검색어가 없습니다. 필요한 약을 먼저 검색해 보세요.</div></article>
+      <article class="recent-card card"><div class="section-header"><div><h2>최근 검색어</h2><p class="page-intro">최근 5건까지 표시됩니다.</p></div><RouterLink to="/search">새로 검색 ›</RouterLink></div><div v-if="recent.length" class="recent-list"><RouterLink v-for="item in recent" :key="item" :to="recentSearchLocation(item)">{{ item }} <span>›</span></RouterLink></div><div v-else class="notice">최근 검색어가 없습니다. 필요한 약을 먼저 검색해 보세요.</div></article>
     </div>
   </section>
 </template>

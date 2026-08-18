@@ -28,6 +28,7 @@ public class DrugInformationEnrichmentService {
         if (!information.available()) {
             return;
         }
+        setIfBlank(drug::getIngredientKr, drug::setIngredientKr, information.ingredientKr());
         setIfBlank(drug::getEfficacy, drug::setEfficacy, information.efficacy());
         setIfBlank(drug::getUsageInfo, drug::setUsageInfo, information.usageInfo());
         setIfBlank(drug::getCaution, drug::setCaution, information.caution());

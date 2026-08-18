@@ -55,4 +55,11 @@ public class FavoriteService {
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "즐겨찾기 정보가 없습니다."));
         favoriteRepository.delete(favorite);
     }
+
+    @Transactional
+    public void deleteByDrugId(Long userId, String drugId) {
+        Favorite favorite = favoriteRepository.findByUserIdAndDrugId(userId, drugId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "즐겨찾기 정보가 없습니다."));
+        favoriteRepository.delete(favorite);
+    }
 }

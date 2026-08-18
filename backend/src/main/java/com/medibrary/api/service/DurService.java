@@ -5,8 +5,10 @@ import com.medibrary.api.dto.DrugDtos;
 import com.medibrary.api.dto.FavoriteDtos;
 import com.medibrary.api.entity.Drug;
 import com.medibrary.api.service.cache.ContraindicationCacheService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -14,17 +16,21 @@ public class DurService {
     private final DrugService drugService;
     private final ContraindicationCacheService cacheService;
     private final DurClient durClient;
+    private final long cacheTtlHours;
 
     public DurService(DrugService drugService,
                       ContraindicationCacheService cacheService,
-                      DurClient durClient) {
+                      DurClient durClient,
+                      @Value("${app.cache.dur-ttl-hours:24}") long cacheTtlHours) {
         this.drugService = drugService;
         this.cacheService = cacheService;
         this.durClient = durClient;
+        this.cacheTtlHours = cacheTtlHours;
     }
 
     public DrugDtos.ContraindicationResponse getContraindications(String drugId) {
-        List<DrugDtos.ContraindicationItem> cachedItems = cacheService.findForDrug(drugId);
+        List<DrugDtos.ContraindicationItem> cachedItems = cacheService.findFreshForDrug(
+                drugId, LocalDateTime.now().minusHours(cacheTtlHours));
         if (!cachedItems.isEmpty()) {
             return new DrugDtos.ContraindicationResponse(drugId, true, cachedItems, null);
         }
@@ -37,10 +43,7 @@ public class DurService {
         if (externalResult.items().isEmpty()) {
             return emptyResponse(drugId);
         }
-        List<DrugDtos.ContraindicationItem> items = externalResult.items().stream()
-                .map(item -> new DrugDtos.ContraindicationItem(
-                        item.drugId(), item.name(), null, item.type(), item.reason()))
-                .toList();
+        List<DrugDtos.ContraindicationItem> items = cacheService.cacheAndFind(drug, externalResult.items());
         return new DrugDtos.ContraindicationResponse(drugId, true, items, null);
     }
 

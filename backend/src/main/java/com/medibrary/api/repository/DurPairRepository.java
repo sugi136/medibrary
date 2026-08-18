@@ -7,8 +7,11 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
 
 public interface DurPairRepository extends JpaRepository<DurPair, Long> {
+    Optional<DurPair> findByDrugAIdAndDrugBId(String drugIdA, String drugIdB);
+
     @Query("""
             select pair from DurPair pair
             join fetch pair.drugA

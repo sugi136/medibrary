@@ -9,5 +9,6 @@ import java.util.Optional;
 public interface FavoriteRepository extends JpaRepository<Favorite, Long> {
     List<Favorite> findAllByUserIdOrderByCreatedAtDesc(Long userId);
     Optional<Favorite> findByIdAndUserId(Long favoriteId, Long userId);
+    Optional<Favorite> findByUserIdAndDrugId(Long userId, String drugId);
     boolean existsByUserIdAndDrugId(Long userId, String drugId);
 }

@@ -1,14 +1,31 @@
 <script setup>
-import { useRouter } from 'vue-router'
+import { onMounted } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import DrugCard from '../components/drug/DrugCard.vue'
 import { useDrugSearch } from '../composables/useDrugSearch'
 
+const route = useRoute()
 const router = useRouter()
 const searchState = useDrugSearch()
+
+function restoreRecentSearch() {
+  const name = typeof route.query.name === 'string' ? route.query.name : ''
+  const shape = typeof route.query.shape === 'string' ? route.query.shape : ''
+  const color = typeof route.query.color === 'string' ? route.query.color : ''
+  if (!name && !shape && !color) return
+
+  searchState.keyword.value = name
+  searchState.shape.value = shape
+  searchState.color.value = color
+  searchState.mode.value = name ? 'name' : 'appearance'
+  searchState.search()
+}
 
 function openDetail(drug) {
   router.push({ name: 'drug-detail', params: { id: drug.id } })
 }
+
+onMounted(restoreRecentSearch)
 </script>
 
 <template>

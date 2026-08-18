@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @Entity
@@ -26,6 +28,15 @@ public class DurPair {
 
     private String reason;
     private String severity;
+
+    @Column(name = "fetched_at", nullable = false)
+    private LocalDateTime fetchedAt;
+
+    @PrePersist
+    @PreUpdate
+    void refreshFetchedAt() {
+        fetchedAt = LocalDateTime.now();
+    }
 
     public DurPair(Drug drugA, Drug drugB, String reason, String severity) {
         this.drugA = drugA;

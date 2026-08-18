@@ -24,16 +24,26 @@ public class DrugCacheService {
     @Transactional
     public Drug cache(ExternalDrug external) {
         return drugRepository.findById(external.id())
+                .map(existing -> applyExternalFields(existing, external))
                 .orElseGet(() -> drugRepository.save(toEntity(external)));
     }
 
     private Drug toEntity(ExternalDrug external) {
         Drug drug = new Drug(external.id(), external.name());
-        drug.setShape(external.shape());
-        drug.setColor(external.color());
-        drug.setMarkFront(external.markFront());
-        drug.setMarkBack(external.markBack());
-        drug.setImageUrl(external.imageUrl());
+        return applyExternalFields(drug, external);
+    }
+
+    private Drug applyExternalFields(Drug drug, ExternalDrug external) {
+        drug.setManufacturer(preferNonBlank(external.manufacturer(), drug.getManufacturer()));
+        drug.setShape(preferNonBlank(external.shape(), drug.getShape()));
+        drug.setColor(preferNonBlank(external.color(), drug.getColor()));
+        drug.setMarkFront(preferNonBlank(external.markFront(), drug.getMarkFront()));
+        drug.setMarkBack(preferNonBlank(external.markBack(), drug.getMarkBack()));
+        drug.setImageUrl(preferNonBlank(external.imageUrl(), drug.getImageUrl()));
         return drug;
+    }
+
+    private String preferNonBlank(String preferred, String fallback) {
+        return preferred == null || preferred.isBlank() ? fallback : preferred;
     }
 }
