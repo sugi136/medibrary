@@ -12,7 +12,7 @@ final class FavoriteMapper {
                 favorite.getId(),
                 drug.getId(),
                 drug.getName(),
-                null,
+                drug.getManufacturer(),
                 drug.getShape(),
                 drug.getColor(),
                 drug.getImageUrl()
