@@ -28,4 +28,10 @@ class IngredientEnglishMapperTest {
         assertThat(mapper.resolveFromText("에스오메프라졸정"))
                 .contains("ESOMEPRAZOLE");
     }
+
+    @Test
+    void resolvesEcabepideForNoResultOpenFdaHandling() {
+        assertThat(mapper.resolveFromText("가베트정500밀리그램(에카베트나트륨수화물)"))
+                .contains("ECABEPIDE");
+    }
 }

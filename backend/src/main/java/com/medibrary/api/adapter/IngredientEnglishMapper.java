@@ -58,6 +58,8 @@ public class IngredientEnglishMapper {
         mappings.put("슈도에페드린", "PSEUDOEPHEDRINE");
         mappings.put("덱스트로메토르판", "DEXTROMETHORPHAN");
         mappings.put("구아이페네신", "GUAIFENESIN");
+        mappings.put("에카베트나트륨수화물", "ECABEPIDE");
+        mappings.put("에카베트나트륨", "ECABEPIDE");
         mappings.put("에스오메프라졸", "ESOMEPRAZOLE");
         mappings.put("오메프라졸", "OMEPRAZOLE");
         mappings.put("판토프라졸", "PANTOPRAZOLE");
