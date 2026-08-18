@@ -17,9 +17,13 @@ public final class DrugDtos {
 
     public record SearchResponse(long totalCount, List<DrugSummary> items) { }
 
-    public record SideEffectResult(boolean available, List<String> cases, String message) { }
+    public record SideEffectCase(String term, Long count, boolean domesticMentioned) { }
 
-    public record SideEffectsResponse(SideEffectResult domestic, SideEffectResult overseas) { }
+    public record SideEffectResult(boolean available, List<SideEffectCase> cases, String message) { }
+
+    public record SideEffectsResponse(SideEffectResult domestic,
+                                      SideEffectResult overseas,
+                                      String disclaimer) { }
 
     public record ContraindicationItem(
             String drugId, String name, String manufacturer, String type, String reason
@@ -28,4 +32,12 @@ public final class DrugDtos {
     public record ContraindicationResponse(
             String drugId, boolean available, List<ContraindicationItem> items, String message
     ) { }
+
+    public record DuplicateWarningItem(String drugId, String name, String category, String reason) { }
+
+    public record DuplicateWarningResponse(String drugId,
+                                           boolean available,
+                                           List<DuplicateWarningItem> sameIngredientItems,
+                                           List<DuplicateWarningItem> efficacyGroupItems,
+                                           String message) { }
 }

@@ -65,6 +65,8 @@ onMounted(detail.loadDetail)
       :result="detail.contraindications.value"
       :items="detail.visibleContraindications.value"
       :show-all="detail.showAllContraindications.value"
+      :duplicate-warnings="detail.duplicateWarnings.value"
+      :duplicate-loading="detail.duplicateWarningLoading.value"
       @retry="detail.loadContraindications"
       @toggle-all="detail.showAllContraindications.value = !detail.showAllContraindications.value"
     />

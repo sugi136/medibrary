@@ -2,6 +2,7 @@ package com.medibrary.api.controller;
 
 import com.medibrary.api.dto.DrugDtos;
 import com.medibrary.api.service.DrugService;
+import com.medibrary.api.service.DuplicateWarningService;
 import com.medibrary.api.service.DurService;
 import com.medibrary.api.service.SideEffectService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,11 +17,16 @@ public class DrugController {
     private final DrugService drugService;
     private final SideEffectService sideEffectService;
     private final DurService durService;
+    private final DuplicateWarningService duplicateWarningService;
 
-    public DrugController(DrugService drugService, SideEffectService sideEffectService, DurService durService) {
+    public DrugController(DrugService drugService,
+                          SideEffectService sideEffectService,
+                          DurService durService,
+                          DuplicateWarningService duplicateWarningService) {
         this.drugService = drugService;
         this.sideEffectService = sideEffectService;
         this.durService = durService;
+        this.duplicateWarningService = duplicateWarningService;
     }
 
     @GetMapping("/search")
@@ -43,6 +49,11 @@ public class DrugController {
             @RequestParam(defaultValue = "all") String source
     ) {
         return sideEffectService.getSideEffects(drugId, source);
+    }
+
+    @GetMapping("/{drugId}/duplicates")
+    public DrugDtos.DuplicateWarningResponse getDuplicateWarnings(@PathVariable String drugId) {
+        return duplicateWarningService.getWarnings(drugId);
     }
 
     @GetMapping("/{drugId}/contraindications")
