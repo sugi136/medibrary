@@ -16,6 +16,15 @@ class DrugSearchCriteriaTest {
     }
 
     @Test
+    void appearanceSearch_shouldNormalizeWhiteColorForPublicData() {
+        DrugSearchCriteria criteria = new DrugSearchCriteria(null, "원형", "흰색");
+
+        assertThat(criteria.hasShapeAndColor()).isTrue();
+        assertThat(criteria.normalizedShape()).isEqualTo("원형");
+        assertThat(criteria.normalizedColor()).isEqualTo("하양");
+    }
+
+    @Test
     void emptyCriteria_shouldNotRequestExternalSearch() {
         DrugSearchCriteria criteria = new DrugSearchCriteria(" ", null, "");
 

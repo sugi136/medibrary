@@ -30,7 +30,9 @@ public record DrugSearchCriteria(String name, String shape, String color) {
     }
 
     public String normalizedColor() {
-        return normalize(color);
+        String normalized = normalize(color);
+        if ("흰색".equals(normalized)) return "하양";
+        return normalized;
     }
 
     private static boolean hasText(String value) {

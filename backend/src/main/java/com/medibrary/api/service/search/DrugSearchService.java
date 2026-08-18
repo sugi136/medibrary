@@ -35,8 +35,19 @@ public class DrugSearchService {
             }
             return cachedDrugs;
         }
-        return drugCacheService.cacheAll(granuleClient.search(
-                criteria.normalizedName(), criteria.normalizedShape(), criteria.normalizedColor()));
+        return filterExternalResults(
+                drugCacheService.cacheAll(granuleClient.search(
+                        criteria.normalizedName(), criteria.normalizedShape(), criteria.normalizedColor())),
+                criteria
+        );
+    }
+
+    private List<Drug> filterExternalResults(List<Drug> drugs, DrugSearchCriteria criteria) {
+        if (!criteria.hasShapeAndColor()) return drugs;
+        return drugs.stream()
+                .filter(drug -> criteria.normalizedShape().equalsIgnoreCase(drug.getShape()))
+                .filter(drug -> criteria.normalizedColor().equalsIgnoreCase(drug.getColor()))
+                .toList();
     }
 
     private boolean isManufacturerMissing(Drug drug) {
