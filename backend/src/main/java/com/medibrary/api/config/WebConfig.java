@@ -9,15 +9,24 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 @Configuration
 public class WebConfig {
     private final List<String> allowedOrigins;
 
     public WebConfig(@Value("${app.cors.allowed-origins}") String allowedOrigins) {
-        this.allowedOrigins = Arrays.stream(allowedOrigins.split(","))
+        this.allowedOrigins = Stream.concat(
+                        Arrays.stream(allowedOrigins.split(",")),
+                        Stream.of(
+                                "http://localhost:5173",
+                                "https://medibrary-penguin16.vercel.app",
+                                "https://medibrary.vercel.app"
+                        )
+                )
                 .map(String::trim)
                 .filter(origin -> !origin.isBlank())
+                .distinct()
                 .toList();
     }
 
