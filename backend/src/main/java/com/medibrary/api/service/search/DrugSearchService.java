@@ -24,11 +24,23 @@ public class DrugSearchService {
     @Transactional
     public List<Drug> search(DrugSearchCriteria criteria) {
         List<Drug> cachedDrugs = findCached(criteria);
-        if (!cachedDrugs.isEmpty() || criteria.isEmpty()) {
+        if (criteria.isEmpty()) {
+            return cachedDrugs;
+        }
+        if (!cachedDrugs.isEmpty()) {
+            if (cachedDrugs.stream().anyMatch(this::isManufacturerMissing)) {
+                drugCacheService.cacheAll(granuleClient.search(
+                        criteria.normalizedName(), criteria.normalizedShape(), criteria.normalizedColor()));
+                return findCached(criteria);
+            }
             return cachedDrugs;
         }
         return drugCacheService.cacheAll(granuleClient.search(
                 criteria.normalizedName(), criteria.normalizedShape(), criteria.normalizedColor()));
+    }
+
+    private boolean isManufacturerMissing(Drug drug) {
+        return drug.getManufacturer() == null || drug.getManufacturer().isBlank();
     }
 
     private List<Drug> findCached(DrugSearchCriteria criteria) {
