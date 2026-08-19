@@ -37,9 +37,11 @@ public class DrugController {
     public DrugDtos.SearchResponse search(
             @RequestParam(required = false) String name,
             @RequestParam(required = false) String shape,
-            @RequestParam(required = false) String color
+            @RequestParam(required = false) String color,
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "20") int size
     ) {
-        return drugService.search(name, shape, color);
+        return drugService.search(name, shape, color, page, size);
     }
 
     @GetMapping("/{drugId}")

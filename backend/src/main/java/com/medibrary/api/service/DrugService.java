@@ -7,6 +7,8 @@ import com.medibrary.api.repository.FavoriteRepository;
 import com.medibrary.api.security.CurrentUserProvider;
 import com.medibrary.api.service.search.DrugSearchCriteria;
 import com.medibrary.api.service.search.DrugSearchService;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -37,16 +39,26 @@ public class DrugService {
         this.currentUserProvider = currentUserProvider;
     }
 
+    private static final int DEFAULT_PAGE_SIZE = 20;
+    private static final int MAX_PAGE_SIZE = 50;
+
     @Transactional
-    public DrugDtos.SearchResponse search(String name, String shape, String color) {
+    public DrugDtos.SearchResponse search(String name, String shape, String color,
+                                          int requestedPage, int requestedSize) {
+        int page = Math.max(0, requestedPage);
+        int size = Math.min(MAX_PAGE_SIZE, Math.max(1, requestedSize > 0 ? requestedSize : DEFAULT_PAGE_SIZE));
         DrugSearchCriteria criteria = new DrugSearchCriteria(name, shape, color);
-        List<DrugDtos.DrugSummary> items = drugSearchService
-                .search(criteria)
-                .stream()
+        var result = drugSearchService.search(
+                criteria,
+                PageRequest.of(page, size, Sort.by(Sort.Order.asc("name"), Sort.Order.asc("id")))
+        );
+        List<DrugDtos.DrugSummary> items = result.items().stream()
                 .map(DrugMapper::toSummary)
                 .toList();
-        currentUserProvider.getUserId().ifPresent(userId -> searchHistoryService.record(userId, criteria));
-        return new DrugDtos.SearchResponse(items.size(), items);
+        if (page == 0) {
+            currentUserProvider.getUserId().ifPresent(userId -> searchHistoryService.record(userId, criteria));
+        }
+        return new DrugDtos.SearchResponse(result.totalCount(), page, size, result.hasNext(), items);
     }
 
     @Transactional

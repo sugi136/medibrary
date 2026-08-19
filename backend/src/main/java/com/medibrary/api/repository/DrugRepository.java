@@ -1,13 +1,16 @@
 package com.medibrary.api.repository;
 
 import com.medibrary.api.entity.Drug;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.List;
-
 public interface DrugRepository extends JpaRepository<Drug, String> {
-    List<Drug> findTop20ByNameContainingIgnoreCase(String name);
-    List<Drug> findTop20ByShapeAndColor(String shape, String color);
-    List<Drug> findTop20ByShape(String shape);
-    List<Drug> findTop20ByColor(String color);
+    Page<Drug> findByNameContainingIgnoreCase(String name, Pageable pageable);
+
+    Page<Drug> findByShapeAndColor(String shape, String color, Pageable pageable);
+
+    Page<Drug> findByShape(String shape, Pageable pageable);
+
+    Page<Drug> findByColor(String color, Pageable pageable);
 }

@@ -14,9 +14,15 @@ import java.util.List;
 
 @Component
 public class GranuleClient {
+    public record SearchResult(List<ExternalDrug> items, long totalCount, boolean hasNext, boolean available) {
+        static SearchResult unavailable() {
+            return new SearchResult(List.of(), 0, false, false);
+        }
+    }
+
     private static final Logger log = LoggerFactory.getLogger(GranuleClient.class);
-    // 2025-11-10 공공데이터포털 공지에 따라 Service01/List01은 폐기되어 Service03/List03을 사용한다.
-    private static final String ENDPOINT = "https://apis.data.go.kr/1471000/MdcinGrnIdntfcInfoService03/getMdcinGrnIdntfcInfoList03";
+    private static final String ENDPOINT =
+            "https://apis.data.go.kr/1471000/MdcinGrnIdntfcInfoService03/getMdcinGrnIdntfcInfoList03";
 
     private final String serviceKey;
     private final ObjectMapper objectMapper;
@@ -30,18 +36,18 @@ public class GranuleClient {
         this.restClient = restClientFactory.create(ENDPOINT);
     }
 
-    public List<ExternalDrug> search(String name, String shape, String color) {
+    public SearchResult search(String name, String shape, String color, int pageNo, int pageSize) {
         if (serviceKey.isBlank()) {
             log.warn("낱알식별 API 호출을 건너뜁니다. DATA_GO_KR_SERVICE_KEY가 설정되지 않았습니다.");
-            return List.of();
+            return SearchResult.unavailable();
         }
 
         try {
             String body = restClient.get().uri(uriBuilder -> {
                 var builder = uriBuilder
                         .queryParam("serviceKey", serviceKey)
-                        .queryParam("pageNo", 1)
-                        .queryParam("numOfRows", 20)
+                        .queryParam("pageNo", pageNo)
+                        .queryParam("numOfRows", pageSize)
                         .queryParam("type", "json");
                 if (hasText(name)) builder.queryParam("item_name", name.trim());
                 if (hasText(shape)) builder.queryParam("drug_shape", shape.trim());
@@ -49,36 +55,39 @@ public class GranuleClient {
                 return builder.build();
             }).retrieve().body(String.class);
 
-            List<ExternalDrug> results = extractItems(body);
-            if (results.isEmpty()) {
-                log.info("낱알식별 API 검색 결과가 없습니다. name='{}', shape='{}', color='{}'",
-                        safeQueryValue(name), safeQueryValue(shape), safeQueryValue(color));
+            SearchResult result = extractResult(body, pageNo, pageSize);
+            if (result.items().isEmpty()) {
+                log.info("낱알식별 API 검색 결과가 없습니다. name='{}', shape='{}', color='{}', page={}",
+                        safeQueryValue(name), safeQueryValue(shape), safeQueryValue(color), pageNo);
             }
-            return results;
+            return result;
         } catch (RestClientResponseException ex) {
             log.warn("낱알식별 API HTTP 오류. status={}, apiError={}",
                     ex.getStatusCode().value(), extractApiErrorSummary(ex.getResponseBodyAsString()));
-            return List.of();
+            return SearchResult.unavailable();
         } catch (Exception ex) {
             log.warn("낱알식별 API 호출 실패. exceptionType={}, message={}",
                     ex.getClass().getSimpleName(), safeExceptionMessage(ex.getMessage()));
-            return List.of();
+            return SearchResult.unavailable();
         }
     }
 
-    private List<ExternalDrug> extractItems(String responseBody) throws Exception {
+    private SearchResult extractResult(String responseBody, int pageNo, int pageSize) throws Exception {
         JsonNode root = objectMapper.readTree(responseBody);
         JsonNode errorHeader = root.path("OpenAPI_ServiceResponse").path("cmmMsgHeader");
         if (!errorHeader.isMissingNode() && errorHeader.isObject()) {
             log.warn("낱알식별 API가 요청을 거절했습니다. apiError={}", extractApiErrorSummary(root));
-            return List.of();
+            return SearchResult.unavailable();
         }
 
         JsonNode payload = root.path("response").isObject() ? root.path("response") : root;
-        JsonNode items = payload.path("body").path("items");
+        JsonNode body = payload.path("body");
         List<ExternalDrug> results = new ArrayList<>();
-        addItems(items, results);
-        return results;
+        addItems(body.path("items"), results);
+
+        long totalCount = body.path("totalCount").asLong(results.size());
+        boolean hasNext = totalCount > (long) pageNo * pageSize;
+        return new SearchResult(results, Math.max(totalCount, results.size()), hasNext, true);
     }
 
     /**

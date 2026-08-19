@@ -26,7 +26,7 @@ public class LocalSampleDataInitializer implements ApplicationRunner {
             return;
         }
         drugRepository.saveAll(List.of(
-                createDrug("LOCAL-001", "타이레놀정 500밀리그램", "원형", "흰색", "TY", "500",
+                createDrug("LOCAL-001", "타이레놀정 500밀리그램", "원형", "하양", "TY", "500",
                         "Acetaminophen", "해열 및 감기에 의한 발열, 두통, 치통, 근육통 등의 통증 완화에 사용합니다.",
                         "성인은 1회 1~2정을 1일 3~4회 필요 시 복용합니다. 복용 간격은 4시간 이상으로 합니다.",
                         "다른 아세트아미노펜 함유 의약품과 중복 복용하지 마세요."),
@@ -34,7 +34,7 @@ public class LocalSampleDataInitializer implements ApplicationRunner {
                         "Ibuprofen", "두통, 생리통, 치통, 근육통 및 염증성 통증의 완화에 사용합니다.",
                         "성인은 1회 1~2정을 필요 시 복용하며, 제품의 용법·용량을 확인하세요.",
                         "위장관 질환이나 신장 질환이 있거나 임신 중인 경우 복용 전 전문가와 상담하세요."),
-                createDrug("LOCAL-003", "아스피린정 100밀리그램", "원형", "흰색", "ASP", "100",
+                createDrug("LOCAL-003", "아스피린정 100밀리그램", "원형", "하양", "ASP", "100",
                         "Aspirin", "혈소판 응집을 억제하여 혈전 생성 위험을 낮추는 데 사용합니다.",
                         "의사 또는 약사가 안내한 용법·용량에 따라 복용하세요.",
                         "출혈 위험이 있거나 항응고제를 복용 중인 경우 반드시 의료진과 상담하세요.")

@@ -15,7 +15,7 @@ public final class DrugDtos {
             String usageInfo, String caution, boolean isFavorite
     ) { }
 
-    public record SearchResponse(long totalCount, List<DrugSummary> items) { }
+    public record SearchResponse(long totalCount, int page, int size, boolean hasNext, List<DrugSummary> items) { }
 
     public record SideEffectCase(String term, Long count, boolean domesticMentioned) { }
 

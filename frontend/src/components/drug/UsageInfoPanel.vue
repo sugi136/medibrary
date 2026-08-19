@@ -5,7 +5,7 @@ defineProps({
 
 const sections = [
   { key: 'efficacy', label: '효능·효과' },
-  { key: 'usage', label: '용법·용량' },
+  { key: 'usageInfo', label: '용법·용량' },
   { key: 'caution', label: '주의사항' },
 ]
 </script>

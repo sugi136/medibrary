@@ -16,7 +16,7 @@ function restoreRecentSearch() {
 
   searchState.keyword.value = name
   searchState.shape.value = shape
-  searchState.color.value = color
+  searchState.color.value = searchState.normalizeColor(color)
   searchState.mode.value = name ? 'name' : 'appearance'
   searchState.search()
 }
@@ -56,7 +56,7 @@ onMounted(restoreRecentSearch)
           모양·색깔로 검색
         </button>
       </div>
-      <form @submit.prevent="searchState.search">
+      <form @submit.prevent="searchState.search()">
         <div v-if="searchState.mode.value === 'name'" class="search-row">
           <input
             v-model="searchState.keyword.value"
@@ -77,7 +77,7 @@ onMounted(restoreRecentSearch)
           </select>
           <select v-model="searchState.color.value" class="select" aria-label="약 색깔">
             <option value="">색깔 선택</option>
-            <option>흰색</option>
+            <option value="하양">하양</option>
             <option>노랑</option>
             <option>분홍</option>
             <option>파랑</option>
@@ -95,20 +95,43 @@ onMounted(restoreRecentSearch)
         <h2>검색 결과</h2>
         <p class="page-intro">검색된 의약품을 선택하면 상세 정보를 확인할 수 있습니다.</p>
       </div>
-      <span class="result-count">{{ searchState.items.value.length }}건</span>
+      <span class="result-count">총 {{ searchState.totalCount.value }}건</span>
     </div>
     <div v-if="searchState.loading.value" class="loading">검색 중입니다…</div>
     <div v-else-if="!searchState.items.value.length" class="notice">
       검색 결과가 없습니다. 다른 검색어 또는 조건으로 다시 시도해 주세요.
     </div>
-    <div v-else class="drug-grid">
-      <DrugCard
-        v-for="drug in searchState.items.value"
-        :key="drug.id"
-        :drug="drug"
-        @select="openDetail"
-      />
-    </div>
+    <template v-else>
+      <div class="drug-grid">
+        <DrugCard
+          v-for="drug in searchState.items.value"
+          :key="drug.id"
+          :drug="drug"
+          @select="openDetail"
+        />
+      </div>
+      <nav
+        v-if="searchState.totalPages.value > 1"
+        class="pagination"
+        aria-label="검색 결과 페이지 이동"
+      >
+        <button
+          type="button"
+          :disabled="searchState.page.value === 0 || searchState.loading.value"
+          @click="searchState.previousPage"
+        >
+          이전
+        </button>
+        <p>{{ searchState.page.value + 1 }} / {{ searchState.totalPages.value }} 페이지</p>
+        <button
+          type="button"
+          :disabled="!searchState.hasNext.value || searchState.loading.value"
+          @click="searchState.nextPage"
+        >
+          다음
+        </button>
+      </nav>
+    </template>
   </section>
 </template>
 
@@ -194,6 +217,34 @@ onMounted(restoreRecentSearch)
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 28px;
+}
+.pagination button {
+  min-width: 72px;
+  min-height: 38px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  color: var(--primary-dark);
+  background: #fff;
+  font-weight: 700;
+}
+.pagination button:disabled {
+  cursor: not-allowed;
+  color: var(--muted);
+  background: #f6f9fa;
+}
+.pagination p {
+  min-width: 110px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
 }
 @media (max-width: 820px) {
   .search-hero {
